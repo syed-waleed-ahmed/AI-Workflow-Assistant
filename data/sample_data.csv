@@ -1,0 +1,6 @@
+date,region,sales,units,channel
+2025-01-01,NA,12000,34,Online
+2025-01-02,EU,8000,22,Retail
+2025-01-03,NA,15000,40,Online
+2025-01-04,APAC,6000,18,Partner
+2025-01-05,EU,9000,25,Online
