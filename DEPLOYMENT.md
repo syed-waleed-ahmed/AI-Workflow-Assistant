@@ -13,9 +13,10 @@ November 2026; they change, so confirm them before relying on a number.
 | Database and storage | Supabase project in `eu-central-1` (Frankfurt), next to the Render region |
 
 Verified on 14 November 2026 against the live URLs: `/ready` reported database, storage and
-model `ok`; `scripts/smoke_test.py` passed all 40 checks, including a real analysis whose 22
+model `ok`; `scripts/smoke_test.py` passed all 41 checks, including a real analysis whose 22
 figures were all traced to computed results; and `npm run e2e` passed all 36 browser checks
-with no console errors.
+with no console errors. The **Production health check** workflow is enabled (repository
+variables `BACKEND_URL` and `FRONTEND_URL`) and passed its first run.
 
 ## Chosen infrastructure
 

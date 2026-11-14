@@ -154,7 +154,7 @@ run only on request: `LIVE_GROQ_API_KEY=... pytest -m live`.
 Two scripts check a running deployment, local or hosted. Each makes throwaway accounts and
 deletes them afterwards:
 
-- `backend/scripts/smoke_test.py --base-url <url>` walks the API journey (40 checks).
+- `backend/scripts/smoke_test.py --base-url <url>` walks the API journey (41 checks).
 - `frontend/e2e/journey.mjs`, run as `BASE_URL=<url> npm run e2e`, drives the real UI in
   Chrome or Edge (36 checks). It covers upload, a real analysis, the report, exports, both
   themes, phone-width layout and sign-out/sign-in, and saves screenshots.
