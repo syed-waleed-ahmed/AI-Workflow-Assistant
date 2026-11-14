@@ -90,9 +90,11 @@ export function DatasetUploader({ onUploaded, onBusyChange, className }: Dataset
     try {
       const response = await fetch(SAMPLE_DATASET_URL);
       if (!response.ok) throw new Error("sample unavailable");
-      const blob = await response.blob();
+      // Raw bytes rather than a Blob: every File implementation accepts an ArrayBuffer part,
+      // whereas a Blob from one implementation is not always recognised by another.
+      const bytes = await response.arrayBuffer();
       setLoadingSample(false);
-      await start(new File([blob], SAMPLE_DATASET_NAME, { type: "text/csv" }));
+      await start(new File([bytes], SAMPLE_DATASET_NAME, { type: "text/csv" }));
     } catch {
       setLoadingSample(false);
       setError("The sample dataset could not be loaded. Please try again.");
