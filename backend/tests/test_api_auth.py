@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import uuid
 from datetime import timedelta
 
 import pytest
@@ -209,6 +210,78 @@ def test_login_limit_follows_the_account_across_addresses(alice, settings):
         )
         statuses.append(response.status_code)
     assert statuses == [401, 401, 401, 429, 429]
+
+
+PROXY_SECRET = "s" * 40
+
+
+def _failed_logins(count: int, headers: dict[str, str]) -> list[int]:
+    """Failed logins for distinct unknown accounts, so only the per-address limit can apply."""
+    return [
+        ApiClient()
+        .post(
+            "/auth/login",
+            json={"email": f"nobody-{uuid.uuid4().hex[:12]}@example.com", "password": "wrong-password"},
+            headers=headers,
+        )
+        .status_code
+        for _ in range(count)
+    ]
+
+
+def test_proxy_stamped_address_is_used_when_the_secret_matches(settings):
+    settings.rate_limit_auth_per_minute = 2
+    settings.proxy_shared_secret = PROXY_SECRET
+    stamped = {"X-AWA-Proxy-Secret": PROXY_SECRET, "X-AWA-Client-IP": "198.51.100.1"}
+    assert _failed_logins(3, stamped) == [401, 401, 429]
+    # Another visitor behind the same proxy has a budget of their own.
+    assert _failed_logins(1, {**stamped, "X-AWA-Client-IP": "198.51.100.2"}) == [401]
+
+
+def test_proxy_stamp_is_ignored_without_the_secret(settings):
+    """A caller cannot pick its own rate-limit address by sending the stamp itself."""
+    settings.rate_limit_auth_per_minute = 2
+    settings.proxy_shared_secret = PROXY_SECRET
+    statuses = [
+        _failed_logins(1, {"X-AWA-Proxy-Secret": "wrong", "X-AWA-Client-IP": f"203.0.113.{i}"})[0] for i in range(3)
+    ]
+    assert statuses == [401, 401, 429]
+
+
+def test_proxy_stamp_is_ignored_when_no_secret_is_configured(settings):
+    settings.rate_limit_auth_per_minute = 2
+    settings.proxy_shared_secret = None
+    statuses = [_failed_logins(1, {"X-AWA-Proxy-Secret": "", "X-AWA-Client-IP": f"203.0.113.{i}"})[0] for i in range(3)]
+    assert statuses == [401, 401, 429]
+
+
+def test_forwarded_for_is_read_from_the_right(settings):
+    """With one trusted proxy, the address that proxy appended is used; earlier entries are forgeable."""
+    settings.rate_limit_auth_per_minute = 2
+    settings.trusted_proxy_hops = 1
+    statuses = [_failed_logins(1, {"X-Forwarded-For": f"203.0.113.{i}, 192.0.2.10"})[0] for i in range(3)]
+    assert statuses == [401, 401, 429]
+    assert _failed_logins(1, {"X-Forwarded-For": "203.0.113.1, 192.0.2.11"}) == [401]
+
+
+def test_production_rejects_a_short_proxy_secret():
+    from pydantic import ValidationError
+
+    from app.core.config import Settings
+
+    production = {
+        "environment": "production",
+        "secret_key": "k" * 40,
+        "database_url": "postgresql://user:pw@db.example.com:5432/app",
+        "storage_backend": "s3",
+        "s3_endpoint_url": "https://storage.example.com",
+        "s3_access_key_id": "key-id",
+        "s3_secret_access_key": "key-secret",
+        "s3_bucket": "datasets",
+    }
+    with pytest.raises(ValidationError, match="PROXY_SHARED_SECRET"):
+        Settings(**production, proxy_shared_secret="too-short")
+    assert Settings(**production, proxy_shared_secret=PROXY_SECRET).proxy_shared_secret == PROXY_SECRET
 
 
 def test_api_requests_are_rate_limited_per_user(alice, bob, settings):

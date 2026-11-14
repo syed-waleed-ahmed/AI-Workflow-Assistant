@@ -36,9 +36,14 @@ services:
         sync: false
       - key: S3_BUCKET
         value: datasets
-      # Browser → Vercel proxy → Render proxy → app: the client address is two hops back.
+      # Render's edge appends the connecting address to X-Forwarded-For, so the last entry is
+      # the only one a caller cannot forge. Requests that come through the frontend's proxy
+      # carry the visitor's address instead, trusted when PROXY_SHARED_SECRET matches.
       - key: TRUSTED_PROXY_HOPS
-        value: "2"
+        value: "1"
+      # The same value must be set on the frontend (Vercel). At least 32 characters.
+      - key: PROXY_SHARED_SECRET
+        sync: false
       # Sized for the free instance (512 MB RAM, shared CPU). Raise these on a larger plan.
       - key: MAX_UPLOAD_MB
         value: "10"

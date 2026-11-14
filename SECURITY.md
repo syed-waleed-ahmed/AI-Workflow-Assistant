@@ -125,6 +125,14 @@ spreadsheet applications from executing them as formulas.
 
 The free-tier deployment lowers the upload and row limits; see [DEPLOYMENT.md](DEPLOYMENT.md).
 
+**Client addresses.** The per-address auth limit needs an address the caller cannot choose.
+`X-Forwarded-For` is read from the right, for `TRUSTED_PROXY_HOPS` entries only, because a
+proxy appends to whatever the caller sent. Measured on the hosted deployment, Render's edge
+appends the connecting address and Vercel does not pass the visitor's address on, so the
+frontend's proxy stamps forwarded auth requests with the visitor's address and a shared secret
+(`PROXY_SHARED_SECRET`). The API honours the stamp only when the secret matches, compared in
+constant time.
+
 ### Transport, headers and errors
 
 - API responses carry `X-Content-Type-Options: nosniff`, `X-Frame-Options: DENY`,
@@ -172,6 +180,7 @@ Groq's own data-handling terms apply to this content.
 | Report figures checked against computed results | Implemented | `test_verification.py`, `test_agent_graph.py` |
 | Formula injection neutralised in exports | Implemented | `test_reports_and_platform.py` |
 | Rate limits and quotas | Implemented | `test_api_auth.py`, `test_api_datasets.py`, `test_api_analyses.py` |
+| Rate-limit address cannot be forged by the caller | Implemented; verified on the hosted deployment | `test_api_auth.py`, `lib.test.ts` |
 | Errors and health endpoints leak no internals | Implemented | `test_reports_and_platform.py` |
 | Unsafe production configuration refused at startup | Implemented | `test_reports_and_platform.py`, CI image job |
 | Dependency audit in CI | Implemented | `.github/workflows/ci.yml` |

@@ -18,14 +18,29 @@ from app.services import auth_service
 
 SAFE_METHODS = {"GET", "HEAD", "OPTIONS"}
 CSRF_HEADER = "x-csrf-token"
+# Set by the frontend's proxy (frontend/src/proxy.ts) on the requests it forwards.
+PROXY_SECRET_HEADER = "x-awa-proxy-secret"  # noqa: S105 - a header name, not a secret
+PROXY_CLIENT_IP_HEADER = "x-awa-client-ip"
 
 DbSession = Annotated[Session, Depends(get_db)]
 AppSettings = Annotated[Settings, Depends(get_settings)]
 
 
 def client_ip(request: Request) -> str:
-    """The caller's address, honouring X-Forwarded-For only for the configured number of proxies."""
-    hops = get_settings().trusted_proxy_hops
+    """The caller's address, for per-address rate limits.
+
+    A request forwarded by the frontend's proxy carries the visitor's address and the shared
+    secret; that address is used only when the secret matches, so a caller cannot choose its
+    own. Otherwise X-Forwarded-For is honoured for the configured number of proxies, counted
+    from the right, because each proxy appends the address that connected to it.
+    """
+    settings = get_settings()
+    secret = settings.proxy_shared_secret
+    if secret:
+        stamped = request.headers.get(PROXY_CLIENT_IP_HEADER, "").strip()
+        if stamped and constant_time_equal(request.headers.get(PROXY_SECRET_HEADER, ""), secret):
+            return stamped[:64]
+    hops = settings.trusted_proxy_hops
     forwarded = [part.strip() for part in request.headers.get("x-forwarded-for", "").split(",") if part.strip()]
     if hops > 0 and len(forwarded) >= hops:
         return forwarded[-hops]
