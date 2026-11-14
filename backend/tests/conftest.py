@@ -17,7 +17,8 @@ _TMP = tempfile.mkdtemp(prefix="awa-tests-")
 os.environ.update(
     {
         "ENVIRONMENT": "test",
-        "DATABASE_URL": "sqlite://",
+        # CI also runs the suite against PostgreSQL by setting TEST_DATABASE_URL.
+        "DATABASE_URL": os.environ.get("TEST_DATABASE_URL", "sqlite://"),
         "STORAGE_BACKEND": "local",
         "LOCAL_STORAGE_DIR": os.path.join(_TMP, "storage"),
         "WORKER_ENABLED": "false",

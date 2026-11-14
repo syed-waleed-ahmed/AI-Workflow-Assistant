@@ -11,6 +11,7 @@ from pathlib import Path
 
 from fpdf import FPDF
 from fpdf.enums import XPos, YPos
+from fpdf.fonts import FontFace
 from openpyxl import Workbook
 from openpyxl.styles import Font
 from sqlalchemy import func, select
@@ -178,19 +179,19 @@ class _ReportPDF(FPDF):
         self.ln(3)
         self.set_font("DejaVu", "B", 13)
         self.set_text_color(*_INK)
-        self.multi_cell(0, 7, text, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+        self.multi_cell(0, 7, text, align="L", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         self.ln(1)
 
     def paragraph(self, text: str, *, style: str = "", size: float = 10, colour: tuple[int, int, int] = _INK) -> None:
         self.set_font("DejaVu", style, size)
         self.set_text_color(*colour)
-        self.multi_cell(0, 5.2, text, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+        self.multi_cell(0, 5.2, text, align="L", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
     def bullet(self, text: str) -> None:
         self.set_font("DejaVu", "", 10)
         self.set_text_color(*_INK)
         self.cell(5, 5.2, "•")
-        self.multi_cell(0, 5.2, text, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+        self.multi_cell(0, 5.2, text, align="L", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
 
     def data_table(self, table: Table, max_rows: int = 20, max_columns: int = 7) -> None:
         columns = table.columns[:max_columns]
@@ -198,7 +199,12 @@ class _ReportPDF(FPDF):
         self.set_font("DejaVu", "", 8)
         self.set_text_color(*_INK)
         with self.table(
-            first_row_as_headings=True, line_height=5, text_align="LEFT", borders_layout="HORIZONTAL_LINES"
+            first_row_as_headings=True,
+            line_height=5,
+            text_align="LEFT",
+            borders_layout="HORIZONTAL_LINES",
+            cell_fill_mode="NONE",  # charts drawn earlier leave a fill colour set on the document
+            headings_style=FontFace(emphasis="BOLD"),
         ) as pdf_table:
             pdf_table.row([str(column) for column in columns])
             for row in rows:
@@ -223,7 +229,7 @@ class _ReportPDF(FPDF):
             self.add_page()
         self.set_font("DejaVu", "B", 9)
         self.set_text_color(*_INK)
-        self.multi_cell(0, 5, chart.title, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+        self.multi_cell(0, 5, chart.title, align="L", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
         left, top = self.l_margin + 14, self.get_y() + 2
         plot_width = width - 16
         low, high = min(0.0, min(values)), max(0.0, max(values))
@@ -317,7 +323,7 @@ def _to_pdf(content: ReportContent) -> bytes:
 
     pdf.set_font("DejaVu", "B", 19)
     pdf.set_text_color(*_INK)
-    pdf.multi_cell(0, 9, content.title, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+    pdf.multi_cell(0, 9, content.title, align="L", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
     overview = content.dataset_overview
     pdf.ln(1)
     pdf.paragraph(
@@ -337,7 +343,7 @@ def _to_pdf(content: ReportContent) -> bytes:
         for metric in content.key_metrics:
             pdf.set_font("DejaVu", "B", 11)
             pdf.set_text_color(*_ACCENT)
-            pdf.multi_cell(0, 6, metric.value, new_x=XPos.LMARGIN, new_y=YPos.NEXT)
+            pdf.multi_cell(0, 6, metric.value, align="L", new_x=XPos.LMARGIN, new_y=YPos.NEXT)
             detail = metric.label + (f" — {metric.context}" if metric.context else "")
             if metric.evidence_ids:
                 detail += f"  [{', '.join(metric.evidence_ids)}]"

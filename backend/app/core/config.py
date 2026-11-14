@@ -58,6 +58,8 @@ class Settings(BaseSettings):
     max_cells: int = 5_000_000
     max_datasets_per_user: int = 25
     user_storage_quota_mb: int = 100
+    # Memory budget for recently used datasets kept parsed in the worker process.
+    frame_cache_mb: int = 160
 
     # --- analysis limits ---
     daily_analysis_limit: int = 10

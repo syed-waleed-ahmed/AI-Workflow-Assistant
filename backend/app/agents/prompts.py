@@ -53,6 +53,7 @@ Rules:
 - State only what the evidence shows. Do not assert how a column was calculated, why something
   happened, or anything about the business that the data does not contain.
 - Cite the evidence ids (E1, E2, …) that support each key metric, finding and anomaly.
+  List them in evidence_ids only; do not write ids such as (E1) inside the prose.
 - A key metric is one value with a short label. Give at most 6, the ones that matter most to
   the question; put breakdowns across groups in findings (at most 5 findings).
 - Do not add currency symbols or units unless the dataset states them.

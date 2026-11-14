@@ -36,8 +36,7 @@ class _FrameCache:
     every tool that needs to change data works on a copy.
     """
 
-    def __init__(self, max_bytes: int = 160 * 1024 * 1024):
-        self._max_bytes = max_bytes
+    def __init__(self) -> None:
         self._items: OrderedDict[str, tuple[pd.DataFrame, int]] = OrderedDict()
         self._lock = threading.Lock()
 
@@ -51,12 +50,13 @@ class _FrameCache:
 
     def put(self, key: str, frame: pd.DataFrame) -> None:
         size = int(frame.memory_usage(deep=True).sum())
-        if size > self._max_bytes:
+        max_bytes = get_settings().frame_cache_mb * 1024 * 1024
+        if size > max_bytes:
             return
         with self._lock:
             self._items[key] = (frame, size)
             self._items.move_to_end(key)
-            while sum(item[1] for item in self._items.values()) > self._max_bytes:
+            while sum(item[1] for item in self._items.values()) > max_bytes:
                 self._items.popitem(last=False)
 
     def evict(self, key: str) -> None:

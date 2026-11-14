@@ -100,15 +100,25 @@ def aggregate(
 
     chart_frame = shown.copy()
     chart_frame["group"] = _group_label(chart_frame, group_by)
+    # Metrics share one axis, so only chart those on a similar scale to the first: a total in the
+    # millions next to an average in the hundreds would flatten the smaller one to nothing.
+    labels = {name: f"{metric.agg} of {metric.column}" for name, metric in zip(names, metrics, strict=True)}
+    reference = float(shown[names[0]].abs().max() or 0)
+    charted = [names[0]]
+    for name in names[1:3]:
+        peak = float(shown[name].abs().max() or 0)
+        if reference and peak and 0.1 <= peak / reference <= 10:
+            charted.append(name)
+    title = ", ".join(labels[name] for name in charted)
     chart = Chart(
         type="bar",
-        title=f"{', '.join(names[:3])} by {' / '.join(group_by)}",
+        title=f"{title[0].upper()}{title[1:]} by {' / '.join(group_by)}",
         x_key="group",
         x_label=" / ".join(group_by),
-        y_label=names[0] if len(names) == 1 else "",
-        series=[ChartSeries(key=name, label=name.replace("_", " ")) for name in names[:3]],
+        y_label=labels[charted[0]] if len(charted) == 1 else "",
+        series=[ChartSeries(key=name, label=labels[name]) for name in charted],
         data=[
-            {"group": record["group"], **{name: to_scalar(record[name]) for name in names[:3]}}
+            {"group": record["group"], **{name: to_scalar(record[name]) for name in charted}}
             for record in chart_frame.to_dict("records")
         ],
     )
