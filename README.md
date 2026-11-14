@@ -142,7 +142,7 @@ in [DEPLOYMENT.md](DEPLOYMENT.md).
 ## Tests
 
 ```bash
-cd backend && pytest            # 371 tests; the model is scripted, nothing calls Groq
+cd backend && pytest            # 375 tests; the model is scripted, nothing calls Groq
 cd frontend && npm run test     # 131 tests (Vitest, Testing Library, axe)
 ```
 

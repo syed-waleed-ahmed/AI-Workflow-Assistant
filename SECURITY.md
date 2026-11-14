@@ -126,12 +126,14 @@ spreadsheet applications from executing them as formulas.
 The free-tier deployment lowers the upload and row limits; see [DEPLOYMENT.md](DEPLOYMENT.md).
 
 **Client addresses.** The per-address auth limit needs an address the caller cannot choose.
-`X-Forwarded-For` is read from the right, for `TRUSTED_PROXY_HOPS` entries only, because a
-proxy appends to whatever the caller sent. Measured on the hosted deployment, Render's edge
-appends the connecting address and Vercel does not pass the visitor's address on, so the
-frontend's proxy stamps forwarded auth requests with the visitor's address and a shared secret
+Measured on the hosted deployment, Render's edge keeps whatever `X-Forwarded-For` a caller
+sends and no entry was both stable and unforgeable, and Vercel does not pass the visitor's
+address on when it proxies. So the frontend's proxy stamps forwarded sign-in and registration
+requests with the visitor's address (from Vercel's edge) and a shared secret
 (`PROXY_SHARED_SECRET`). The API honours the stamp only when the secret matches, compared in
-constant time.
+constant time, and with the secret configured it refuses sign-in and registration that arrive
+without a valid stamp. Without a secret (local development, other hosts), `X-Forwarded-For`
+is read from the right for `TRUSTED_PROXY_HOPS` entries.
 
 ### Transport, headers and errors
 
