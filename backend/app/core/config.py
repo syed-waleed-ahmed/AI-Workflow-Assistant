@@ -23,6 +23,9 @@ class Settings(BaseSettings):
     sentry_dsn: str | None = None
     # Number of reverse proxies in front of the app whose X-Forwarded-For entry is trusted.
     trusted_proxy_hops: int = 0
+    # Shared with the frontend's proxy, which stamps the visitor's address on the requests it
+    # forwards. The stamp is honoured only when this secret matches; unset disables it.
+    proxy_shared_secret: str | None = None
 
     # --- database ---
     database_url: str = "sqlite:///./dev.db"
@@ -90,6 +93,8 @@ class Settings(BaseSettings):
         if self.environment == "production":
             if self.secret_key == _DEV_SECRET or len(self.secret_key) < 32:
                 raise ValueError("SECRET_KEY must be set to a random value of at least 32 characters")
+            if self.proxy_shared_secret is not None and len(self.proxy_shared_secret) < 32:
+                raise ValueError("PROXY_SHARED_SECRET must be at least 32 characters when set")
             if self.database_url.startswith("sqlite"):
                 raise ValueError("DATABASE_URL must point to PostgreSQL in production")
             if self.storage_backend != "s3":

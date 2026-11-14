@@ -6,6 +6,10 @@ language, and get a report with key metrics, charts, findings and recommendation
 
 The language model plans the analysis and writes the narrative. It never does the arithmetic.
 
+**Live:** <https://ai-workflow-assistant-app.vercel.app> — create an account and try the bundled
+sample dataset. It runs on free tiers, so the first request after a quiet spell can take about
+a minute while the API wakes up.
+
 ![Analysis workspace with a completed, verified report](docs/screenshots/analysis.png)
 
 | Live progress | Report | Dataset profile | Phone |
@@ -119,6 +123,7 @@ them all. The essentials:
 | `SECRET_KEY` | backend | Required in production. |
 | `BACKEND_URL` | frontend | Where the frontend proxies `/api`. |
 | `NEXT_PUBLIC_API_DIRECT_URL` | frontend | Backend URL for direct file uploads (production). |
+| `PROXY_SHARED_SECRET` | both | Same value on each side, so per-address sign-in limits see the visitor's address (production). |
 
 ## Supported files and limits
 
@@ -137,8 +142,8 @@ in [DEPLOYMENT.md](DEPLOYMENT.md).
 ## Tests
 
 ```bash
-cd backend && pytest            # 366 tests; the model is scripted, nothing calls Groq
-cd frontend && npm run test     # 128 tests (Vitest, Testing Library, axe)
+cd backend && pytest            # 371 tests; the model is scripted, nothing calls Groq
+cd frontend && npm run test     # 131 tests (Vitest, Testing Library, axe)
 ```
 
 The backend suite covers the tools against hand-computed values, the expression and filter

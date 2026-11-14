@@ -40,17 +40,17 @@ five-section report, and the command-line interface (`python -m app.cli`).
 | 6 | Frontend: Next.js application wired to the real API | Done |
 | 7 | Reporting: charts from tool results, persistence, exports | Done |
 | 8 | Security and performance: isolation tests, injection tests, memory profile | Done |
-| 9 | CI/CD and deployment assets | Done; live deployment blocked on provider sign-in |
-| 10 | Production verification | Blocked until deployed; the smoke test is ready |
+| 9 | CI/CD and deployment | Done: Vercel, Render and Supabase, see DEPLOYMENT.md |
+| 10 | Production verification | Done: smoke test and browser journey against the live URLs |
 
 ## Acceptance criteria
 
 | Criterion | Status | Evidence |
 | --- | --- | --- |
 | Existing CLI audited, valuable logic preserved | Verified | Table above; `backend/app/cli.py` runs the same workflow |
-| FastAPI backend operational | Verified | 366 tests; CI |
-| Next.js frontend operational | Verified | 128 tests, lint, strict typecheck and production build; `frontend/e2e/journey.mjs` (36 checks) passed in a real browser against the production build |
-| Database configured and persistent | Verified on PostgreSQL 17 in CI; hosted database **blocked** | `backend-postgres` CI job |
+| FastAPI backend operational | Verified | 371 tests; CI |
+| Next.js frontend operational | Verified | 131 tests, lint, strict typecheck and production build; `frontend/e2e/journey.mjs` (36 checks) passed in a real browser against the production build |
+| Database configured and persistent | Verified | `backend-postgres` CI job (PostgreSQL 17); hosted Supabase PostgreSQL 17, reports persisted across sessions in the production smoke test |
 | User authentication | Verified | `test_api_auth.py` |
 | User-level authorisation | Verified | `test_isolation.py` (17 routes × wrong user and anonymous) |
 | CSV uploads | Verified | `test_file_validation.py`, `test_api_datasets.py` |
@@ -69,9 +69,9 @@ five-section report, and the command-line interface (`python -m app.cli`).
 | Production builds | Verified | `next build` and the Docker image build in CI |
 | CI/CD configured | Verified | `.github/workflows/ci.yml` |
 | Database migrations | Verified | Applied, checked for drift and reversed on PostgreSQL in CI |
-| Live frontend and backend deployed | **Blocked** | Needs sign-in to Vercel, Render and Supabase; steps in DEPLOYMENT.md |
-| Frontend–backend integration | Verified locally through the Next.js proxy | `smoke_test.py --base-url http://localhost:3000` and the browser journey |
-| Production smoke tests | **Blocked** | Run `smoke_test.py` and `npm run e2e` against the deployed URL |
+| Live frontend and backend deployed | Verified | <https://ai-workflow-assistant-app.vercel.app> and <https://ai-workflow-assistant-api.onrender.com>; `/ready` reports database, storage and model `ok` |
+| Frontend–backend integration | Verified in production | Requests through Vercel's proxy, and direct uploads to the API with upload tickets |
+| Production smoke tests | Verified | `smoke_test.py` 40/40 (including a real analysis, 22 figures verified) and `npm run e2e` 36/36 against the live URLs |
 | Documentation | Done | README and the four documents it links |
 | Free-tier constraints and upgrade path documented | Done | DEPLOYMENT.md |
 

@@ -110,8 +110,19 @@ def main() -> int:
         r = alice.http.post("/datasets", files={"file": ("x.csv", b"a,b\n1,2\n")})  # no CSRF header
         c.check("state-changing request without CSRF token is rejected", r.status_code == 403, str(r.status_code))
 
-        r = alice.request("POST", "/datasets", files={"file": ("../../etc/passwd.exe", b"MZ\x90\x00binary")})
+        r = alice.request("POST", "/datasets", files={"file": ("payload.exe", b"MZ\x90\x00binary")})
         c.check("disallowed file type is rejected", r.status_code == 422, str(r.status_code))
+
+        # A path-traversal filename never becomes a path. Hosting providers' edge firewalls
+        # (Render, Vercel) block it with their own 403 before it reaches the API; without them
+        # the API stores the file under the bare name.
+        r = alice.request("POST", "/datasets", files={"file": ("../../etc/passwd.csv", b"a,b\n1,2\n")})
+        traversal_safe = r.status_code == 403 or (
+            r.status_code == 201 and r.json().get("original_filename") == "passwd.csv"
+        )
+        c.check("path-traversal filename is neutralised", traversal_safe, f"{r.status_code} {r.text[:200]}")
+        if r.status_code == 201:
+            alice.request("DELETE", f"/datasets/{r.json()['id']}")
 
         r = alice.request("POST", "/datasets", files={"file": ("sales smoke.csv", build_csv(), "text/csv")})
         if not c.check("upload CSV", r.status_code == 201, r.text[:300]):
