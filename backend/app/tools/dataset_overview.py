@@ -31,7 +31,7 @@ def classify_column(name: str, series: pd.Series, row_count: int) -> str:
 
     lowered = name.lower().replace("-", "_").replace(" ", "_")
     looks_like_id = any(lowered == hint or lowered.endswith("_" + hint) for hint in _ID_NAME_HINTS)
-    all_unique = unique == non_null and row_count >= 20
+    all_unique = unique == non_null
 
     if pd.api.types.is_numeric_dtype(series):
         # Integer keys (order_id, customer_id) are labels, not quantities: averaging or
@@ -39,8 +39,11 @@ def classify_column(name: str, series: pd.Series, row_count: int) -> str:
         if pd.api.types.is_integer_dtype(series) and looks_like_id:
             return "identifier"
         return "numeric"
-    if all_unique and (looks_like_id or series.astype("string").str.len().mean() <= 40):
-        return "identifier"
+    # A text column whose values never repeat labels rows rather than grouping them: a key if
+    # it is named like one (or is short and the table is big enough to judge), free text otherwise.
+    if all_unique:
+        short = series.astype("string").str.len().mean() <= 40
+        return "identifier" if looks_like_id or (row_count >= 20 and short) else "text"
     if unique <= 50 or unique <= 0.05 * non_null:
         return "categorical"
     return "text"

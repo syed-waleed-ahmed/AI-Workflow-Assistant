@@ -277,6 +277,33 @@ def catalog_text() -> str:
     return "\n".join(f"- {spec.name}: {spec.catalog}" for spec in TOOLS.values())
 
 
+def _compact(node: Any) -> Any:
+    """Strip schema noise that costs tokens without helping the model.
+
+    Pydantic emits titles, explicit null alternatives and null defaults for every optional
+    field. Tool schemas are sent with each request, and the provider's free tier caps a request
+    at a few thousand tokens, so the schema is reduced to what the model needs: names, types,
+    enums, descriptions and which fields are required. Arguments are validated by Pydantic on
+    the way back in, so nothing is lost in strictness.
+    """
+    if isinstance(node, list):
+        return [_compact(item) for item in node]
+    if not isinstance(node, dict):
+        return node
+    out = {key: _compact(value) for key, value in node.items() if key != "title"}
+    if out.get("default", ...) is None:
+        del out["default"]
+    options = out.get("anyOf")
+    if isinstance(options, list):
+        concrete = [option for option in options if option != {"type": "null"}]
+        del out["anyOf"]
+        if len(concrete) == 1:
+            out = {**concrete[0], **out}
+        # A wider union (a filter value may be text, a number or a list) is left untyped;
+        # its description says what is expected.
+    return out
+
+
 def tool_schemas(names: list[str]) -> list[dict[str, Any]]:
     """OpenAI-format schemas for the chosen tools plus the batch wrapper."""
     schemas = []
@@ -284,10 +311,10 @@ def tool_schemas(names: list[str]) -> list[dict[str, Any]]:
         spec = TOOLS[name]
         schema = convert_to_openai_tool(spec.args_schema)
         schema["function"]["name"] = name
-        schemas.append(schema)
+        schemas.append(_compact(schema))
     batch = convert_to_openai_tool(RunBatchArgs)
     batch["function"]["name"] = BATCH_TOOL_NAME
-    schemas.append(batch)
+    schemas.append(_compact(batch))
     return schemas
 
 

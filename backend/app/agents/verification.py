@@ -15,7 +15,7 @@ from dataclasses import dataclass, field
 from typing import Any
 
 from app.agents.evidence import EvidenceLedger
-from app.schemas.report import ReportDraft
+from app.schemas.report import Anomaly, Finding, KeyMetric, ReportDraft
 
 # 1,234.5 | 12.3% | $4.2M | 1.5k — with an optional magnitude suffix.
 _NUMBER = re.compile(
@@ -153,7 +153,8 @@ def check_evidence_references(draft: ReportDraft, ledger: EvidenceLedger) -> Rep
     """Drop references to evidence ids that do not exist, so provenance links are always real."""
     valid = ledger.ids()
     charts = {item.id for item in ledger.successful if item.result and item.result.chart}
-    for item in [*draft.key_metrics, *draft.findings, *draft.anomalies]:
+    cited: list[KeyMetric | Finding | Anomaly] = [*draft.key_metrics, *draft.findings, *draft.anomalies]
+    for item in cited:
         item.evidence_ids = [ref for ref in item.evidence_ids if ref in valid]
     draft.chart_evidence_ids = list(dict.fromkeys(ref for ref in draft.chart_evidence_ids if ref in charts))
     return draft

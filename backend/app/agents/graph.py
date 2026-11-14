@@ -64,11 +64,8 @@ def _fit_to_budget(messages: list[BaseMessage], deps: RunDeps, tools: list[dict[
     for max_rows in (12, 6, 3, 0):
         fitted: list[BaseMessage] = []
         for message in messages:
-            evidence_ids = (
-                (message.additional_kwargs or {}).get("evidence_ids") if isinstance(message, ToolMessage) else None
-            )
-            if evidence_ids:
-                text = "\n".join(by_id[ref].render(max_rows) for ref in evidence_ids if ref in by_id)
+            if isinstance(message, ToolMessage) and (shown := message.additional_kwargs.get("evidence_ids")):
+                text = "\n".join(by_id[ref].render(max_rows) for ref in shown if ref in by_id)
                 fitted.append(ToolMessage(content=text, tool_call_id=message.tool_call_id))
             else:
                 fitted.append(message)
@@ -184,12 +181,14 @@ def build_graph(deps: RunDeps) -> Any:
         for tool_call in getattr(last, "tool_calls", []):
             name, args = tool_call["name"], tool_call.get("args") or {}
             if name == toolkit.BATCH_TOOL_NAME:
-                raw_calls = args.get("calls") if isinstance(args.get("calls"), list) else []
-                requests = [
-                    (str(item.get("tool", "")), item.get("args") if isinstance(item.get("args"), dict) else {})
-                    for item in raw_calls[: toolkit.MAX_BATCH_CALLS]
-                    if isinstance(item, dict)
-                ]
+                # The model's JSON is untrusted in shape as well as content: keep only well-formed entries.
+                listed = args.get("calls")
+                raw_calls: list[Any] = listed if isinstance(listed, list) else []
+                requests: list[tuple[str, dict[str, Any]]] = []
+                for item in raw_calls[: toolkit.MAX_BATCH_CALLS]:
+                    if isinstance(item, dict):
+                        sub = item.get("args")
+                        requests.append((str(item.get("tool", "")), sub if isinstance(sub, dict) else {}))
             else:
                 requests = [(name, args)]
 
@@ -300,9 +299,10 @@ def build_graph(deps: RunDeps) -> Any:
         return update
 
     def after_ground(state: AgentState) -> Literal["report", "__end__"]:
-        return "report" if state.get("report_feedback") else END
+        return "report" if state.get("report_feedback") else "__end__"
 
-    graph = StateGraph(AgentState)
+    # Typed as Any: LangGraph's add_node overloads do not accept nodes over a partial TypedDict.
+    graph: Any = StateGraph(AgentState)
     graph.add_node("plan", plan_node)
     graph.add_node("agent", agent_node)
     graph.add_node("tools", tools_node)

@@ -184,7 +184,9 @@ def _read_excel(content: bytes, file_format: FileFormat, sheet: str | None, max_
                 sheet = sheets[0]
             elif sheet not in sheets:
                 raise UnprocessableError(f"Sheet '{sheet[:80]}' does not exist in this workbook.", code="unknown_sheet")
-            frame = workbook.parse(sheet_name=sheet, nrows=max_rows + 1, keep_default_na=False, na_values=NA_VALUES)
+            frame = pd.read_excel(
+                workbook, sheet_name=sheet, nrows=max_rows + 1, keep_default_na=False, na_values=NA_VALUES
+            )
     except (SheetSelectionRequired, UnprocessableError, PayloadTooLargeError):
         raise
     except Exception as exc:  # the engines raise many unrelated exception types on bad input

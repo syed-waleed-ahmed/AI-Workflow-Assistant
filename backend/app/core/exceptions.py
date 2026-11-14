@@ -105,11 +105,7 @@ def register_exception_handlers(app: FastAPI) -> None:
             headers=getattr(exc, "headers", None),
         )
 
-    @app.exception_handler(Exception)
-    async def _unhandled(request: Request, exc: Exception) -> JSONResponse:
-        # The stack trace goes to the log; the client only learns the request id.
-        logger.exception("unhandled error", extra={"path": request.url.path, "method": request.method})
-        return JSONResponse(
-            _body("internal_error", "Something went wrong on our side. Please try again."),
-            status_code=500,
-        )
+
+def internal_error_response() -> JSONResponse:
+    """The only thing a client learns about an unexpected failure: that it happened, and its id."""
+    return JSONResponse(_body("internal_error", "Something went wrong on our side. Please try again."), status_code=500)

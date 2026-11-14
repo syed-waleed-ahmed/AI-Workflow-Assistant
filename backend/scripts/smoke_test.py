@@ -120,7 +120,11 @@ def main() -> int:
         dataset_id = dataset["id"]
         c.check("dataset profiled", dataset["row_count"] == 600 and len(dataset["profile"]["columns"]) == 7)
         kinds = {col["name"]: col["kind"] for col in dataset["profile"]["columns"]}
-        c.check("column types inferred", kinds.get("order_date") == "datetime" and kinds.get("revenue") == "numeric", str(kinds))
+        c.check(
+            "column types inferred",
+            kinds.get("order_date") == "datetime" and kinds.get("revenue") == "numeric",
+            str(kinds),
+        )
 
         r = alice.request("POST", "/datasets/upload-ticket")
         ticket = r.json().get("ticket", "")
@@ -163,7 +167,11 @@ def main() -> int:
                     break
                 time.sleep(2)
             elapsed = time.monotonic() - started
-            if not c.check(f"analysis completed ({elapsed:.0f}s)", status == "completed", f"status={status} error={body.get('error')}"):
+            if not c.check(
+                f"analysis completed ({elapsed:.0f}s)",
+                status == "completed",
+                f"status={status} error={body.get('error')}",
+            ):
                 return 1
             c.check("progress events were reported", len(labels) >= 4, str(labels))
 
@@ -177,10 +185,20 @@ def main() -> int:
                 return 1
             r = alice.request("GET", f"/reports/{report_id}")
             report = r.json()["content"]
-            c.check("report has summary, metrics and findings", bool(report["executive_summary"]) and bool(report["findings"]) and bool(report["key_metrics"]))
+            c.check(
+                "report has summary, metrics and findings",
+                bool(report["executive_summary"]) and bool(report["findings"]) and bool(report["key_metrics"]),
+            )
             c.check("report has computed evidence", len(report["methodology"]) >= 1)
-            c.check("report has chart data from tools", any(v["chart"]["data"] for v in report["visualizations"]), "no visualizations")
-            c.check(f"figures verified ({report['verification']['status']}, {report['verification']['numbers_checked']} checked)", report["verification"]["numbers_checked"] > 0)
+            c.check(
+                "report has chart data from tools",
+                any(v["chart"]["data"] for v in report["visualizations"]),
+                "no visualizations",
+            )
+            c.check(
+                f"figures verified ({report['verification']['status']}, {report['verification']['numbers_checked']} checked)",
+                report["verification"]["numbers_checked"] > 0,
+            )
 
             # Independent check: the largest region total in the evidence must equal a direct recomputation.
             import csv as _csv
@@ -211,7 +229,9 @@ def main() -> int:
             c.check("export Excel", r.status_code == 200 and r.content.startswith(b"PK"), str(r.status_code))
             table_id = next((rec["id"] for rec in report["methodology"] if rec.get("table")), None)
             if table_id:
-                r = alice.request("GET", f"/reports/{report_id}/export", params={"format": "csv", "evidence_id": table_id})
+                r = alice.request(
+                    "GET", f"/reports/{report_id}/export", params={"format": "csv", "evidence_id": table_id}
+                )
                 c.check("export CSV table", r.status_code == 200 and "," in r.text, str(r.status_code))
 
             alice.request("POST", "/auth/logout")

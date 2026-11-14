@@ -16,7 +16,7 @@ from app import __version__
 from app.api.v1 import router as api_router
 from app.api.v1.health import root_router as health_router
 from app.core.config import get_settings
-from app.core.exceptions import register_exception_handlers
+from app.core.exceptions import internal_error_response, register_exception_handlers
 from app.core.logging import configure_logging, request_id_var
 from app.workers.analysis_worker import worker
 
@@ -87,7 +87,13 @@ def create_app() -> FastAPI:
                     status_code=413,
                 )
             else:
-                response = await call_next(request)
+                try:
+                    response = await call_next(request)
+                except Exception:
+                    # Handled here rather than in an exception handler so the response still gets
+                    # the request id and security headers. The stack trace goes to the log only.
+                    logger.exception("unhandled error", extra={"method": request.method, "path": request.url.path})
+                    response = internal_error_response()
             status_code = response.status_code
             response.headers["X-Request-ID"] = request_id
             response.headers["X-Content-Type-Options"] = "nosniff"
