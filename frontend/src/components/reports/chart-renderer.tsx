@@ -515,7 +515,7 @@ export function ChartRenderer({ chart, source, className }: ChartRendererProps) 
   return (
     <figure
       className={cn(
-        "flex min-w-0 flex-col gap-3 rounded-lg border border-border bg-card p-4",
+        "flex min-w-0 flex-col gap-3 rounded-xl border border-border bg-card p-4 shadow-sm transition-shadow hover:shadow-md",
         className,
       )}
     >

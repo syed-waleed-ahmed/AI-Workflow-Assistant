@@ -14,9 +14,9 @@ async function RegisterFormWithParams({ searchParams }: { searchParams: SearchPa
 
 export default function RegisterPage({ searchParams }: { searchParams: SearchParams }) {
   return (
-    <div className="w-full max-w-sm rounded-lg border border-border bg-card p-6 shadow-sm">
+    <div className="w-full max-w-sm animate-fade-up rounded-2xl border border-border bg-card/90 p-7 shadow-lg backdrop-blur">
       <div className="mb-6 space-y-1">
-        <h1 className="text-lg font-semibold tracking-tight">Create an account</h1>
+        <h1 className="text-xl font-semibold tracking-tight">Create an account</h1>
         <p className="text-sm text-muted-foreground">
           Free to use, with daily limits. Your datasets stay private to your account.
         </p>

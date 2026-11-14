@@ -5,7 +5,12 @@ import { ThemeToggle } from "@/components/layout/theme-toggle";
 
 export default function AuthLayout({ children }: { children: ReactNode }) {
   return (
-    <div className="flex min-h-dvh flex-1 flex-col bg-surface">
+    <div className="relative isolate flex min-h-dvh flex-1 flex-col overflow-hidden bg-surface">
+      <div aria-hidden="true" className="bg-dots pointer-events-none absolute inset-0 -z-10" />
+      <div
+        aria-hidden="true"
+        className="bg-glow pointer-events-none absolute -top-48 left-1/2 -z-10 h-[34rem] w-[60rem] max-w-none -translate-x-1/2"
+      />
       <header className="flex h-14 items-center justify-between px-4 sm:px-6">
         <Link href="/" className="rounded-md">
           <Logo />

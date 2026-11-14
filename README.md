@@ -66,7 +66,7 @@ structured reporting and numeric grounding were added around it.
 
 | Layer | Technology |
 | --- | --- |
-| Frontend | Next.js (App Router), React, TypeScript (strict), Tailwind CSS, shadcn/ui, Recharts, TanStack Query, React Hook Form, Zod |
+| Frontend | Next.js (App Router), React, TypeScript (strict), Tailwind CSS, shadcn/ui, Recharts, Motion, TanStack Query, React Hook Form, Zod |
 | Backend | Python 3.12, FastAPI, Pydantic, SQLAlchemy 2, Alembic |
 | Agent | LangGraph, LangChain Core, Groq (`openai/gpt-oss-120b`) |
 | Data | pandas, NumPy, PyArrow (Parquet), openpyxl |
@@ -148,7 +148,7 @@ in [DEPLOYMENT.md](DEPLOYMENT.md).
 
 ```bash
 cd backend && pytest            # 375 tests; the model is scripted, nothing calls Groq
-cd frontend && npm run test     # 131 tests (Vitest, Testing Library, axe)
+cd frontend && npm run test     # 133 tests (Vitest, Testing Library, axe)
 ```
 
 The backend suite covers the tools against hand-computed values, the expression and filter

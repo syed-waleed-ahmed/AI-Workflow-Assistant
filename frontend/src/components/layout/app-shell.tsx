@@ -76,13 +76,16 @@ function NavList({ pathname, onNavigate }: { pathname: string | null; onNavigate
               onClick={onNavigate}
               aria-current={active ? "page" : undefined}
               className={cn(
-                "flex h-9 items-center gap-2.5 rounded-md px-2.5 text-sm transition-colors",
+                "relative flex h-9 items-center gap-2.5 rounded-lg px-2.5 text-sm transition-colors",
                 active
-                  ? "bg-muted font-medium text-foreground"
+                  ? "bg-background font-medium text-foreground shadow-sm ring-1 ring-border before:absolute before:top-1/2 before:left-0 before:h-4 before:w-0.75 before:-translate-y-1/2 before:rounded-full before:bg-brand-gradient"
                   : "text-muted-foreground hover:bg-muted hover:text-foreground",
               )}
             >
-              <Icon className="size-4 shrink-0" aria-hidden="true" />
+              <Icon
+                className={cn("size-4 shrink-0", active && "text-accent-text")}
+                aria-hidden="true"
+              />
               {item.label}
             </Link>
           </li>
@@ -111,7 +114,7 @@ function SidebarUsage() {
   const { analyses_today: used, daily_analysis_limit: limit } = usage.data;
   const percent = limit > 0 ? (used / limit) * 100 : 0;
   return (
-    <div className="space-y-1.5 rounded-md border border-border bg-background p-3">
+    <div className="space-y-2 rounded-xl border border-border bg-background p-3 shadow-sm">
       <p className="flex items-baseline justify-between text-xs">
         <span className="text-muted-foreground">Analyses (24h)</span>
         <span className="tabular font-medium">
@@ -140,6 +143,12 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
         </Link>
       </Button>
       <nav aria-label="Main" className="flex-1 overflow-y-auto">
+        <p
+          aria-hidden="true"
+          className="px-2.5 pb-1.5 text-[11px] font-medium tracking-wider text-muted-foreground uppercase"
+        >
+          Workspace
+        </p>
         <Navigation onNavigate={onNavigate} />
       </nav>
       <ClientOnly>
@@ -152,6 +161,12 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
 function UserMenu() {
   const me = useMe();
   const logout = useLogout();
+  const initials = (me.data?.name ?? "")
+    .split(/\s+/)
+    .filter(Boolean)
+    .slice(0, 2)
+    .map((part) => part[0]?.toUpperCase() ?? "")
+    .join("");
 
   const signOut = () =>
     logout.mutate(undefined, {
@@ -165,9 +180,18 @@ function UserMenu() {
         <button
           type="button"
           aria-label="Account menu"
-          className="flex size-8 items-center justify-center rounded-full text-muted-foreground transition-colors hover:bg-muted hover:text-foreground"
+          className="flex size-8 items-center justify-center rounded-full text-muted-foreground transition-[color,background-color,box-shadow] hover:bg-muted hover:text-foreground hover:ring-2 hover:ring-border"
         >
-          <CircleUser className="size-5" aria-hidden="true" />
+          {initials ? (
+            <span
+              aria-hidden="true"
+              className="bg-brand-gradient flex size-7 items-center justify-center rounded-full text-[11px] font-semibold text-primary-foreground"
+            >
+              {initials}
+            </span>
+          ) : (
+            <CircleUser className="size-5" aria-hidden="true" />
+          )}
         </button>
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end" className="w-60">

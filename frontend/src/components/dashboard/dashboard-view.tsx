@@ -1,6 +1,16 @@
 "use client";
 
-import { ArrowRight, Database, FileSearch, MessagesSquare, Plus, Upload } from "lucide-react";
+import {
+  ArrowRight,
+  Database,
+  FileSearch,
+  Gauge,
+  MessagesSquare,
+  Plus,
+  Sparkles,
+  Upload,
+  type LucideIcon,
+} from "lucide-react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
@@ -63,8 +73,11 @@ function Onboarding() {
       </div>
       <ol className="grid gap-3 md:grid-cols-3">
         {ONBOARDING_STEPS.map((step, index) => (
-          <li key={step.title} className="flex gap-3 rounded-lg border border-border bg-card p-4">
-            <span className="flex size-8 shrink-0 items-center justify-center rounded-md bg-muted text-muted-foreground">
+          <li
+            key={step.title}
+            className="card-interactive flex gap-3 rounded-xl border border-border bg-card p-4 shadow-sm"
+          >
+            <span className="flex size-9 shrink-0 items-center justify-center rounded-lg bg-brand-soft text-accent-text ring-1 ring-border">
               <step.icon className="size-4" aria-hidden="true" />
             </span>
             <div className="space-y-1">
@@ -151,12 +164,48 @@ function QuickStart({
   );
 }
 
+interface Stat {
+  icon: LucideIcon;
+  label: string;
+  value: string;
+}
+
+/** Headline counts for a returning user. */
+function StatTiles({ stats }: { stats: readonly Stat[] }) {
+  return (
+    <ul className="grid grid-cols-3 gap-2 sm:gap-3">
+      {stats.map((stat) => (
+        <li
+          key={stat.label}
+          className="flex min-w-0 items-center gap-4 rounded-xl border border-border bg-card p-3 shadow-sm sm:p-4"
+        >
+          <span className="bg-brand-gradient hidden size-10 shrink-0 items-center justify-center rounded-lg text-primary-foreground shadow-sm sm:flex">
+            <stat.icon className="size-5" aria-hidden="true" />
+          </span>
+          <p className="flex min-w-0 flex-col">
+            <span className="text-xs leading-4 font-medium text-muted-foreground">
+              {stat.label}
+            </span>
+            <span className="tabular text-lg font-semibold tracking-tight sm:text-xl">
+              {stat.value}
+            </span>
+          </p>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 function ActiveBanner({ analysis }: { analysis: AnalysisSummary }) {
   return (
     <Link
       href={`/app/analyses/${analysis.id}`}
-      className="flex items-center gap-3 rounded-lg border border-border bg-accent-soft px-4 py-3 transition-colors hover:border-ring"
+      className="card-interactive flex items-center gap-3 rounded-xl border border-border bg-accent-soft px-4 py-3"
     >
+      <span aria-hidden="true" className="relative flex size-2.5 shrink-0">
+        <span className="absolute inline-flex size-full animate-ping rounded-full bg-primary opacity-60" />
+        <span className="relative inline-flex size-2.5 rounded-full bg-primary" />
+      </span>
       <StatusBadge status={analysis.status} />
       <span className="min-w-0 flex-1 truncate text-sm font-medium">{analysis.title}</span>
       <span className="hidden shrink-0 items-center gap-1 text-sm text-accent-text sm:flex">
@@ -192,12 +241,12 @@ function SectionHeading({
 
 function DatasetPreviewList({ datasets }: { datasets: readonly DatasetSummary[] }) {
   return (
-    <ul className="divide-y divide-border rounded-lg border border-border bg-card">
+    <ul className="divide-y divide-border rounded-xl border border-border bg-card shadow-sm">
       {datasets.map((dataset) => (
         <li key={dataset.id}>
           <Link
             href={`/app/datasets/${dataset.id}`}
-            className="flex items-center gap-3 px-4 py-3 transition-colors first:rounded-t-lg last:rounded-b-lg hover:bg-muted/60"
+            className="flex items-center gap-3 px-4 py-3 transition-colors first:rounded-t-xl last:rounded-b-xl hover:bg-muted/60"
           >
             <Database className="size-4 shrink-0 text-muted-foreground" aria-hidden="true" />
             <div className="min-w-0 flex-1">
@@ -264,6 +313,24 @@ export function DashboardView() {
       <Onboarding />
     ) : (
       <>
+        <StatTiles
+          stats={[
+            { icon: Database, label: "Datasets", value: formatInteger(datasets.data.total) },
+            {
+              icon: MessagesSquare,
+              label: "Analyses",
+              value: formatInteger(analyses.data.total),
+            },
+            {
+              icon: Gauge,
+              label: "Analyses today",
+              value: usage.data
+                ? `${usage.data.analyses_today} / ${usage.data.daily_analysis_limit}`
+                : "—",
+            },
+          ]}
+        />
+
         {active ? <ActiveBanner analysis={active} /> : null}
 
         {datasets.data.total > 0 ? (
@@ -318,13 +385,38 @@ export function DashboardView() {
 
   return (
     <PageContainer>
-      <header className="space-y-1">
-        <h1 className="text-xl leading-7 font-semibold tracking-tight">
-          {firstName ? `Welcome, ${firstName}` : "Welcome"}
-        </h1>
-        <p className="text-sm text-muted-foreground">
-          Ask questions of your data and get reports you can trace back to the computation.
-        </p>
+      <header className="relative isolate overflow-hidden rounded-2xl border border-border bg-card px-5 py-6 shadow-sm sm:px-7 sm:py-8">
+        <div aria-hidden="true" className="bg-dots pointer-events-none absolute inset-0 -z-10" />
+        <div
+          aria-hidden="true"
+          className="bg-glow pointer-events-none absolute -top-32 -right-24 -z-10 size-96"
+        />
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div className="space-y-1.5">
+            <h1 className="text-2xl leading-8 font-semibold tracking-tight sm:text-3xl">
+              {firstName ? (
+                <>
+                  Welcome, <span className="text-gradient">{firstName}</span>
+                </>
+              ) : (
+                "Welcome"
+              )}
+            </h1>
+            <p className="max-w-xl text-sm text-muted-foreground">
+              Ask questions of your data and get reports you can trace back to the computation.
+            </p>
+          </div>
+          <Button asChild className="group w-fit">
+            <Link href="/app/analyses/new">
+              <Sparkles aria-hidden="true" />
+              New analysis
+              <ArrowRight
+                aria-hidden="true"
+                className="transition-transform group-hover:translate-x-0.5"
+              />
+            </Link>
+          </Button>
+        </div>
       </header>
 
       {body}

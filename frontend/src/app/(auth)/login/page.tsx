@@ -18,9 +18,9 @@ async function LoginFormWithParams({ searchParams }: { searchParams: SearchParam
 
 export default function LoginPage({ searchParams }: { searchParams: SearchParams }) {
   return (
-    <div className="w-full max-w-sm rounded-lg border border-border bg-card p-6 shadow-sm">
+    <div className="w-full max-w-sm animate-fade-up rounded-2xl border border-border bg-card/90 p-7 shadow-lg backdrop-blur">
       <div className="mb-6 space-y-1">
-        <h1 className="text-lg font-semibold tracking-tight">Sign in</h1>
+        <h1 className="text-xl font-semibold tracking-tight">Sign in</h1>
         <p className="text-sm text-muted-foreground">Continue to your datasets and reports.</p>
       </div>
       <Suspense fallback={<LoginForm />}>
