@@ -111,6 +111,16 @@ confirms the second account cannot reach the first account's data, and deletes b
 It exits non-zero if any step fails. Add `--skip-analysis` to check everything except the
 model call.
 
+Then check the interface itself in a real browser (Chrome or Edge; set `BROWSER_PATH` if it
+is not found):
+
+```bash
+cd frontend
+BASE_URL=https://<project>.vercel.app npm run e2e
+```
+
+Screenshots of every page are saved in `frontend/e2e/output/`.
+
 ### 6. Turn on the scheduled health check
 
 In the GitHub repository, **Settings → Secrets and variables → Actions → Variables**, add

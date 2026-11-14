@@ -186,6 +186,11 @@ Groq's own data-handling terms apply to this content.
 - **Audit log** of account and data access.
 - **Distributed rate limiting.** The limiter is in-process, which is correct for one instance
   and must be replaced before running several.
+- **A strict script policy on the frontend.** The frontend's content security policy allows
+  inline scripts, because Next.js prerendered pages need them and nonces would force every
+  page to render dynamically. The frontend never inserts API data as HTML
+  (`dangerouslySetInnerHTML` is not used), which is the main defence against script
+  injection.
 - **Malware scanning** of uploads. Files are parsed as data and never executed or served back
   in their original form.
 - **Formal compliance** (SOC 2, GDPR tooling, HIPAA). Account deletion removes all of a user's
