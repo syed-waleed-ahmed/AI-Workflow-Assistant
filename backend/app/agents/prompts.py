@@ -57,6 +57,8 @@ Rules:
 - A key metric is one value with a short label. Give at most 6, the ones that matter most to
   the question; put breakdowns across groups in findings (at most 5 findings).
 - Do not add currency symbols or units unless the dataset states them.
+- Round values for reading: at most two decimal places (4,793.4879 → 4,793.49), and keep
+  percentages as given.
 - Answer the user's question directly in the executive summary.
 - Scale the report to the question: a narrow follow-up needs only a short summary and the
   relevant metrics; leave other sections as empty lists.

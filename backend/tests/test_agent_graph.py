@@ -128,6 +128,30 @@ def test_invalid_calls_become_errors_the_model_can_correct(sales):
     assert [record.id for record in result.report.methodology] == ["E5"]  # failures are not evidence
 
 
+def test_every_started_computation_reports_how_it_ended(sales):
+    """Progress events come in pairs, so the client never shows a step that is stuck running."""
+    gateway = ScriptedGateway(
+        chat=[
+            batch(
+                ("aggregate", {"metrics": [{"column": "region", "agg": "sum"}]}),  # fails while executing
+                AGGREGATE_BY_REGION,
+            ),
+            DONE,
+        ]
+    )
+    deps, events = make_deps(sales, gateway)
+    run_analysis(deps)
+    tool_events = [(detail["evidence_id"], detail["state"]) for kind, _, detail in events if kind == "tool"]
+    assert tool_events == [("E1", "running"), ("E1", "failed"), ("E2", "running"), ("E2", "done")]
+
+
+def test_calls_rejected_before_running_emit_no_progress(sales):
+    gateway = ScriptedGateway(chat=[batch(("no_such_tool", {}), AGGREGATE_BY_REGION), DONE])
+    deps, events = make_deps(sales, gateway)
+    run_analysis(deps)
+    assert [detail["evidence_id"] for kind, _, detail in events if kind == "tool"] == ["E2", "E2"]
+
+
 def test_tools_cannot_reach_any_data_but_the_bound_frame(sales):
     """No tool accepts a path, URL or dataset id; unexpected arguments are refused outright."""
     for name, spec in toolkit.TOOLS.items():

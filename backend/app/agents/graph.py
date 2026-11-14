@@ -165,18 +165,21 @@ def build_graph(deps: RunDeps) -> Any:
                 id=evidence_id, tool=name, label=call.label, arguments=arguments, ok=False,
                 error=f"This exact call was already made; see result {duplicate.id}.",
             )  # fmt: skip
-        deps.emit("tool", call.label, {"tool": name, "evidence_id": evidence_id, "state": "running"})
+        progress = {"tool": name, "evidence_id": evidence_id}
+        deps.emit("tool", call.label, {**progress, "state": "running"})
         try:
             result = toolkit.execute(call, deps.frame)
-        except ToolInputError as exc:
-            return Evidence(id=evidence_id, tool=name, label=call.label, arguments=arguments, ok=False, error=str(exc))
-        except Exception:
-            # A defect in a tool must not take the run down or leak internals to the model.
-            logger.exception("tool raised unexpectedly", extra={"tool": name})
-            return Evidence(
-                id=evidence_id, tool=name, label=call.label, arguments=arguments, ok=False,
-                error="This tool failed on this data. Try a different approach.",
-            )  # fmt: skip
+        except Exception as exc:
+            if isinstance(exc, ToolInputError):
+                error = str(exc)
+            else:
+                # A defect in a tool must not take the run down or leak internals to the model.
+                logger.exception("tool raised unexpectedly", extra={"tool": name})
+                error = "This tool failed on this data. Try a different approach."
+            # Close the progress step the user saw start; the model usually retries with new arguments.
+            deps.emit("tool", call.label, {**progress, "state": "failed"})
+            return Evidence(id=evidence_id, tool=name, label=call.label, arguments=arguments, ok=False, error=error)
+        deps.emit("tool", call.label, {**progress, "state": "done"})
         return Evidence(id=evidence_id, tool=name, label=call.label, arguments=arguments, ok=True, result=result)
 
     def tools_node(state: AgentState) -> dict[str, Any]:
@@ -202,9 +205,7 @@ def build_graph(deps: RunDeps) -> Any:
                 evidence = _run_one(sub_name, sub_args)
                 deps.ledger.add(evidence)
                 produced.append(evidence)
-                if evidence.ok:
-                    deps.emit("tool", evidence.label, {"tool": sub_name, "evidence_id": evidence.id, "state": "done"})
-                else:
+                if not evidence.ok:
                     logger.info("tool call rejected: %s: %s", sub_name, (evidence.error or "")[:300])
             content = (
                 "\n".join(item.render() for item in produced) or "ERROR: run_batch needs a non-empty 'calls' list."
