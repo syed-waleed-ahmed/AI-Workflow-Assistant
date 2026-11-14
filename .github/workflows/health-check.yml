@@ -5,7 +5,7 @@ name: Production health check
 #
 # Configure in the repository settings → Secrets and variables → Actions → Variables:
 #   BACKEND_URL   e.g. https://ai-workflow-assistant-api.onrender.com
-#   FRONTEND_URL  e.g. https://ai-workflow-assistant.vercel.app
+#   FRONTEND_URL  e.g. https://ai-workflow-assistant-app.vercel.app
 # The job is skipped until BACKEND_URL is set.
 
 on:

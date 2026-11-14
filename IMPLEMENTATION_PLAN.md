@@ -71,7 +71,7 @@ five-section report, and the command-line interface (`python -m app.cli`).
 | Database migrations | Verified | Applied, checked for drift and reversed on PostgreSQL in CI |
 | Live frontend and backend deployed | Verified | <https://ai-workflow-assistant-app.vercel.app> and <https://ai-workflow-assistant-api.onrender.com>; `/ready` reports database, storage and model `ok` |
 | Frontend–backend integration | Verified in production | Requests through Vercel's proxy, and direct uploads to the API with upload tickets |
-| Production smoke tests | Verified | `smoke_test.py` 40/40 (including a real analysis, 22 figures verified) and `npm run e2e` 36/36 against the live URLs |
+| Production smoke tests | Verified | `smoke_test.py` 41/41 (including a real analysis, 22 figures verified) and `npm run e2e` 36/36 against the live URLs |
 | Documentation | Done | README and the four documents it links |
 | Free-tier constraints and upgrade path documented | Done | DEPLOYMENT.md |
 

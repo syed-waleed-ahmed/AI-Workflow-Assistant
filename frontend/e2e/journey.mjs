@@ -248,6 +248,11 @@ try {
     ["Excel (.xlsx)", ".xlsx", "PK"],
     ["Markdown (.md)", ".md", "# "],
   ]) {
+    // Remove earlier downloads of this type: a report with the same title gets the same file
+    // name, so a rerun would otherwise overwrite the old file and look like no download.
+    for (const old of fs.readdirSync(path.join(OUT, "downloads"))) {
+      if (old.endsWith(ext)) fs.rmSync(path.join(OUT, "downloads", old), { force: true });
+    }
     const before = new Set(fs.readdirSync(path.join(OUT, "downloads")));
     await clickText("Export", "button");
     await clickText(label);
