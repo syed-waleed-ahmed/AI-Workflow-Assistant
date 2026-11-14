@@ -3,6 +3,9 @@
     python scripts/smoke_test.py --base-url http://localhost:8000
     python scripts/smoke_test.py --base-url https://your-app.vercel.app   # through the frontend proxy
 
+Against a deployment with PROXY_SHARED_SECRET set, use the frontend's URL: the API then accepts
+sign-in and registration only through the frontend's proxy.
+
 Walks the full user journey with two throwaway accounts: register, upload a generated dataset,
 run a real analysis, read and export the report, sign out and back in, and check that a second
 user cannot reach the first user's data. Both accounts are deleted at the end.

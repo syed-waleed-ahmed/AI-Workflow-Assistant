@@ -238,14 +238,42 @@ def test_proxy_stamped_address_is_used_when_the_secret_matches(settings):
     assert _failed_logins(1, {**stamped, "X-AWA-Client-IP": "198.51.100.2"}) == [401]
 
 
-def test_proxy_stamp_is_ignored_without_the_secret(settings):
-    """A caller cannot pick its own rate-limit address by sending the stamp itself."""
-    settings.rate_limit_auth_per_minute = 2
+@pytest.mark.parametrize(
+    "headers",
+    [
+        {},
+        {"X-AWA-Client-IP": "203.0.113.7"},
+        {"X-AWA-Proxy-Secret": "wrong", "X-AWA-Client-IP": "203.0.113.7"},
+        {"X-AWA-Proxy-Secret": PROXY_SECRET},
+    ],
+)
+def test_auth_is_refused_without_a_valid_proxy_stamp_when_a_secret_is_configured(settings, headers):
+    """A caller cannot pick its own rate-limit address, or skip the proxy that knows it."""
     settings.proxy_shared_secret = PROXY_SECRET
-    statuses = [
-        _failed_logins(1, {"X-AWA-Proxy-Secret": "wrong", "X-AWA-Client-IP": f"203.0.113.{i}"})[0] for i in range(3)
-    ]
-    assert statuses == [401, 401, 429]
+    client = ApiClient()
+    login = client.post("/auth/login", json={"email": "alice@example.com", "password": PASSWORD}, headers=headers)
+    assert login.status_code == 403 and login.json()["error"]["code"] == "proxy_required"
+    register = client.post(
+        "/auth/register",
+        json={"email": "mallory@example.com", "password": PASSWORD, "name": "Mallory"},
+        headers=headers,
+    )
+    assert register.status_code == 403
+    with session_scope() as db:
+        assert db.scalar(select(User).where(User.email == "mallory@example.com")) is None
+
+
+def test_registration_and_login_work_through_the_proxy(settings):
+    settings.proxy_shared_secret = PROXY_SECRET
+    stamped = {"X-AWA-Proxy-Secret": PROXY_SECRET, "X-AWA-Client-IP": "198.51.100.1"}
+    client = ApiClient()
+    registered = client.post(
+        "/auth/register", json={"email": "carol@example.com", "password": PASSWORD, "name": "Carol"}, headers=stamped
+    )
+    assert registered.status_code == 201
+    assert client.get("/auth/me").status_code == 200  # other routes do not need the stamp
+    login = ApiClient().post("/auth/login", json={"email": "carol@example.com", "password": PASSWORD}, headers=stamped)
+    assert login.status_code == 200
 
 
 def test_proxy_stamp_is_ignored_when_no_secret_is_configured(settings):

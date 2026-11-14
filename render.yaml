@@ -36,11 +36,11 @@ services:
         sync: false
       - key: S3_BUCKET
         value: datasets
-      # Render's edge appends the connecting address to X-Forwarded-For, so the last entry is
-      # the only one a caller cannot forge. Requests that come through the frontend's proxy
-      # carry the visitor's address instead, trusted when PROXY_SHARED_SECRET matches.
+      # Measured on Render: no X-Forwarded-For entry is both stable per caller and unforgeable,
+      # so it is not trusted. With PROXY_SHARED_SECRET set, sign-in and registration are
+      # accepted only through the frontend's proxy, which stamps the visitor's address.
       - key: TRUSTED_PROXY_HOPS
-        value: "1"
+        value: "0"
       # The same value must be set on the frontend (Vercel). At least 32 characters.
       - key: PROXY_SHARED_SECRET
         sync: false

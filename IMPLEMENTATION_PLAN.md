@@ -48,7 +48,7 @@ five-section report, and the command-line interface (`python -m app.cli`).
 | Criterion | Status | Evidence |
 | --- | --- | --- |
 | Existing CLI audited, valuable logic preserved | Verified | Table above; `backend/app/cli.py` runs the same workflow |
-| FastAPI backend operational | Verified | 371 tests; CI |
+| FastAPI backend operational | Verified | 375 tests; CI |
 | Next.js frontend operational | Verified | 131 tests, lint, strict typecheck and production build; `frontend/e2e/journey.mjs` (36 checks) passed in a real browser against the production build |
 | Database configured and persistent | Verified | `backend-postgres` CI job (PostgreSQL 17); hosted Supabase PostgreSQL 17, reports persisted across sessions in the production smoke test |
 | User authentication | Verified | `test_api_auth.py` |
