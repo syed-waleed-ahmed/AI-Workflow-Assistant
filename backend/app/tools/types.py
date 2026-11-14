@@ -9,7 +9,7 @@ from __future__ import annotations
 
 from typing import Any, Literal
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator
 
 Scalar = int | float | str | bool | None
 
@@ -40,6 +40,12 @@ class Chart(BaseModel):
     y_label: str = ""
     series: list[ChartSeries] = Field(default_factory=list)
     data: list[dict[str, Scalar]] = Field(default_factory=list)
+
+    @field_validator("title")
+    @classmethod
+    def _sentence_case(cls, value: str) -> str:
+        # Titles are assembled from aggregation and column names, which start in lower case.
+        return value[:1].upper() + value[1:]
 
 
 class ToolResult(BaseModel):

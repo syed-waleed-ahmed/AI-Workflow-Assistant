@@ -33,7 +33,12 @@ from app.agents import prompts, toolkit
 from app.agents.evidence import Evidence
 from app.agents.llm import LLMError, estimate_message_tokens, estimate_tokens
 from app.agents.state import AgentState, AnalysisFailed, Plan, RunDeps
-from app.agents.verification import check_evidence_references, check_grounding, evidence_gaps
+from app.agents.verification import (
+    check_evidence_references,
+    check_grounding,
+    evidence_gaps,
+    strip_inline_references,
+)
 from app.schemas.report import ReportDraft
 from app.tools.types import ToolInputError
 
@@ -270,7 +275,7 @@ def build_graph(deps: RunDeps) -> Any:
     def ground_node(state: AgentState) -> dict[str, Any]:
         """Verify every number in the draft against computed results."""
         deps.emit("status", "Verifying figures against computed results", None)
-        draft = check_evidence_references(state["draft"], deps.ledger)
+        draft = strip_inline_references(check_evidence_references(state["draft"], deps.ledger))
         result = check_grounding(draft, deps.ledger, deps.profile, deps.question)
         attempts = state.get("grounding_attempts", 0)
         update: dict[str, Any] = {

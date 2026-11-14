@@ -10,6 +10,7 @@ from app.agents.verification import (
     check_grounding,
     evidence_gaps,
     extract_numbers,
+    strip_inline_references,
 )
 from app.tools.types import Chart, ChartSeries, Table, ToolResult
 from tests.conftest import simple_draft
@@ -146,6 +147,19 @@ def test_references_to_unknown_evidence_are_removed(ledger):
     assert cleaned.key_metrics[0].evidence_ids == ["E1"]
     assert cleaned.findings[0].evidence_ids == []
     assert cleaned.chart_evidence_ids == ["E1"]
+
+
+def test_inline_citations_are_removed_from_prose():
+    draft = simple_draft(summary="NA leads with 8200 (E1). EU follows [E2, E3] and APAC is last (E1 and E4).")
+    draft.findings[0].detail = "NA has 42.17% (E1)."
+    draft.key_metrics[0].context = "by region (E1)"
+    cleaned = strip_inline_references(draft)
+    assert cleaned.executive_summary == "NA leads with 8200. EU follows and APAC is last."
+    assert cleaned.findings[0].detail == "NA has 42.17%."
+    assert cleaned.key_metrics[0].context == "by region"
+    assert cleaned.findings[0].evidence_ids == ["E1"]  # the structured references are untouched
+    untouched = simple_draft(summary="Segment (East) grew; see note (a) and code E12X.")
+    assert strip_inline_references(untouched).executive_summary == "Segment (East) grew; see note (a) and code E12X."
 
 
 def test_evidence_gaps():

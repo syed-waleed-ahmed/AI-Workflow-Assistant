@@ -149,6 +149,25 @@ def check_grounding(
     return result
 
 
+_INLINE_REFERENCE = re.compile(r"\s*[(\[]\s*E\d+(?:\s*(?:,|and|&)\s*E\d+)*\s*[)\]]")
+
+
+def strip_inline_references(draft: ReportDraft) -> ReportDraft:
+    """Remove "(E1)"-style citations the model wrote into prose.
+
+    References are carried in each item's `evidence_ids` and rendered as links by every output
+    format, so a second copy inside the sentence is only noise.
+    """
+    draft.executive_summary = _INLINE_REFERENCE.sub("", draft.executive_summary)
+    described: list[Finding | Anomaly] = [*draft.findings, *draft.anomalies]
+    for item in described:
+        item.detail = _INLINE_REFERENCE.sub("", item.detail)
+    for metric in draft.key_metrics:
+        metric.context = _INLINE_REFERENCE.sub("", metric.context).strip()
+    draft.data_quality = [_INLINE_REFERENCE.sub("", note) for note in draft.data_quality]
+    return draft
+
+
 def check_evidence_references(draft: ReportDraft, ledger: EvidenceLedger) -> ReportDraft:
     """Drop references to evidence ids that do not exist, so provenance links are always real."""
     valid = ledger.ids()
