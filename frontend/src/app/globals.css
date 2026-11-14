@@ -1,0 +1,282 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * Design tokens. A neutral zinc base with one accent (blue). Every colour used by a
+ * component comes from here so the light and dark themes stay in step.
+ */
+:root {
+  color-scheme: light;
+  --background: #ffffff;
+  --foreground: #18181b;
+  --surface: #fafafa;
+  --card: #ffffff;
+  --popover: #ffffff;
+  --muted: #f4f4f5;
+  --muted-foreground: #52525b;
+  --border: #e4e4e7;
+  --input: #a1a1aa;
+  --ring: #1d5fc2;
+  --primary: #1d5fc2;
+  --primary-hover: #184fa5;
+  --primary-foreground: #ffffff;
+  --accent-soft: #eaf1fc;
+  --accent-text: #174ea6;
+  --destructive: #b91c1c;
+  --destructive-hover: #991b1b;
+  --destructive-foreground: #ffffff;
+  --destructive-soft: #fdecec;
+  --destructive-text: #a31515;
+  --success-soft: #e7f6ec;
+  --success-text: #136a32;
+  --warning-soft: #fdf3dc;
+  --warning-text: #8a4b06;
+
+  /* Charts: one fixed categorical order, a diverging pair with a neutral midpoint. */
+  --chart-1: #2a78d6;
+  --chart-2: #eb6834;
+  --chart-3: #1baf7a;
+  --chart-4: #eda100;
+  --chart-5: #e87ba4;
+  --chart-6: #008300;
+  --chart-7: #6250d6;
+  --chart-8: #e34948;
+  --chart-grid: #e4e4e7;
+  --chart-axis: #52525b;
+  --heat-negative: #d03b3b;
+  --heat-positive: #2a78d6;
+  --heat-neutral: #f0efec;
+
+  --radius: 0.5rem;
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.04);
+  --shadow-md: 0 4px 16px -4px rgb(0 0 0 / 0.1), 0 1px 2px 0 rgb(0 0 0 / 0.04);
+}
+
+/* Printing always uses the light tokens, whatever theme is active on screen. */
+@media not print {
+  .dark {
+    color-scheme: dark;
+    --background: #09090b;
+    --foreground: #fafafa;
+    --surface: #0c0c0e;
+    --card: #111113;
+    --popover: #141416;
+    --muted: #1c1c1f;
+    --muted-foreground: #a1a1aa;
+    --border: #27272a;
+    --input: #71717a;
+    --ring: #7fb2f7;
+    --primary: #7fb2f7;
+    --primary-hover: #9cc4fa;
+    --primary-foreground: #08172b;
+    --accent-soft: #11233f;
+    --accent-text: #a5c9fa;
+    --destructive: #dc2626;
+    --destructive-hover: #b91c1c;
+    --destructive-foreground: #ffffff;
+    --destructive-soft: #3a1414;
+    --destructive-text: #fca5a5;
+    --success-soft: #0f2a1a;
+    --success-text: #86dfa5;
+    --warning-soft: #33240a;
+    --warning-text: #f5c56b;
+
+    --chart-1: #3987e5;
+    --chart-2: #d95926;
+    --chart-3: #199e70;
+    --chart-4: #c98500;
+    --chart-5: #d55181;
+    --chart-6: #0ca30c;
+    --chart-7: #9085e9;
+    --chart-8: #e66767;
+    --chart-grid: #27272a;
+    --chart-axis: #a1a1aa;
+    --heat-negative: #e66767;
+    --heat-positive: #3987e5;
+    --heat-neutral: #383835;
+
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.4);
+    --shadow-md: 0 8px 24px -6px rgb(0 0 0 / 0.6), 0 1px 2px 0 rgb(0 0 0 / 0.4);
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-card: var(--card);
+  --color-popover: var(--popover);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-primary: var(--primary);
+  --color-primary-hover: var(--primary-hover);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent-soft: var(--accent-soft);
+  --color-accent-text: var(--accent-text);
+  --color-destructive: var(--destructive);
+  --color-destructive-hover: var(--destructive-hover);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-destructive-soft: var(--destructive-soft);
+  --color-destructive-text: var(--destructive-text);
+  --color-success-soft: var(--success-soft);
+  --color-success-text: var(--success-text);
+  --color-warning-soft: var(--warning-soft);
+  --color-warning-text: var(--warning-text);
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: var(--radius);
+  --radius-lg: calc(var(--radius) + 2px);
+  --radius-xl: calc(var(--radius) + 6px);
+  --shadow-sm: var(--shadow-sm);
+  --shadow-md: var(--shadow-md);
+  --animate-fade-in: fade-in 150ms ease-out;
+  --animate-pop-in: pop-in 150ms ease-out;
+  --animate-slide-in-left: slide-in-left 200ms ease-out;
+  --animate-indeterminate: indeterminate 1.4s ease-in-out infinite;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes pop-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes indeterminate {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(350%);
+  }
+}
+
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    scroll-padding-top: 5rem;
+  }
+
+  body {
+    background: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-sans);
+    font-feature-settings: "cv11", "ss01";
+    overflow-x: hidden;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not([aria-disabled="true"]),
+  summary {
+    cursor: pointer;
+  }
+
+  ::selection {
+    background: var(--accent-soft);
+    color: var(--foreground);
+  }
+}
+
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media print {
+  :root {
+    --foreground: #000000;
+    --muted-foreground: #3f3f46;
+    --border: #d4d4d8;
+    --shadow-sm: none;
+    --shadow-md: none;
+  }
+
+  /* The theme switcher sets color-scheme inline on <html>; paper is always light. */
+  html {
+    color-scheme: light !important;
+    background: #ffffff;
+  }
+
+  [data-print="hide"] {
+    display: none !important;
+  }
+
+  body {
+    overflow: visible;
+  }
+
+  figure,
+  tr {
+    break-inside: avoid;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    break-after: avoid;
+  }
+
+  @page {
+    margin: 16mm 14mm;
+  }
+}
+
+/*
+ * Collapsed evidence is hidden with the `hidden` attribute, which Tailwind's base layer
+ * enforces with !important. Important rules in a layer can only be overridden from the same
+ * layer, so the print override lives in the base layer too.
+ */
+@layer base {
+  @media print {
+    [hidden][data-print="expand"] {
+      display: block !important;
+    }
+  }
+}

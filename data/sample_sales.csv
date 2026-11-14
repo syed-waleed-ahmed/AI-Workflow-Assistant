@@ -1,0 +1,2401 @@
+order_id,order_date,region,channel,product,customer_id,units,unit_price,discount_pct,status,revenue
+ORD-00842,2024-01-01,Europe,Partner,Team,249,31,260.47,10,won,7267.11
+ORD-00997,2024-01-01,North America,Online,Team,148,21,248.54,0,won,5219.34
+ORD-00144,2024-01-02,Europe,Online,Starter,230,24,240.65,20,won,4620.48
+ORD-00242,2024-01-02,Europe,Retail,Starter,243,8,234.02,10,lost,1684.94
+ORD-00712,2024-01-02,Europe,Retail,Team,80,16,257.75,5,lost,3917.8
+ORD-01024,2024-01-02,LATAM,Retail,Team,194,23,208.01,0,lost,4784.23
+ORD-01834,2024-01-02,APAC,Retail,Starter,193,26,149.8,0,won,3894.8
+ORD-01010,2024-01-02,LATAM,Retail,Team,148,25,288.31,20,won,5766.2
+ORD-01959,2024-01-02,Europe,Retail,Business,117,33,251.24,0,won,8290.92
+ORD-00349,2024-01-03,North America,Partner,Enterprise,274,27,267.31,5,won,6856.5
+ORD-01954,2024-01-03,North America,Online,Starter,120,35,251.67,0,won,8808.45
+ORD-00403,2024-01-03,Europe,Retail,Starter,279,27,282.82,10,won,6872.53
+ORD-01654,2024-01-03,Europe,Retail,Starter,98,30,315.48,10,lost,8517.96
+ORD-01528,2024-01-03,Europe,Online,Starter,69,28,230.42,0,lost,6451.76
+ORD-01846,2024-01-03,APAC,Online,Team,288,27,287.11,10,won,6976.77
+ORD-00876,2024-01-04,APAC,Retail,Team,35,30,368.61,0,won,11058.3
+ORD-02364,2024-01-04,APAC,Online,Starter,168,14,294.73,0,lost,4126.22
+ORD-01065,2024-01-04,Europe,Online,Team,210,19,213.68,5,won,3856.92
+ORD-00890,2024-01-05,North America,Partner,Starter,148,25,236.27,5,won,5611.41
+ORD-00542,2024-01-05,Europe,Retail,Starter,131,25,205.52,0,lost,5138.0
+ORD-02095,2024-01-05,Europe,Online,Starter,157,28,270.87,5,won,7205.14
+ORD-00700,2024-01-05,Europe,Retail,Starter,132,16,269.93,5,won,4102.94
+ORD-01330,2024-01-06,Europe,Online,Starter,183,16,243.64,0,won,3898.24
+ORD-00572,2024-01-06,LATAM,Retail,Team,117,15,309.49,0,lost,4642.35
+ORD-01516,2024-01-07,Europe,Online,Team,137,8,190.84,0,lost,1526.72
+ORD-00655,2024-01-08,APAC,Partner,Enterprise,62,8,251.11,0,won,2008.88
+ORD-00108,2024-01-08,North America,Online,Starter,266,9,256.28,20,won,1845.22
+ORD-00595,2024-01-08,Europe,Online,Team,48,38,208.11,20,lost,6326.54
+ORD-00830,2024-01-09,APAC,Online,Starter,130,15,246.8,0,won,3702.0
+ORD-01652,2024-01-09,North America,Online,Business,10,1,177.89,5,won,169.0
+ORD-00855,2024-01-09,North America,Online,Business,284,35,200.47,0,won,7016.45
+ORD-02147,2024-01-10,North America,Online,Business,255,17,271.45,5,lost,4383.92
+ORD-01134,2024-01-10,LATAM,Online,Starter,296,35,287.44,0,won,10060.4
+ORD-01819,2024-01-10,North America,Partner,Business,86,30,230.07,20,lost,5521.68
+ORD-01700,2024-01-10,North America,Online,Team,73,33,210.47,0,won,6945.51
+ORD-01521,2024-01-11,North America,Online,Business,72,23,275.43,5,won,6018.15
+ORD-01540,2024-01-11,North America,Retail,Starter,116,26,258.1,0,won,6710.6
+ORD-01360,2024-01-11,North America,Online,Enterprise,9,32,321.02,10,lost,9245.38
+ORD-02187,2024-01-11,APAC,Partner,Starter,19,12,237.55,0,won,2850.6
+ORD-01492,2024-01-12,Europe,Partner,Starter,205,29,182.21,10,won,4755.68
+ORD-01696,2024-01-12,Europe,Retail,Business,52,4,276.62,5,won,1051.16
+ORD-00272,2024-01-12,Europe,Retail,Starter,38,33,173.1,0,won,5712.3
+ORD-01753,2024-01-12,APAC,Retail,Business,37,4,306.99,10,lost,1105.16
+ORD-00740,2024-01-12,North America,Retail,Starter,62,10,299.14,10,won,2692.26
+ORD-01829,2024-01-12,Europe,Online,Starter,61,7,265.39,0,won,1857.73
+ORD-00543,2024-01-12,APAC,Partner,Starter,300,1,315.22,0,lost,315.22
+ORD-01097,2024-01-13,North America,Retail,Team,254,33,176.27,0,won,5816.91
+ORD-00357,2024-01-13,Europe,Online,Business,276,19,156.88,20,won,2384.58
+ORD-01051,2024-01-13,Europe,Online,Business,22,33,,10,lost,7710.42
+ORD-02002,2024-01-14,LATAM,Partner,Enterprise,87,34,293.2,0,won,9968.8
+ORD-01668,2024-01-14,LATAM,Online,Team,259,26,169.61,5,lost,4189.37
+ORD-00235,2024-01-14,North America,Partner,Business,56,18,254.5,0,lost,4581.0
+ORD-02186,2024-01-14,APAC,Online,Enterprise,319,7,273.88,5,lost,1821.3
+ORD-00127,2024-01-15,North America,Online,Starter,152,18,270.16,10,won,4376.59
+ORD-01795,2024-01-15,APAC,Retail,Business,6,20,239.56,5,won,4551.64
+ORD-00697,2024-01-15,Europe,Retail,Business,274,8,249.81,10,won,1798.63
+ORD-00395,2024-01-16,North America,Online,Business,35,29,286.83,10,lost,7486.26
+ORD-01515,2024-01-17,North America,Retail,Team,195,22,168.3,10,won,3332.34
+ORD-02246,2024-01-17,LATAM,Online,Starter,58,10,297.55,0,won,2975.5
+ORD-01138,2024-01-18,APAC,Online,Team,126,36,226.45,5,won,7744.59
+ORD-00988,2024-01-19,North America,Retail,Starter,276,35,74.73,0,won,2615.55
+ORD-02224,2024-01-19,LATAM,Retail,Business,244,34,277.71,10,won,8497.93
+ORD-01891,2024-01-19,Europe,Retail,Team,222,8,357.94,10,lost,2577.17
+ORD-01130,2024-01-19,North America,Online,Business,123,11,206.72,0,won,2273.92
+ORD-01456,2024-01-20,LATAM,Online,Starter,44,24,251.42,10,won,5430.67
+ORD-00252,2024-01-20,North America,Retail,Team,149,19,239.89,0,won,4557.91
+ORD-02329,2024-01-20,Europe,Retail,Enterprise,188,36,208.0,20,lost,5990.4
+ORD-01261,2024-01-21,North America,Partner,Team,23,38,239.79,0,lost,9112.02
+ORD-01709,2024-01-21,Europe,Retail,Business,287,8,247.04,0,won,1976.32
+ORD-01805,2024-01-21,North America,Online,Enterprise,294,33,202.24,0,won,6673.92
+ORD-02024,2024-01-21,Europe,Partner,Business,142,7,181.35,5,lost,1205.98
+ORD-00095,2024-01-22,APAC,Retail,Starter,230,4,105.54,5,won,401.05
+ORD-00071,2024-01-22,North America,Retail,Business,153,37,223.56,10,won,7444.55
+ORD-00875,2024-01-23,North America,Online,Starter,171,9,247.93,10,won,2008.23
+ORD-01478,2024-01-23,LATAM,Partner,Business,50,22,164.2,0,won,3612.4
+ORD-02026,2024-01-24,North America,Partner,Starter,47,27,222.83,0,won,6016.41
+ORD-00249,2024-01-24,North America,Partner,Starter,210,3,,0,won,672.06
+ORD-01821,2024-01-24,North America,Partner,Enterprise,110,1,220.6,0,won,220.6
+ORD-02269,2024-01-24,APAC,Partner,Business,192,6,207.72,5,won,1184.0
+ORD-02087,2024-01-24,North America,Online,Business,32,31,264.63,0,won,8203.53
+ORD-00729,2024-01-25,North America,Online,Business,210,5,184.24,5,lost,875.14
+ORD-02003,2024-01-25,APAC,Partner,Business,218,25,237.54,0,won,5938.5
+ORD-01476,2024-01-26,Europe,Online,Team,177,24,261.37,0,won,6272.88
+ORD-02337,2024-01-26,Europe,Online,Business,189,28,198.63,5,lost,5283.56
+ORD-00952,2024-01-26,APAC,Retail,Team,113,7,269.15,0,won,1884.05
+ORD-00738,2024-01-26,Europe,Online,Team,10,33,300.52,10,lost,8925.44
+ORD-00067,2024-01-26,North America,Retail,Starter,244,18,179.58,20,won,2585.95
+ORD-00262,2024-01-27,North America,Online,Starter,50,3,213.33,0,won,639.99
+ORD-01391,2024-01-27,North America,Retail,Enterprise,214,37,205.32,5,won,7217.0
+ORD-02098,2024-01-27,APAC,Partner,Enterprise,50,17,230.67,0,won,3921.39
+ORD-00476,2024-01-28,Europe,Retail,Starter,127,27,210.01,10,won,5103.24
+ORD-00989,2024-01-28,North America,Retail,Enterprise,136,14,286.84,0,won,4015.76
+ORD-00584,2024-01-28,North America,Online,Enterprise,193,1,177.25,0,lost,177.25
+ORD-00645,2024-01-30,APAC,Retail,Starter,139,9,254.83,20,won,1834.78
+ORD-01326,2024-01-30,APAC,Online,Team,62,24,306.99,10,won,6630.98
+ORD-00536,2024-01-30,North America,Retail,Starter,75,2,270.71,0,lost,541.42
+ORD-00821,2024-01-30,North America,Online,Starter,265,9,240.01,5,won,2052.09
+ORD-00815,2024-01-30,APAC,Partner,Team,115,30,319.31,0,lost,9579.3
+ORD-01638,2024-01-31,North America,Online,Starter,222,37,245.78,20,won,7275.09
+ORD-00548,2024-01-31,Europe,Online,Team,148,14,193.81,0,lost,2713.34
+ORD-00228,2024-01-31,APAC,Partner,Starter,8,10,122.14,0,won,1221.4
+ORD-01046,2024-02-01,North America,Online,Business,113,23,265.18,20,won,4879.31
+ORD-01764,2024-02-01,North America,Retail,Team,317,25,277.99,0,won,6949.75
+ORD-01998,2024-02-01,North America,Partner,Team,254,5,259.93,10,won,1169.69
+ORD-00569,2024-02-02,Europe,Retail,Starter,203,7,208.97,0,lost,1462.79
+ORD-01839,2024-02-02,APAC,Retail,Business,132,35,320.23,10,won,10087.25
+ORD-01454,2024-02-02,North America,Online,Team,310,37,374.97,5,won,13180.2
+ORD-00737,2024-02-02,APAC,Partner,Team,125,11,201.9,0,won,2220.9
+ORD-01782,2024-02-02,Europe,Retail,Business,21,35,254.54,20,won,7127.12
+ORD-01727,2024-02-02,North America,Online,Business,28,32,182.8,10,lost,5264.64
+ORD-02020,2024-02-02,APAC,Online,Team,48,23,262.01,10,lost,5423.61
+ORD-01690,2024-02-03,North America,Retail,Team,302,12,54.43,0,won,653.16
+ORD-02331,2024-02-03,LATAM,Retail,Business,171,7,275.29,10,won,1734.33
+ORD-01992,2024-02-03,Europe,Online,Starter,121,37,93.29,5,won,3279.14
+ORD-01680,2024-02-03,APAC,Online,Business,111,39,95.82,5,won,3550.13
+ORD-00466,2024-02-04,APAC,Partner,Business,109,36,197.76,10,won,6407.42
+ORD-00199,2024-02-04,Europe,Online,Starter,61,9,141.15,0,won,1270.35
+ORD-02070,2024-02-04,Europe,Online,Team,288,5,291.21,0,lost,1456.05
+ORD-01730,2024-02-05,Europe,Retail,Starter,31,38,252.34,10,won,8630.03
+ORD-00480,2024-02-05,North America,Retail,Business,314,10,205.35,10,won,1848.15
+ORD-00498,2024-02-05,Europe,Retail,Starter,196,9,208.57,5,won,1783.27
+ORD-02073,2024-02-05,Europe,Partner,Starter,65,32,282.12,0,won,9027.84
+ORD-00227,2024-02-05,Europe,Partner,Enterprise,77,25,354.37,5,lost,8416.29
+ORD-01514,2024-02-05,North America,Retail,Starter,14,9,204.92,0,lost,1844.28
+ORD-02250,2024-02-05,North America,Retail,Starter,136,29,290.83,0,won,8434.07
+ORD-00514,2024-02-05,APAC,Retail,Business,37,32,210.72,0,won,6743.04
+ORD-01707,2024-02-06,North America,Retail,Business,72,2,169.95,10,lost,305.91
+ORD-00701,2024-02-07,APAC,Partner,Business,129,32,245.72,0,lost,7863.04
+ORD-00348,2024-02-08,North America,Online,Business,117,30,338.1,0,won,10143.0
+ORD-01510,2024-02-08,North America,Online,Team,245,30,320.92,0,won,9627.6
+ORD-00782,2024-02-08,North America,Online,Starter,234,30,266.22,10,won,7187.94
+ORD-02273,2024-02-08,APAC,Partner,Enterprise,51,4,224.64,5,won,853.63
+ORD-00455,2024-02-08,Europe,Online,Business,37,6,302.86,20,won,1453.73
+ORD-00485,2024-02-09,Europe,Online,Team,239,2,202.55,5,lost,384.84
+ORD-02245,2024-02-09,Europe,Retail,Team,76,38,170.78,5,won,6165.16
+ORD-00389,2024-02-09,APAC,Partner,Team,209,36,226.37,5,won,7741.85
+ORD-01066,2024-02-09,APAC,Partner,Business,158,20,152.8,0,won,3056.0
+ORD-00721,2024-02-10,APAC,Online,Team,26,35,251.4,5,won,8359.05
+ORD-00330,2024-02-10,Europe,Online,Starter,253,4,359.19,0,lost,1436.76
+ORD-01331,2024-02-10,North America,Online,Business,138,2,241.23,0,lost,482.46
+ORD-01390,2024-02-11,APAC,Partner,Team,282,37,220.51,5,won,7750.93
+ORD-02319,2024-02-11,North America,Retail,Business,17,20,295.22,5,won,5609.18
+ORD-00214,2024-02-11,APAC,Online,Starter,74,19,227.49,0,won,4322.31
+ORD-00133,2024-02-11,North America,Partner,Business,172,15,355.45,0,won,5331.75
+ORD-01963,2024-02-12,Europe,Retail,Team,264,4,193.41,0,lost,773.64
+ORD-01849,2024-02-12,APAC,Partner,Starter,316,7,136.88,0,won,958.16
+ORD-01511,2024-02-13,APAC,Retail,Team,15,32,239.38,5,lost,7277.15
+ORD-01193,2024-02-13,North America,Online,Starter,211,26,169.91,0,won,4417.66
+ORD-01861,2024-02-13,LATAM,Online,Starter,281,24,242.66,10,won,5241.46
+ORD-01760,2024-02-13,North America,Partner,Enterprise,52,30,318.7,10,won,8604.9
+ORD-00082,2024-02-14,Europe,Retail,Enterprise,152,1,234.14,20,won,187.31
+ORD-01307,2024-02-14,APAC,Online,Business,300,34,226.28,0,lost,7693.52
+ORD-02010,2024-02-14,North America,Retail,Business,184,16,313.07,20,won,4007.3
+ORD-01480,2024-02-15,North America,Online,Business,144,34,248.42,5,won,8023.97
+ORD-01181,2024-02-15,North America,Retail,Starter,35,31,251.73,0,lost,7803.63
+ORD-00530,2024-02-15,North America,Online,Starter,192,19,178.25,5,lost,3217.41
+ORD-01018,2024-02-15,Europe,Online,Business,147,39,,10,won,8815.36
+ORD-02115,2024-02-15,Europe,Partner,Starter,15,36,251.31,0,won,9047.16
+ORD-00565,2024-02-16,APAC,Online,Starter,299,11,276.81,5,won,2892.66
+ORD-02304,2024-02-16,Europe,Partner,Enterprise,45,29,288.7,0,won,8372.3
+ORD-02162,2024-02-16,LATAM,Partner,Enterprise,217,29,276.46,10,won,7215.61
+ORD-01843,2024-02-16,Europe,Online,Business,71,14,252.16,10,won,3177.22
+ORD-00208,2024-02-16,APAC,Retail,Starter,8,25,282.69,0,won,7067.25
+ORD-01952,2024-02-17,APAC,Retail,Business,85,31,234.46,20,won,5814.61
+ORD-00390,2024-02-17,APAC,Retail,Team,78,37,208.06,0,lost,7698.22
+ORD-02096,2024-02-17,North America,Online,Starter,50,13,327.33,0,won,4255.29
+ORD-02084,2024-02-17,North America,Online,Business,153,24,238.42,0,won,5722.08
+ORD-02318,2024-02-17,APAC,Retail,Starter,42,2,163.21,5,won,310.1
+ORD-01695,2024-02-17,North America,Online,Starter,44,28,288.86,20,won,6470.46
+ORD-01794,2024-02-18,North America,Retail,Business,275,4,141.44,0,lost,565.76
+ORD-02074,2024-02-18,North America,Online,Team,229,10,231.34,10,won,2082.06
+ORD-00458,2024-02-18,APAC,Partner,Business,238,27,275.27,5,won,7060.68
+ORD-00612,2024-02-19,APAC,Online,Business,291,12,260.75,20,won,2503.2
+ORD-01494,2024-02-19,Europe,Retail,Team,45,2,293.37,0,won,586.74
+ORD-01743,2024-02-19,LATAM,Retail,Team,149,6,303.12,20,lost,1454.98
+ORD-01315,2024-02-19,Europe,Partner,Starter,292,8,267.7,0,won,2141.6
+ORD-00290,2024-02-19,North America,Online,Team,212,3,305.69,10,lost,825.36
+ORD-02357,2024-02-19,APAC,Retail,Team,83,32,,5,won,6125.9
+ORD-00854,2024-02-19,LATAM,Online,Starter,56,19,128.6,20,lost,1954.72
+ORD-00492,2024-02-21,APAC,Online,Business,276,2,224.79,10,won,404.62
+ORD-01451,2024-02-21,North America,Retail,Starter,96,26,196.81,5,lost,4861.21
+ORD-00148,2024-02-21,Europe,Online,Business,2,36,190.14,10,lost,6160.54
+ORD-01463,2024-02-21,North America,Online,Starter,142,38,259.29,0,won,9853.02
+ORD-00351,2024-02-21,North America,Online,Business,155,29,247.89,10,lost,6469.93
+ORD-01975,2024-02-22,Europe,Online,Business,37,33,264.04,0,won,8713.32
+ORD-02301,2024-02-22,North America,Partner,Starter,296,12,171.18,10,won,1848.74
+ORD-01243,2024-02-22,North America,Partner,Starter,212,3,179.84,0,won,539.52
+ORD-00296,2024-02-22,LATAM,Online,Enterprise,30,17,262.5,5,won,4239.38
+ORD-01822,2024-02-23,APAC,Retail,Business,28,38,302.9,0,won,11510.2
+ORD-01167,2024-02-23,APAC,Online,Business,220,33,291.16,10,lost,8647.45
+ORD-02029,2024-02-24,North America,Retail,Enterprise,62,32,159.03,0,won,5088.96
+ORD-01938,2024-02-24,APAC,Online,Team,306,24,255.07,10,won,5509.51
+ORD-02111,2024-02-25,North America,Online,Team,120,37,285.47,10,won,9506.15
+ORD-02118,2024-02-25,APAC,Online,Business,148,2,337.83,20,won,540.53
+ORD-02025,2024-02-25,North America,Partner,Business,291,7,183.88,5,won,1222.8
+ORD-02055,2024-02-25,Europe,Retail,Starter,249,9,232.97,10,won,1887.06
+ORD-01556,2024-02-25,APAC,Online,Starter,74,5,218.75,0,won,1093.75
+ORD-01248,2024-02-26,North America,Partner,Business,103,4,222.35,0,lost,889.4
+ORD-01395,2024-02-26,North America,Online,Team,295,9,,0,won,1695.51
+ORD-00407,2024-02-26,APAC,Online,Business,185,18,,10,won,4388.42
+ORD-00305,2024-02-26,Europe,Online,Starter,309,23,327.97,10,won,6788.98
+ORD-01294,2024-02-26,North America,Online,Team,279,9,148.42,0,won,1335.78
+ORD-00741,2024-02-27,LATAM,Online,Starter,251,9,274.11,0,lost,2466.99
+ORD-01342,2024-02-27,Europe,Online,Starter,118,20,311.13,0,won,6222.6
+ORD-01150,2024-02-27,North America,Online,Team,157,34,193.6,0,won,6582.4
+ORD-01553,2024-02-28,North America,Partner,Starter,66,15,215.01,10,won,2902.64
+ORD-02211,2024-02-28,LATAM,Partner,Enterprise,222,9,208.1,5,lost,1779.26
+ORD-01951,2024-02-28,North America,Retail,Starter,277,17,248.07,0,won,4217.19
+ORD-00744,2024-02-28,APAC,Retail,Starter,116,30,219.75,0,won,6592.5
+ORD-01496,2024-02-29,North America,Partner,Starter,196,17,163.77,20,won,2227.27
+ORD-02267,2024-02-29,APAC,Online,Starter,222,34,262.12,5,won,8466.48
+ORD-00261,2024-02-29,APAC,Online,Team,153,4,166.63,0,won,666.52
+ORD-01945,2024-02-29,North America,Retail,Business,285,26,359.54,10,won,8413.24
+ORD-01571,2024-02-29,North America,Online,Starter,12,1,361.0,5,won,342.95
+ORD-02040,2024-02-29,North America,Online,Business,270,35,258.95,0,lost,9063.25
+ORD-01337,2024-03-01,Europe,Retail,Starter,165,11,304.34,0,won,3347.74
+ORD-01922,2024-03-01,North America,Retail,Team,70,13,173.56,20,lost,1805.02
+ORD-00515,2024-03-01,Europe,Online,Business,164,31,225.44,10,lost,6289.78
+ORD-00635,2024-03-01,Europe,Online,Enterprise,72,36,,0,lost,5315.4
+ORD-00576,2024-03-02,Europe,Online,Business,41,19,244.26,0,won,4640.94
+ORD-02330,2024-03-02,North America,Online,Business,142,1,125.89,5,won,119.6
+ORD-01190,2024-03-02,North America,Retail,Business,120,27,304.47,0,won,8220.69
+ORD-02216,2024-03-02,Europe,Partner,Team,319,35,274.41,0,won,9604.35
+ORD-01314,2024-03-02,Europe,Retail,Business,39,11,229.05,10,won,2267.6
+ORD-00327,2024-03-03,LATAM,Online,Team,178,31,373.88,0,won,11590.28
+ORD-01093,2024-03-03,LATAM,Partner,Team,160,14,199.78,0,won,2796.92
+ORD-01121,2024-03-04,North America,Online,Team,124,13,302.46,5,won,3735.38
+ORD-00917,2024-03-04,LATAM,Online,Business,49,17,316.72,5,won,5115.03
+ORD-01019,2024-03-04,North America,Partner,Business,119,37,170.81,0,lost,6319.97
+ORD-02253,2024-03-04,APAC,Retail,Team,186,39,239.71,0,won,9348.69
+ORD-00198,2024-03-05,LATAM,Online,Team,95,28,242.03,0,lost,6776.84
+ORD-01484,2024-03-05,North America,Partner,Enterprise,22,17,183.74,0,won,3123.58
+ORD-02297,2024-03-05,North America,Retail,Starter,212,24,272.67,10,lost,5889.67
+ORD-00996,2024-03-05,APAC,Online,Business,125,31,264.26,0,won,8192.06
+ORD-01414,2024-03-06,Europe,Online,Starter,238,5,,20,won,921.48
+ORD-00506,2024-03-06,North America,Retail,Business,286,22,269.58,0,won,5930.76
+ORD-00927,2024-03-06,Europe,Retail,Team,5,22,242.56,0,won,5336.32
+ORD-00430,2024-03-06,APAC,Online,Starter,183,37,189.05,0,won,6994.85
+ORD-00919,2024-03-07,APAC,Online,Team,176,8,237.41,0,won,1899.28
+ORD-00911,2024-03-07,APAC,Online,Enterprise,113,28,152.25,20,won,3410.4
+ORD-00347,2024-03-07,LATAM,Retail,Team,63,37,275.57,10,won,9176.48
+ORD-00551,2024-03-08,Europe,Online,Starter,29,15,239.47,0,won,3592.05
+ORD-00394,2024-03-08,North America,Retail,Team,309,33,271.51,0,won,8959.83
+ORD-00966,2024-03-08,North America,Online,Starter,130,29,247.34,5,won,6814.22
+ORD-01332,2024-03-08,North America,Retail,Business,11,35,265.24,0,won,9283.4
+ORD-00702,2024-03-08,Europe,Partner,Starter,190,15,226.61,5,won,3229.19
+ORD-00030,2024-03-09,Europe,Online,Business,25,39,177.76,0,won,6932.64
+ORD-00383,2024-03-10,North America,Online,Starter,123,16,253.2,0,lost,4051.2
+ORD-01539,2024-03-10,North America,Online,Starter,304,21,177.75,0,won,3732.75
+ORD-01109,2024-03-10,Europe,Partner,Business,217,5,198.14,5,won,941.16
+ORD-01568,2024-03-10,Europe,Online,Business,93,7,266.68,0,won,1866.76
+ORD-01578,2024-03-10,LATAM,Retail,Team,178,1,267.52,0,won,267.52
+ORD-00718,2024-03-11,Europe,Online,Business,203,11,243.25,10,won,2408.18
+ORD-02148,2024-03-11,Europe,Retail,Business,305,10,236.11,20,won,1888.88
+ORD-00414,2024-03-11,Europe,Online,Team,179,20,213.35,5,won,4053.65
+ORD-01283,2024-03-12,North America,Retail,Enterprise,319,25,247.49,20,won,4949.8
+ORD-00450,2024-03-12,Europe,Online,Business,102,20,317.34,10,won,5712.12
+ORD-01543,2024-03-13,North America,Retail,Business,16,39,175.57,20,won,5477.78
+ORD-00191,2024-03-13,Europe,Online,Starter,318,7,113.14,20,lost,633.58
+ORD-01088,2024-03-14,North America,Online,Business,261,6,289.34,0,won,1736.04
+ORD-01832,2024-03-14,Europe,Partner,Starter,23,17,194.85,10,lost,2981.2
+ORD-00677,2024-03-14,Europe,Partner,Starter,275,14,210.33,0,won,2944.62
+ORD-01693,2024-03-15,LATAM,Retail,Business,184,26,297.45,5,lost,7347.02
+ORD-00639,2024-03-15,APAC,Online,Enterprise,271,19,172.78,5,lost,3118.68
+ORD-01306,2024-03-15,North America,Online,Team,293,28,166.39,5,won,4425.97
+ORD-01777,2024-03-16,North America,Online,Starter,102,17,294.61,20,won,4006.7
+ORD-00428,2024-03-16,APAC,Partner,Team,297,13,243.54,0,lost,3166.02
+ORD-01620,2024-03-16,APAC,Online,Starter,190,2,383.07,20,lost,612.91
+ORD-00297,2024-03-16,APAC,Retail,Enterprise,136,34,334.24,10,won,10227.74
+ORD-00666,2024-03-17,APAC,Online,Business,109,18,212.89,5,lost,3640.42
+ORD-01411,2024-03-17,Europe,Retail,Starter,99,39,283.18,0,won,11044.02
+ORD-01929,2024-03-17,North America,Partner,Starter,316,31,143.46,0,won,4447.26
+ORD-00589,2024-03-17,Europe,Retail,Enterprise,296,6,291.53,20,lost,1399.34
+ORD-00291,2024-03-17,North America,Online,Starter,145,11,285.5,20,won,2512.4
+ORD-01240,2024-03-18,North America,Retail,Enterprise,129,35,246.57,0,won,8629.95
+ORD-01660,2024-03-18,North America,Retail,Team,193,2,262.56,0,lost,525.12
+ORD-00128,2024-03-18,North America,Retail,Business,272,34,282.27,0,won,9597.18
+ORD-00942,2024-03-18,LATAM,Partner,Starter,169,15,319.4,5,lost,4551.45
+ORD-01298,2024-03-20,Europe,Partner,Team,171,26,202.24,5,won,4995.33
+ORD-01291,2024-03-20,Europe,Online,Starter,71,5,241.21,0,won,1206.05
+ORD-02222,2024-03-20,North America,Retail,Starter,207,4,338.41,10,won,1218.28
+ORD-02035,2024-03-20,Europe,Retail,Enterprise,304,14,335.26,5,won,4458.96
+ORD-00784,2024-03-20,Europe,Online,Team,89,2,277.19,0,won,554.38
+ORD-01960,2024-03-20,North America,Retail,Enterprise,64,2,298.46,10,lost,537.23
+ORD-00557,2024-03-21,North America,Retail,Enterprise,164,1,254.86,0,won,254.86
+ORD-01990,2024-03-22,North America,Retail,Team,231,19,183.59,0,won,3488.21
+ORD-00623,2024-03-22,North America,Online,Business,7,27,336.3,0,lost,9080.1
+ORD-01745,2024-03-22,Europe,Online,Starter,134,8,239.76,5,won,1822.18
+ORD-00265,2024-03-22,North America,Partner,Business,186,29,427.31,0,won,12391.99
+ORD-01458,2024-03-22,LATAM,Online,Business,37,11,306.79,5,won,3205.96
+ORD-00292,2024-03-23,APAC,Online,Starter,85,16,222.34,5,won,3379.57
+ORD-00041,2024-03-23,APAC,Partner,Team,5,32,160.76,0,lost,5144.32
+ORD-02241,2024-03-23,North America,Online,Team,316,9,352.47,0,lost,3172.23
+ORD-00574,2024-03-23,Europe,Retail,Team,159,29,374.06,0,won,10847.74
+ORD-01878,2024-03-24,North America,Retail,Enterprise,73,11,259.35,0,lost,2852.85
+ORD-01931,2024-03-24,North America,Online,Enterprise,163,4,235.62,0,won,942.48
+ORD-01988,2024-03-24,North America,Retail,Starter,48,38,138.82,20,lost,4220.13
+ORD-00288,2024-03-25,APAC,Online,Team,52,4,250.4,10,won,901.44
+ORD-01136,2024-03-25,North America,Online,Enterprise,109,26,314.17,0,lost,8168.42
+ORD-01717,2024-03-25,Europe,Online,Enterprise,108,30,351.84,0,lost,10555.2
+ORD-01015,2024-03-25,North America,Retail,Business,110,10,274.04,10,won,2466.36
+ORD-01186,2024-03-25,North America,Retail,Team,82,24,264.79,0,won,6354.96
+ORD-02027,2024-03-26,North America,Partner,Starter,123,20,352.86,20,won,5645.76
+ORD-01085,2024-03-26,Europe,Retail,Team,95,26,231.98,0,won,6031.48
+ORD-02259,2024-03-26,North America,Partner,Starter,14,38,259.74,10,won,8883.11
+ORD-01179,2024-03-26,North America,Online,Business,186,24,291.13,0,won,6987.12
+ORD-01317,2024-03-27,North America,Online,Team,57,31,228.03,20,won,5655.14
+ORD-01971,2024-03-27,LATAM,Online,Business,100,24,226.63,0,won,5439.12
+ORD-02339,2024-03-27,Europe,Online,Team,61,5,271.39,0,lost,1356.95
+ORD-01115,2024-03-28,APAC,Online,Team,94,24,296.85,0,lost,7124.4
+ORD-01887,2024-03-28,North America,Retail,Enterprise,95,18,277.15,5,won,4739.26
+ORD-01858,2024-03-29,LATAM,Online,Business,179,12,277.62,20,won,2665.15
+ORD-01252,2024-03-29,Europe,Online,Starter,106,36,280.0,0,lost,10080.0
+ORD-02009,2024-03-29,North America,Partner,Starter,222,3,350.25,10,won,945.68
+ORD-00831,2024-03-30,North America,Online,Enterprise,251,16,217.38,10,won,3130.27
+ORD-01633,2024-03-30,APAC,Partner,Team,144,14,182.51,0,lost,2555.14
+ORD-00902,2024-03-30,LATAM,Partner,Starter,283,2,336.41,10,won,605.54
+ORD-01914,2024-03-31,LATAM,Online,Team,52,26,359.95,0,won,9358.7
+ORD-01254,2024-03-31,LATAM,Online,Team,1,25,175.05,0,lost,4376.25
+ORD-00932,2024-04-01,LATAM,Online,Starter,317,9,299.42,0,won,2694.78
+ORD-02340,2024-04-01,North America,Retail,Business,12,7,266.02,0,won,1862.14
+ORD-00275,2024-04-01,APAC,Retail,Team,287,29,208.82,0,won,6055.78
+ORD-01972,2024-04-01,APAC,Partner,Starter,179,21,275.08,0,won,5776.68
+ORD-02061,2024-04-01,Europe,Online,Team,159,2,215.84,10,won,388.51
+ORD-01113,2024-04-02,Europe,Retail,Team,32,33,242.15,0,lost,7990.95
+ORD-01057,2024-04-02,North America,Online,Starter,5,12,375.57,10,lost,4056.16
+ORD-01686,2024-04-02,APAC,Online,Starter,108,2,277.12,0,won,554.24
+ORD-01077,2024-04-02,Europe,Online,Starter,262,33,281.56,0,won,9291.48
+ORD-01710,2024-04-02,Europe,Partner,Starter,232,6,171.38,10,lost,925.45
+ORD-00670,2024-04-02,Europe,Online,Business,225,18,309.61,0,won,5572.98
+ORD-01635,2024-04-03,North America,Online,Starter,4,3,257.44,5,won,733.7
+ORD-00778,2024-04-03,LATAM,Retail,Business,304,4,303.71,20,won,971.87
+ORD-01223,2024-04-03,LATAM,Online,Starter,30,26,340.3,5,won,8405.41
+ORD-00035,2024-04-03,North America,Online,Enterprise,152,31,204.23,0,won,6331.13
+ORD-00789,2024-04-03,North America,Online,Business,39,21,287.61,20,won,4831.85
+ORD-01518,2024-04-03,North America,Retail,Starter,216,24,319.21,5,won,7277.99
+ORD-02355,2024-04-04,North America,Retail,Starter,306,16,216.33,0,lost,3461.28
+ORD-02283,2024-04-04,North America,Partner,Business,117,10,313.53,0,lost,3135.3
+ORD-01642,2024-04-05,North America,Partner,Team,260,31,191.12,0,won,5924.72
+ORD-02334,2024-04-05,APAC,Retail,Business,236,17,373.87,0,won,6355.79
+ORD-01809,2024-04-05,APAC,Partner,Enterprise,2,22,260.81,0,lost,5737.82
+ORD-00157,2024-04-05,North America,Online,Team,26,19,262.03,10,won,4480.71
+ORD-00512,2024-04-06,North America,Online,Team,170,28,256.26,20,won,5740.22
+ORD-01902,2024-04-06,APAC,Retail,Business,130,17,251.13,5,won,4055.75
+ORD-02108,2024-04-07,Europe,Partner,Business,168,15,321.31,5,lost,4578.67
+ORD-01444,2024-04-07,North America,Online,Enterprise,216,8,277.66,10,won,1999.15
+ORD-01006,2024-04-08,North America,Online,Enterprise,231,36,319.63,0,lost,11506.68
+ORD-00436,2024-04-08,Europe,Retail,Starter,37,19,200.98,0,won,3818.62
+ORD-01450,2024-04-08,Europe,Online,Enterprise,24,15,219.95,0,won,3299.25
+ORD-01742,2024-04-09,North America,Partner,Starter,7,8,278.32,0,won,2226.56
+ORD-01612,2024-04-09,North America,Online,Team,87,27,348.73,0,lost,9415.71
+ORD-01651,2024-04-10,APAC,Online,Enterprise,258,2,278.94,5,won,529.99
+ORD-01082,2024-04-10,LATAM,Online,Business,235,39,344.93,0,won,13452.27
+ORD-00404,2024-04-11,North America,Online,Enterprise,46,14,251.05,20,lost,2811.76
+ORD-01482,2024-04-11,North America,Partner,Business,185,9,220.59,0,won,1985.31
+ORD-01611,2024-04-12,North America,Online,Starter,227,30,328.77,0,won,9863.1
+ORD-01420,2024-04-12,North America,Retail,Team,160,39,251.76,0,lost,9818.64
+ORD-01595,2024-04-12,APAC,Online,Team,294,3,203.44,0,won,610.32
+ORD-01239,2024-04-12,APAC,Online,Business,138,8,256.68,10,won,1848.1
+ORD-00269,2024-04-12,APAC,Retail,Team,18,17,234.56,0,won,3987.52
+ORD-02382,2024-04-12,North America,Online,Starter,289,7,,0,won,1847.09
+ORD-01979,2024-04-12,LATAM,Retail,Starter,311,5,195.56,0,won,977.8
+ORD-00229,2024-04-12,APAC,Online,Team,36,30,381.8,0,won,11454.0
+ORD-00000,2024-04-13,Europe,Partner,Enterprise,266,2,286.19,0,won,572.38
+ORD-01586,2024-04-13,APAC,Online,Enterprise,115,39,283.92,0,won,11072.88
+ORD-01185,2024-04-14,APAC,Online,Team,161,25,141.34,0,lost,3533.5
+ORD-01417,2024-04-15,North America,Online,Starter,32,9,179.41,5,won,1533.96
+ORD-01358,2024-04-16,Europe,Online,Starter,35,7,265.4,5,won,1764.91
+ORD-00045,2024-04-17,APAC,Partner,Team,61,21,153.36,0,won,3220.56
+ORD-01592,2024-04-17,North America,Partner,Starter,95,27,243.83,5,won,6254.24
+ORD-01661,2024-04-17,North America,Online,Team,316,23,230.61,10,won,4773.63
+ORD-00344,2024-04-18,North America,Retail,Starter,254,19,353.5,20,won,5373.2
+ORD-01128,2024-04-18,APAC,Retail,Business,126,13,307.5,0,won,3997.5
+ORD-00844,2024-04-18,North America,Retail,Business,297,37,260.83,10,won,8685.64
+ORD-01715,2024-04-18,Europe,Retail,Enterprise,214,12,314.44,5,won,3584.62
+ORD-00064,2024-04-18,Europe,Retail,Starter,279,32,321.77,20,won,8237.31
+ORD-02120,2024-04-19,Europe,Online,Business,7,34,234.51,0,won,7973.34
+ORD-01532,2024-04-19,Europe,Retail,Team,127,23,295.69,0,lost,6800.87
+ORD-01899,2024-04-19,Europe,Partner,Starter,285,27,224.76,10,lost,5461.67
+ORD-00534,2024-04-20,APAC,Retail,Business,36,27,331.24,0,won,8943.48
+ORD-00818,2024-04-20,North America,Online,Starter,179,29,228.1,0,lost,6614.9
+ORD-01466,2024-04-20,North America,Online,Team,200,21,78.42,0,won,1646.82
+ORD-00679,2024-04-20,APAC,Retail,Enterprise,262,37,201.15,5,lost,7070.42
+ORD-01874,2024-04-20,APAC,Online,Enterprise,291,24,,20,lost,4701.31
+ORD-02379,2024-04-20,APAC,Online,Team,263,26,261.01,0,won,6786.26
+ORD-02293,2024-04-21,LATAM,Partner,Business,102,1,264.43,20,won,211.54
+ORD-00813,2024-04-21,Europe,Retail,Starter,125,25,250.51,5,won,5949.61
+ORD-00925,2024-04-21,North America,Partner,Starter,221,7,187.52,0,won,1312.64
+ORD-01117,2024-04-21,Europe,Retail,Enterprise,239,10,369.81,5,lost,3513.2
+ORD-00633,2024-04-21,North America,Online,Team,299,33,296.82,10,won,8815.55
+ORD-00923,2024-04-22,North America,Partner,Starter,271,18,362.26,0,lost,6520.68
+ORD-01045,2024-04-22,North America,Partner,Starter,53,11,252.99,5,lost,2643.75
+ORD-02275,2024-04-22,APAC,Retail,Business,6,16,316.87,0,lost,5069.92
+ORD-01369,2024-04-23,North America,Online,Starter,307,30,262.34,0,lost,7870.2
+ORD-00733,2024-04-23,North America,Partner,Business,291,18,246.36,0,lost,4434.48
+ORD-01205,2024-04-23,LATAM,Online,Enterprise,236,34,242.12,10,won,7408.87
+ORD-01163,2024-04-23,North America,Retail,Starter,255,39,219.29,20,won,6841.85
+ORD-01896,2024-04-24,Europe,Retail,Team,108,11,309.27,5,won,3231.87
+ORD-02251,2024-04-24,LATAM,Online,Enterprise,236,17,306.15,0,won,5204.55
+ORD-00620,2024-04-25,North America,Online,Team,289,29,151.85,0,won,4403.65
+ORD-00061,2024-04-25,Europe,Online,Team,211,5,234.85,10,won,1056.82
+ORD-01382,2024-04-26,North America,Partner,Team,149,16,276.75,0,won,4428.0
+ORD-02353,2024-04-26,North America,Online,Business,132,30,258.1,5,lost,7355.85
+ORD-00938,2024-04-26,North America,Online,Starter,202,3,288.45,0,lost,865.35
+ORD-02137,2024-04-26,North America,Retail,Team,66,16,307.33,5,lost,4671.42
+ORD-00032,2024-04-26,North America,Online,Starter,164,22,193.37,0,won,4254.14
+ORD-01060,2024-04-26,APAC,Retail,Business,7,16,306.06,10,won,4407.26
+ORD-01722,2024-04-27,APAC,Retail,Team,270,23,181.66,0,won,4178.18
+ORD-01788,2024-04-27,North America,Retail,Starter,34,21,305.23,0,won,6409.83
+ORD-00170,2024-04-27,Europe,Retail,Team,82,16,258.99,0,won,4143.84
+ORD-02363,2024-04-28,LATAM,Online,Starter,101,9,179.97,5,lost,1538.74
+ORD-00833,2024-04-28,Europe,Partner,Business,289,9,,0,won,2526.21
+ORD-00176,2024-04-29,APAC,Partner,Team,173,14,301.71,10,won,3801.55
+ORD-02014,2024-04-29,North America,Retail,Enterprise,239,21,298.38,20,lost,5012.78
+ORD-00860,2024-04-29,Europe,Retail,Starter,313,20,306.18,0,won,6123.6
+ORD-01235,2024-04-29,North America,Partner,Team,5,27,212.71,0,won,5743.17
+ORD-00864,2024-04-29,North America,Retail,Business,19,17,139.41,0,won,2369.97
+ORD-01409,2024-04-29,APAC,Retail,Enterprise,206,36,162.6,0,won,5853.6
+ORD-00845,2024-04-30,Europe,Online,Team,217,19,192.28,0,won,3653.32
+ORD-00107,2024-04-30,Europe,Online,Business,74,26,214.75,0,won,5583.5
+ORD-01962,2024-04-30,North America,Retail,Team,180,20,296.44,10,won,5335.92
+ORD-01756,2024-04-30,Europe,Online,Business,73,23,369.29,0,lost,8493.67
+ORD-01213,2024-05-01,LATAM,Online,Starter,13,38,261.14,5,won,9427.15
+ORD-01001,2024-05-01,APAC,Online,Team,143,8,310.33,5,won,2358.51
+ORD-01464,2024-05-01,LATAM,Online,Starter,100,39,315.04,0,won,12286.56
+ORD-00376,2024-05-01,North America,Partner,Team,308,14,233.42,5,won,3104.49
+ORD-00965,2024-05-01,Europe,Retail,Business,233,14,294.69,5,won,3919.38
+ORD-02064,2024-05-02,APAC,Online,Business,97,28,243.55,10,lost,6137.46
+ORD-01901,2024-05-02,APAC,Retail,Team,265,13,253.06,5,won,3125.29
+ORD-00578,2024-05-02,APAC,Online,Team,273,6,252.22,20,won,1210.66
+ORD-00913,2024-05-02,Europe,Online,Team,74,10,,0,lost,3332.0
+ORD-01419,2024-05-02,Europe,Online,Business,109,26,185.36,0,won,4819.36
+ORD-00786,2024-05-03,LATAM,Online,Team,30,25,242.65,5,won,5762.94
+ORD-02284,2024-05-03,APAC,Retail,Business,266,20,323.17,10,won,5817.06
+ORD-00213,2024-05-03,Europe,Retail,Team,47,15,301.34,0,won,4520.1
+ORD-00698,2024-05-03,Europe,Retail,Business,129,15,227.23,10,won,3067.6
+ORD-00954,2024-05-04,Europe,Retail,Business,113,23,,5,lost,6580.35
+ORD-02080,2024-05-05,North America,Online,Business,110,5,,0,lost,1158.4
+ORD-01583,2024-05-05,North America,Retail,Business,232,9,275.81,0,won,2482.29
+ORD-01351,2024-05-05,North America,Partner,Team,27,35,216.18,0,won,7566.3
+ORD-02071,2024-05-05,North America,Partner,Starter,229,11,341.62,0,won,3757.82
+ORD-00280,2024-05-06,Europe,Partner,Starter,22,30,212.02,0,lost,6360.6
+ORD-00197,2024-05-07,North America,Online,Starter,163,6,294.04,0,won,1764.24
+ORD-01993,2024-05-07,APAC,Partner,Team,112,12,277.4,0,won,3328.8
+ORD-00783,2024-05-07,LATAM,Partner,Starter,315,5,255.46,0,won,1277.3
+ORD-00308,2024-05-07,North America,Online,Starter,281,21,218.63,0,won,4591.23
+ORD-01566,2024-05-08,Europe,Online,Enterprise,121,22,201.23,5,won,4205.71
+ORD-02276,2024-05-09,North America,Retail,Team,217,14,268.7,10,won,3385.62
+ORD-01189,2024-05-09,LATAM,Retail,Enterprise,55,4,209.32,5,won,795.42
+ORD-02077,2024-05-09,APAC,Online,Starter,43,21,265.91,10,won,5025.7
+ORD-00482,2024-05-09,Europe,Retail,Enterprise,245,29,291.1,0,won,8441.9
+ORD-00075,2024-05-09,APAC,Online,Enterprise,76,35,220.03,20,won,6160.84
+ORD-01392,2024-05-09,Europe,Online,Starter,14,19,262.64,5,lost,4740.65
+ORD-02345,2024-05-09,APAC,Partner,Starter,53,22,344.95,20,won,6071.12
+ORD-01801,2024-05-09,Europe,Retail,Team,24,10,258.32,0,won,2583.2
+ORD-01495,2024-05-10,APAC,Retail,Starter,62,25,319.15,0,won,7978.75
+ORD-01536,2024-05-10,Europe,Partner,Enterprise,40,17,366.33,20,won,4982.09
+ORD-01107,2024-05-10,North America,Retail,Team,117,18,235.6,10,won,3816.72
+ORD-00145,2024-05-10,LATAM,Retail,Enterprise,192,14,290.93,5,won,3869.37
+ORD-01206,2024-05-10,North America,Partner,Starter,206,38,252.9,5,won,9129.69
+ORD-01319,2024-05-10,Europe,Online,Starter,85,27,244.8,10,lost,5948.64
+ORD-00354,2024-05-11,North America,Online,Team,194,30,298.38,0,won,8951.4
+ORD-01263,2024-05-11,APAC,Online,Team,270,31,208.64,20,won,5174.27
+ORD-02343,2024-05-11,North America,Retail,Team,33,19,284.53,0,lost,5406.07
+ORD-00887,2024-05-11,North America,Online,Enterprise,37,21,188.03,10,won,3553.77
+ORD-02042,2024-05-11,LATAM,Retail,Starter,277,12,199.45,5,won,2273.73
+ORD-01467,2024-05-11,North America,Online,Team,224,25,206.49,0,won,5162.25
+ORD-01650,2024-05-11,APAC,Online,Team,168,37,191.36,0,won,7080.32
+ORD-01091,2024-05-12,Europe,Retail,Starter,44,7,254.43,20,lost,1424.81
+ORD-01597,2024-05-12,Europe,Online,Business,205,2,172.21,0,won,344.42
+ORD-00469,2024-05-12,APAC,Retail,Starter,93,27,295.58,0,won,7980.66
+ORD-00560,2024-05-13,Europe,Retail,Business,134,14,308.19,0,lost,4314.66
+ORD-00873,2024-05-13,LATAM,Online,Starter,209,1,296.09,0,lost,296.09
+ORD-00163,2024-05-13,North America,Retail,Team,236,20,163.58,10,won,2944.44
+ORD-01632,2024-05-13,Europe,Retail,Business,116,35,392.96,10,won,12378.24
+ORD-01396,2024-05-13,Europe,Partner,Enterprise,109,7,206.99,0,lost,1448.93
+ORD-01775,2024-05-13,LATAM,Retail,Starter,79,30,223.56,10,lost,6036.12
+ORD-01014,2024-05-13,North America,Retail,Business,206,33,298.0,0,won,9834.0
+ORD-01784,2024-05-13,LATAM,Retail,Business,21,34,290.12,0,won,9864.08
+ORD-00005,2024-05-13,APAC,Retail,Starter,184,39,275.3,10,won,9663.03
+ORD-01352,2024-05-14,North America,Partner,Team,212,33,222.98,5,won,6990.42
+ORD-00755,2024-05-14,North America,Online,Starter,222,5,338.3,0,won,1691.5
+ORD-00456,2024-05-14,Europe,Partner,Business,116,26,73.41,10,won,1717.79
+ORD-00600,2024-05-14,APAC,Retail,Enterprise,90,18,227.38,10,won,3683.56
+ORD-00518,2024-05-14,North America,Partner,Starter,132,28,385.32,0,lost,10788.96
+ORD-01550,2024-05-15,APAC,Partner,Business,42,20,228.84,5,lost,4347.96
+ORD-01776,2024-05-16,LATAM,Online,Starter,309,36,235.07,20,won,6770.02
+ORD-00776,2024-05-16,Europe,Online,Starter,254,37,268.3,20,won,7941.68
+ORD-00761,2024-05-16,Europe,Online,Enterprise,190,1,320.08,0,lost,320.08
+ORD-00941,2024-05-16,Europe,Partner,Starter,179,34,353.12,20,won,9604.86
+ORD-01823,2024-05-16,APAC,Online,Starter,250,22,169.51,0,lost,3729.22
+ORD-02254,2024-05-16,North America,Partner,Team,80,26,257.1,5,won,6350.37
+ORD-01919,2024-05-17,APAC,Partner,Team,39,6,230.18,20,won,1104.86
+ORD-02249,2024-05-17,Europe,Online,Enterprise,294,18,,10,lost,3905.01
+ORD-02336,2024-05-17,North America,Retail,Starter,36,11,285.62,0,won,3141.82
+ORD-00361,2024-05-17,Europe,Partner,Team,300,11,257.01,5,won,2685.75
+ORD-01446,2024-05-18,North America,Partner,Starter,53,38,224.55,0,won,8532.9
+ORD-01119,2024-05-19,Europe,Online,Team,159,23,251.66,0,won,5788.18
+ORD-01852,2024-05-19,Europe,Online,Enterprise,277,35,250.06,10,won,7876.89
+ORD-00827,2024-05-19,North America,Retail,Team,214,16,246.96,0,won,3951.36
+ORD-01859,2024-05-19,LATAM,Online,Business,82,6,323.22,0,lost,1939.32
+ORD-02094,2024-05-19,North America,Retail,Team,188,11,175.62,5,lost,1835.23
+ORD-00306,2024-05-19,North America,Partner,Business,79,39,244.4,0,lost,9531.6
+ORD-00342,2024-05-20,APAC,Partner,Starter,236,23,253.13,0,won,5821.99
+ORD-00147,2024-05-20,Europe,Retail,Business,249,25,208.05,0,lost,5201.25
+ORD-01659,2024-05-20,North America,Retail,Team,201,10,209.58,10,won,1886.22
+ORD-01684,2024-05-20,North America,Online,Business,61,27,297.97,0,lost,8045.19
+ORD-01573,2024-05-20,APAC,Online,Starter,264,29,291.16,10,won,7599.28
+ORD-01076,2024-05-21,North America,Online,Enterprise,157,28,300.2,10,lost,7565.04
+ORD-00582,2024-05-21,North America,Online,Team,172,18,215.25,10,won,3487.05
+ORD-01405,2024-05-21,APAC,Partner,Enterprise,212,3,279.78,0,won,839.34
+ORD-01112,2024-05-21,North America,Retail,Team,21,8,179.03,20,won,1145.79
+ORD-00118,2024-05-22,Europe,Retail,Starter,142,2,310.41,0,lost,620.82
+ORD-00243,2024-05-23,Europe,Online,Team,5,21,295.91,10,won,5592.7
+ORD-00488,2024-05-23,LATAM,Retail,Starter,106,30,307.47,0,won,9224.1
+ORD-00772,2024-05-23,North America,Online,Starter,209,35,237.2,10,lost,7471.8
+ORD-00467,2024-05-23,APAC,Partner,Team,249,27,290.41,0,won,7841.07
+ORD-02310,2024-05-23,North America,Online,Team,260,26,284.7,0,won,7402.2
+ORD-00050,2024-05-23,North America,Retail,Business,176,38,268.56,0,won,10205.28
+ORD-00916,2024-05-24,APAC,Retail,Business,229,13,260.7,10,won,3050.19
+ORD-00219,2024-05-24,APAC,Online,Starter,283,31,286.49,0,won,8881.19
+ORD-01159,2024-05-24,Europe,Retail,Business,200,29,125.82,10,won,3283.9
+ORD-00165,2024-05-24,Europe,Online,Starter,81,23,305.85,0,lost,7034.55
+ORD-01432,2024-05-25,APAC,Retail,Starter,26,37,252.53,5,won,8876.43
+ORD-02397,2024-05-25,APAC,Retail,Starter,235,7,,0,won,980.28
+ORD-01621,2024-05-25,APAC,Online,Business,66,19,238.56,5,won,4306.01
+ORD-00025,2024-05-25,Europe,Partner,Business,246,35,135.87,0,won,4755.45
+ORD-00693,2024-05-26,North America,Online,Team,26,38,320.1,10,won,10947.42
+ORD-00241,2024-05-26,North America,Online,Enterprise,46,12,375.72,5,lost,4283.21
+ORD-02050,2024-05-26,APAC,Online,Business,91,2,,5,lost,611.29
+ORD-01682,2024-05-26,Europe,Online,Business,56,36,327.12,0,won,11776.32
+ORD-01786,2024-05-26,North America,Partner,Team,27,12,201.19,20,won,1931.42
+ORD-00092,2024-05-26,Europe,Online,Starter,20,11,334.26,0,won,3676.86
+ORD-00431,2024-05-27,North America,Online,Team,35,25,124.66,5,lost,2960.68
+ORD-01813,2024-05-27,North America,Partner,Team,131,35,242.37,5,won,8058.8
+ORD-00730,2024-05-27,North America,Online,Starter,9,11,375.22,10,lost,3714.68
+ORD-01779,2024-05-27,APAC,Online,Business,239,31,292.92,10,won,8172.47
+ORD-02377,2024-05-27,North America,Retail,Business,154,21,279.21,20,won,4690.73
+ORD-00775,2024-05-27,North America,Retail,Enterprise,103,22,158.24,0,won,3481.28
+ORD-01893,2024-05-28,APAC,Partner,Starter,160,10,276.11,0,won,2761.1
+ORD-00771,2024-05-28,LATAM,Online,Business,101,24,205.77,0,lost,4938.48
+ORD-01943,2024-05-29,Europe,Partner,Team,180,29,226.07,0,won,6556.03
+ORD-02134,2024-05-29,Europe,Online,Business,224,2,163.44,10,won,294.19
+ORD-01166,2024-05-29,North America,Partner,Team,169,30,151.62,0,won,4548.6
+ORD-00805,2024-05-29,APAC,Online,Starter,259,39,222.34,5,won,8237.7
+ORD-00663,2024-05-29,North America,Partner,Enterprise,30,12,202.05,0,lost,2424.6
+ORD-00159,2024-05-30,North America,Online,Team,51,6,297.01,0,lost,1782.06
+ORD-00391,2024-05-30,APAC,Online,Starter,213,4,219.54,0,won,878.16
+ORD-01921,2024-05-30,APAC,Retail,Starter,42,1,252.57,5,won,239.94
+ORD-00460,2024-05-31,Europe,Partner,Enterprise,82,9,146.59,10,won,1187.38
+ORD-01871,2024-06-01,Europe,Partner,Starter,56,27,,0,won,9542.07
+ORD-00956,2024-06-01,Europe,Online,Starter,36,4,,0,won,882.12
+ORD-02085,2024-06-01,LATAM,Online,Team,104,23,229.48,10,won,4750.24
+ORD-02373,2024-06-01,APAC,Partner,Starter,277,10,232.66,0,won,2326.6
+ORD-02225,2024-06-01,Europe,Retail,Team,315,2,197.23,20,won,315.57
+ORD-01616,2024-06-02,APAC,Online,Enterprise,271,10,278.54,10,won,2506.86
+ORD-01601,2024-06-02,Europe,Retail,Enterprise,207,17,250.49,0,won,4258.33
+ORD-00688,2024-06-02,Europe,Online,Starter,198,9,264.56,0,won,2381.04
+ORD-01542,2024-06-02,North America,Online,Team,113,34,297.67,5,lost,9614.74
+ORD-00223,2024-06-02,Europe,Online,Team,161,5,220.93,0,won,1104.65
+ORD-01674,2024-06-03,LATAM,Online,Team,7,19,276.44,20,lost,4201.89
+ORD-02299,2024-06-03,North America,Retail,Starter,123,16,206.94,0,won,3311.04
+ORD-01876,2024-06-03,North America,Online,Team,95,24,182.16,0,won,4371.84
+ORD-02388,2024-06-03,LATAM,Partner,Business,160,12,238.55,5,won,2719.47
+ORD-00360,2024-06-03,North America,Online,Team,130,19,239.38,20,won,3638.58
+ORD-02226,2024-06-04,North America,Retail,Team,84,22,,20,won,3995.73
+ORD-00834,2024-06-04,North America,Online,Starter,234,22,297.36,5,lost,6214.82
+ORD-01370,2024-06-04,APAC,Online,Team,179,16,263.84,0,won,4221.44
+ORD-02022,2024-06-04,Europe,Online,Team,121,36,271.84,0,won,9786.24
+ORD-00001,2024-06-04,APAC,Online,Starter,23,37,232.27,0,lost,8593.99
+ORD-00605,2024-06-04,North America,Online,Team,20,28,250.53,10,won,6313.36
+ORD-01778,2024-06-05,North America,Online,Starter,247,28,131.5,20,won,2945.6
+ORD-01935,2024-06-05,APAC,Online,Business,7,6,220.71,0,lost,1324.26
+ORD-00413,2024-06-05,Europe,Retail,Starter,63,1,240.56,10,won,216.5
+ORD-00529,2024-06-05,North America,Partner,Business,305,11,367.53,5,won,3840.69
+ORD-02125,2024-06-05,North America,Online,Business,102,32,298.89,5,won,9086.26
+ORD-01297,2024-06-05,APAC,Online,Starter,116,24,197.91,0,won,4749.84
+ORD-01099,2024-06-05,North America,Retail,Team,51,29,261.41,0,lost,7580.89
+ORD-01111,2024-06-05,Europe,Online,Starter,296,36,210.22,20,lost,6054.34
+ORD-02323,2024-06-06,North America,Online,Starter,235,11,169.55,10,won,1678.55
+ORD-01617,2024-06-06,Europe,Online,Business,276,15,192.14,0,won,2882.1
+ORD-00614,2024-06-06,North America,Online,Starter,212,10,215.89,0,won,2158.9
+ORD-00017,2024-06-06,APAC,Partner,Business,270,9,201.38,5,won,1721.8
+ORD-00762,2024-06-06,North America,Online,Team,299,38,221.79,0,lost,8428.02
+ORD-02214,2024-06-06,North America,Online,Team,319,22,209.1,0,lost,4600.2
+ORD-00804,2024-06-07,APAC,Retail,Team,13,19,198.15,0,won,3764.85
+ORD-01841,2024-06-07,APAC,Online,Business,291,3,305.06,5,won,869.42
+ORD-01440,2024-06-07,North America,Online,Team,9,28,247.46,10,won,6235.99
+ORD-00777,2024-06-08,Europe,Retail,Team,98,28,229.93,0,lost,6438.04
+ORD-00115,2024-06-08,APAC,Partner,Starter,149,17,263.74,0,lost,4483.58
+ORD-00752,2024-06-08,Europe,Retail,Team,72,21,362.7,5,won,7235.86
+ORD-02342,2024-06-08,APAC,Online,Enterprise,72,30,184.69,0,won,5540.7
+ORD-00139,2024-06-08,APAC,Retail,Starter,279,19,269.14,0,won,5113.66
+ORD-00236,2024-06-09,Europe,Partner,Team,176,34,238.69,0,lost,8115.46
+ORD-02193,2024-06-09,APAC,Retail,Business,46,24,280.32,0,won,6727.68
+ORD-01431,2024-06-09,North America,Online,Business,282,11,218.06,5,won,2278.73
+ORD-00222,2024-06-10,Europe,Partner,Starter,19,6,280.45,10,won,1514.43
+ORD-00355,2024-06-10,North America,Retail,Team,192,4,165.18,10,won,594.65
+ORD-00894,2024-06-10,North America,Online,Team,216,2,301.36,10,won,542.45
+ORD-00149,2024-06-10,LATAM,Online,Team,70,22,,10,won,3708.74
+ORD-01883,2024-06-10,APAC,Online,Team,252,6,377.14,20,won,1810.27
+ORD-01384,2024-06-10,LATAM,Online,Starter,288,23,283.92,5,won,6203.65
+ORD-01705,2024-06-10,APAC,Online,Business,243,36,,0,lost,6123.24
+ORD-01588,2024-06-11,North America,Online,Team,176,18,321.49,0,won,5786.82
+ORD-01074,2024-06-11,North America,Partner,Starter,152,33,239.75,0,won,7911.75
+ORD-01030,2024-06-11,Europe,Online,Team,295,2,362.44,0,won,724.88
+ORD-00470,2024-06-11,North America,Online,Team,296,8,258.43,0,lost,2067.44
+ORD-02247,2024-06-11,APAC,Online,Team,19,5,236.34,0,won,1181.7
+ORD-02092,2024-06-11,Europe,Partner,Starter,289,35,163.78,0,lost,5732.3
+ORD-01585,2024-06-11,North America,Retail,Enterprise,37,2,59.9,0,won,119.8
+ORD-02013,2024-06-11,APAC,Partner,Starter,9,13,310.89,10,won,3637.41
+ORD-01143,2024-06-12,North America,Retail,Business,137,39,280.09,20,won,8738.81
+ORD-00081,2024-06-12,LATAM,Online,Starter,108,29,348.9,10,won,9106.29
+ORD-01706,2024-06-13,APAC,Online,Starter,116,31,192.42,5,won,5666.77
+ORD-01523,2024-06-13,Europe,Partner,Starter,193,16,140.86,0,lost,2253.76
+ORD-01180,2024-06-13,Europe,Online,Business,86,13,244.81,20,lost,2546.02
+ORD-01363,2024-06-13,LATAM,Retail,Starter,213,36,242.55,0,won,8731.8
+ORD-01781,2024-06-13,North America,Retail,Business,200,30,250.27,10,won,6757.29
+ORD-02386,2024-06-14,Europe,Online,Business,223,8,197.79,5,lost,1503.2
+ORD-00279,2024-06-14,APAC,Retail,Starter,180,26,232.54,0,lost,6046.04
+ORD-00585,2024-06-14,APAC,Partner,Team,274,15,178.82,5,won,2548.18
+ORD-01967,2024-06-14,North America,Online,Team,37,15,216.9,20,won,2602.8
+ORD-00673,2024-06-14,APAC,Online,Starter,215,26,260.21,20,won,5412.37
+ORD-02321,2024-06-14,Europe,Online,Starter,122,1,266.13,0,won,266.13
+ORD-02272,2024-06-14,Europe,Online,Enterprise,4,23,235.97,0,lost,5427.31
+ORD-00103,2024-06-15,Europe,Online,Starter,295,16,265.96,5,lost,4042.59
+ORD-00862,2024-06-15,APAC,Retail,Team,7,1,128.17,20,won,102.54
+ORD-01655,2024-06-15,North America,Retail,Business,126,8,186.58,0,won,1492.64
+ORD-01989,2024-06-15,LATAM,Online,Business,29,39,308.59,0,won,12035.01
+ORD-01416,2024-06-15,North America,Online,Business,146,32,325.79,20,won,8340.22
+ORD-01255,2024-06-16,North America,Online,Starter,54,1,238.73,0,won,238.73
+ORD-00753,2024-06-16,North America,Online,Team,211,12,337.02,0,won,4044.24
+ORD-01153,2024-06-17,LATAM,Partner,Starter,213,22,273.62,10,won,5417.68
+ORD-01490,2024-06-17,North America,Online,Business,115,16,275.61,0,won,4409.76
+ORD-01751,2024-06-17,LATAM,Online,Starter,28,32,311.79,5,lost,9478.42
+ORD-01462,2024-06-17,North America,Retail,Team,28,7,309.34,0,won,2165.38
+ORD-02113,2024-06-17,APAC,Online,Team,126,16,240.85,5,lost,3660.92
+ORD-01948,2024-06-17,North America,Online,Business,284,30,279.22,5,won,7957.77
+ORD-01774,2024-06-17,North America,Retail,Starter,207,35,245.43,10,won,7731.05
+ORD-00310,2024-06-18,Europe,Online,Business,78,5,256.45,0,won,1282.25
+ORD-00028,2024-06-18,Europe,Online,Business,221,15,195.04,10,lost,2633.04
+ORD-00435,2024-06-18,North America,Partner,Team,182,27,192.42,10,won,4675.81
+ORD-01491,2024-06-18,North America,Online,Business,103,7,252.01,10,lost,1587.66
+ORD-00143,2024-06-18,APAC,Online,Starter,208,35,205.25,0,won,7183.75
+ORD-01017,2024-06-19,Europe,Online,Starter,40,6,304.02,0,won,1824.12
+ORD-02121,2024-06-19,Europe,Retail,Business,87,34,305.21,0,lost,10377.14
+ORD-00120,2024-06-19,North America,Retail,Starter,262,38,215.54,0,won,8190.52
+ORD-00011,2024-06-19,North America,Partner,Starter,31,27,202.46,0,won,185000.0
+ORD-01041,2024-06-19,North America,Retail,Team,99,21,276.77,10,won,5230.95
+ORD-00161,2024-06-20,LATAM,Online,Starter,302,4,320.52,5,won,1217.98
+ORD-01362,2024-06-20,APAC,Partner,Team,19,19,247.87,5,won,4474.05
+ORD-01126,2024-06-20,APAC,Online,Business,80,17,299.07,10,lost,4575.77
+ORD-02290,2024-06-20,APAC,Online,Starter,251,37,222.01,10,won,7392.93
+ORD-02065,2024-06-20,Europe,Online,Starter,218,19,220.52,10,won,3770.89
+ORD-01530,2024-06-21,Europe,Retail,Team,249,26,101.55,0,won,2640.3
+ORD-01623,2024-06-21,Europe,Retail,Enterprise,42,26,357.89,0,won,9305.14
+ORD-00714,2024-06-21,Europe,Online,Starter,66,1,210.07,0,won,210.07
+ORD-01162,2024-06-21,LATAM,Partner,Business,103,21,214.69,5,lost,4283.07
+ORD-02312,2024-06-22,North America,Online,Enterprise,149,27,170.8,0,lost,4611.6
+ORD-00027,2024-06-22,LATAM,Retail,Business,201,14,222.52,10,won,2803.75
+ORD-00271,2024-06-22,North America,Partner,Team,47,8,185.69,10,won,1336.97
+ORD-00026,2024-06-22,Europe,Online,Enterprise,36,17,267.15,5,won,4314.47
+ORD-00250,2024-06-22,North America,Partner,Starter,83,16,292.4,10,lost,4210.56
+ORD-01689,2024-06-22,APAC,Online,Starter,58,35,243.03,0,won,8506.05
+ORD-01245,2024-06-22,APAC,Partner,Business,229,27,193.42,10,won,4700.11
+ORD-02032,2024-06-23,North America,Online,Team,134,22,156.18,0,won,3435.96
+ORD-00411,2024-06-23,Europe,Partner,Starter,171,13,228.54,20,won,2376.82
+ORD-02260,2024-06-23,APAC,Online,Team,157,2,323.18,0,won,646.36
+ORD-00070,2024-06-23,Europe,Online,Starter,174,5,224.44,5,won,1066.09
+ORD-02017,2024-06-23,LATAM,Retail,Team,52,6,181.54,10,won,980.32
+ORD-01744,2024-06-23,Europe,Partner,Business,307,33,336.47,0,won,11103.51
+ORD-00473,2024-06-23,Europe,Retail,Team,292,3,326.43,20,won,783.43
+ORD-01741,2024-06-23,Europe,Retail,Business,240,32,365.12,0,won,11683.84
+ORD-00803,2024-06-23,Europe,Online,Business,309,12,116.97,10,lost,1263.28
+ORD-00412,2024-06-24,LATAM,Retail,Business,142,8,173.58,0,won,1388.64
+ORD-01219,2024-06-24,North America,Partner,Starter,293,32,290.7,10,lost,8372.16
+ORD-01003,2024-06-24,Europe,Retail,Business,279,14,319.31,0,won,4470.34
+ORD-00785,2024-06-24,North America,Retail,Team,181,23,193.56,0,won,4451.88
+ORD-01562,2024-06-24,Europe,Retail,Enterprise,305,37,221.54,5,lost,7787.13
+ORD-00656,2024-06-25,Europe,Online,Team,122,38,384.26,10,won,13141.69
+ORD-00192,2024-06-25,North America,Online,Business,126,23,401.52,10,won,8311.46
+ORD-01133,2024-06-25,Europe,Partner,Starter,267,23,233.14,10,won,4826.0
+ORD-01090,2024-06-25,North America,Retail,Team,144,4,339.08,5,lost,1288.5
+ORD-01049,2024-06-25,Europe,Retail,Business,275,3,283.98,5,won,809.34
+ORD-01877,2024-06-25,Europe,Retail,Starter,267,7,252.14,10,won,1588.48
+ORD-00477,2024-06-26,Europe,Retail,Team,305,34,363.95,0,won,12374.3
+ORD-00315,2024-06-26,APAC,Online,Team,292,27,247.3,10,lost,6009.39
+ORD-01148,2024-06-26,North America,Online,Starter,219,23,119.61,0,won,2751.03
+ORD-01465,2024-06-26,North America,Online,Starter,260,2,249.02,0,won,498.04
+ORD-02248,2024-06-26,Europe,Retail,Starter,179,20,227.5,0,won,4550.0
+ORD-01987,2024-06-27,North America,Online,Business,287,3,277.29,0,lost,831.87
+ORD-02234,2024-06-27,North America,Retail,Team,215,16,180.27,0,won,2884.32
+ORD-01487,2024-06-27,APAC,Retail,Business,39,14,198.73,5,won,2643.11
+ORD-00764,2024-06-27,North America,Online,Starter,21,19,232.96,0,won,4426.24
+ORD-00715,2024-06-27,North America,Online,Team,33,16,288.03,10,won,4147.63
+ORD-01867,2024-06-27,APAC,Retail,Enterprise,181,31,78.87,0,won,2444.97
+ORD-02399,2024-06-27,APAC,Online,Starter,147,18,184.6,0,won,3322.8
+ORD-00632,2024-06-27,North America,Online,Starter,63,7,327.59,5,won,2178.47
+ORD-01559,2024-06-28,North America,Online,Starter,170,20,283.94,10,won,5110.92
+ORD-01347,2024-06-28,North America,Online,Enterprise,302,2,241.01,0,won,482.02
+ORD-02244,2024-06-28,APAC,Online,Starter,310,35,192.3,10,won,6057.45
+ORD-00341,2024-06-28,North America,Retail,Starter,218,27,196.03,0,lost,5292.81
+ORD-01567,2024-06-28,APAC,Partner,Starter,224,10,238.07,0,won,2380.7
+ORD-01145,2024-06-29,Europe,Online,Business,200,38,283.73,0,won,10781.74
+ORD-00724,2024-06-30,North America,Online,Starter,44,12,172.72,0,lost,2072.64
+ORD-01761,2024-06-30,North America,Retail,Team,48,28,186.1,20,won,4168.64
+ORD-01763,2024-06-30,Europe,Online,Business,312,32,167.21,0,won,5350.72
+ORD-01916,2024-06-30,APAC,Online,Team,250,38,196.7,5,lost,7100.87
+ORD-01222,2024-07-01,North America,Online,Enterprise,129,15,286.58,5,won,4083.76
+ORD-02060,2024-07-01,North America,Online,Team,15,28,159.83,0,lost,4475.24
+ORD-01860,2024-07-02,North America,Partner,Team,214,25,279.91,0,won,6997.75
+ORD-01271,2024-07-02,LATAM,Retail,Starter,141,5,234.02,0,lost,1170.1
+ORD-01930,2024-07-02,APAC,Retail,Team,20,29,195.06,0,lost,5656.74
+ORD-02107,2024-07-02,LATAM,Retail,Starter,247,39,218.99,0,won,8540.61
+ORD-02295,2024-07-02,North America,Retail,Business,9,35,209.34,5,won,6960.56
+ORD-00660,2024-07-02,North America,Retail,Business,5,15,172.15,0,won,2582.25
+ORD-00097,2024-07-02,North America,Online,Business,128,30,332.08,20,won,7969.92
+ORD-01584,2024-07-02,North America,Retail,Business,240,18,303.79,0,won,5468.22
+ORD-01301,2024-07-03,APAC,Partner,Team,180,2,,0,lost,441.08
+ORD-02287,2024-07-03,North America,Online,Business,294,7,258.03,10,won,1625.59
+ORD-02000,2024-07-03,North America,Online,Business,190,32,226.51,10,won,6523.49
+ORD-00016,2024-07-03,LATAM,Partner,Enterprise,189,17,263.75,0,won,4483.75
+ORD-01698,2024-07-04,North America,Online,Team,68,15,146.99,5,won,2094.61
+ORD-02130,2024-07-04,Europe,Online,Starter,65,37,283.32,10,won,9434.56
+ORD-01824,2024-07-04,APAC,Partner,Starter,200,6,240.09,20,won,1152.43
+ORD-00178,2024-07-04,APAC,Online,Starter,17,30,128.65,0,won,3859.5
+ORD-02039,2024-07-04,APAC,Online,Starter,194,32,237.21,5,lost,7211.18
+ORD-00885,2024-07-04,North America,Online,Enterprise,287,24,256.37,5,won,5845.24
+ORD-02076,2024-07-05,Europe,Retail,Enterprise,262,36,265.68,10,won,8608.03
+ORD-01299,2024-07-05,APAC,Online,Starter,242,28,291.88,0,won,8172.64
+ORD-01663,2024-07-06,Europe,Online,Team,107,10,341.09,0,won,3410.9
+ORD-00386,2024-07-06,APAC,Online,Starter,169,31,281.32,0,won,8720.92
+ORD-00490,2024-07-07,North America,Partner,Business,196,12,257.13,0,lost,3085.56
+ORD-02146,2024-07-07,APAC,Partner,Business,1,9,215.18,5,won,1839.79
+ORD-01274,2024-07-07,APAC,Retail,Team,278,27,239.67,10,won,5823.98
+ORD-01406,2024-07-07,Europe,Retail,Business,282,17,243.17,0,lost,4133.89
+ORD-01986,2024-07-07,North America,Partner,Team,181,4,244.42,0,won,977.68
+ORD-00849,2024-07-07,North America,Partner,Business,199,10,167.84,0,lost,1678.4
+ORD-01080,2024-07-07,LATAM,Online,Enterprise,81,38,173.08,10,lost,5919.34
+ORD-01714,2024-07-08,Europe,Retail,Starter,246,21,364.78,5,lost,7277.36
+ORD-02221,2024-07-08,North America,Online,Business,187,8,231.32,10,won,1665.5
+ORD-02066,2024-07-08,Europe,Retail,Business,76,20,,0,lost,6596.8
+ORD-00453,2024-07-08,Europe,Online,Business,96,37,313.27,0,won,11590.99
+ORD-01718,2024-07-09,North America,Retail,Team,105,7,289.75,0,won,2028.25
+ORD-01685,2024-07-09,Europe,Retail,Business,161,18,224.58,0,lost,4042.44
+ORD-00896,2024-07-09,Europe,Retail,Starter,5,15,257.53,0,lost,3862.95
+ORD-01318,2024-07-09,APAC,Online,Business,227,21,198.72,0,won,4173.12
+ORD-00545,2024-07-10,North America,Partner,Team,44,8,,0,won,2262.4
+ORD-01815,2024-07-10,LATAM,Retail,Enterprise,4,23,288.5,10,lost,5971.95
+ORD-02268,2024-07-10,Europe,Online,Starter,163,13,303.18,5,won,3744.27
+ORD-01675,2024-07-10,North America,Retail,Starter,318,6,255.18,10,won,1377.97
+ORD-01720,2024-07-10,North America,Retail,Team,241,22,237.9,0,won,5233.8
+ORD-02356,2024-07-11,North America,Partner,Team,122,13,227.95,0,won,2963.35
+ORD-01870,2024-07-11,APAC,Online,Enterprise,62,30,292.32,0,won,8769.6
+ORD-01257,2024-07-11,Europe,Partner,Business,115,13,316.79,0,lost,4118.27
+ORD-01629,2024-07-11,North America,Online,Business,64,2,248.21,10,lost,446.78
+ORD-00878,2024-07-12,North America,Partner,Starter,303,24,278.23,5,lost,6343.64
+ORD-01250,2024-07-12,APAC,Retail,Starter,174,37,337.86,10,lost,11250.74
+ORD-00293,2024-07-12,Europe,Online,Starter,314,24,277.58,10,won,5995.73
+ORD-01195,2024-07-12,Europe,Online,Business,141,16,197.76,10,won,2847.74
+ORD-01123,2024-07-12,Europe,Online,Business,256,26,,0,won,4053.92
+ORD-01791,2024-07-13,Europe,Retail,Business,124,38,261.97,0,won,9954.86
+ORD-01687,2024-07-13,North America,Retail,Team,235,4,225.6,0,won,902.4
+ORD-01081,2024-07-13,North America,Online,Team,87,23,83.79,0,lost,1927.17
+ORD-00796,2024-07-13,Europe,Online,Enterprise,315,2,313.17,0,won,626.34
+ORD-01201,2024-07-13,APAC,Online,Starter,115,16,226.04,10,won,3254.98
+ORD-01766,2024-07-14,Europe,Online,Team,132,10,226.87,0,lost,2268.7
+ORD-00353,2024-07-14,Europe,Partner,Starter,1,17,192.46,0,lost,3271.82
+ORD-02240,2024-07-14,Europe,Retail,Enterprise,32,27,381.23,5,lost,9778.55
+ORD-00621,2024-07-14,North America,Partner,Team,147,30,372.16,10,won,10048.32
+ORD-00899,2024-07-15,North America,Partner,Starter,304,2,198.54,0,won,397.08
+ORD-00594,2024-07-15,North America,Partner,Business,116,33,135.72,20,won,3583.01
+ORD-02059,2024-07-15,Europe,Retail,Team,319,9,237.43,10,won,1923.18
+ORD-02347,2024-07-15,Europe,Online,Team,198,15,246.03,0,won,3690.45
+ORD-00711,2024-07-15,North America,Online,Business,184,9,167.58,0,lost,1508.22
+ORD-02062,2024-07-15,North America,Online,Business,69,5,309.47,0,won,1547.35
+ORD-00478,2024-07-16,Europe,Retail,Business,319,20,293.17,10,lost,5277.06
+ORD-01885,2024-07-16,Europe,Online,Team,202,28,247.34,10,lost,6232.97
+ORD-01194,2024-07-17,North America,Online,Team,265,21,310.44,0,lost,6519.24
+ORD-00696,2024-07-17,LATAM,Online,Starter,80,25,293.79,0,won,7344.75
+ORD-00294,2024-07-17,APAC,Retail,Team,33,27,273.13,20,won,5899.61
+ORD-01426,2024-07-18,North America,Online,Starter,169,9,298.55,10,won,2418.26
+ORD-02349,2024-07-18,Europe,Partner,Enterprise,92,16,227.28,0,lost,3636.48
+ORD-00922,2024-07-18,Europe,Online,Business,193,6,274.05,5,won,1562.08
+ORD-01322,2024-07-18,North America,Partner,Team,23,22,280.3,10,won,5549.94
+ORD-02038,2024-07-18,Europe,Online,Starter,203,36,248.16,0,lost,8933.76
+ORD-01548,2024-07-18,North America,Retail,Starter,6,29,183.8,0,won,5330.2
+ORD-01165,2024-07-19,APAC,Retail,Team,261,16,156.23,0,won,2499.68
+ORD-01504,2024-07-19,North America,Partner,Team,96,2,182.6,0,won,365.2
+ORD-01320,2024-07-19,APAC,Retail,Team,266,36,243.43,20,won,7010.78
+ORD-00264,2024-07-20,North America,Retail,Team,221,36,213.1,5,won,7288.02
+ORD-02204,2024-07-20,North America,Retail,Business,287,25,292.12,5,won,6937.85
+ORD-00676,2024-07-20,North America,Online,Team,206,25,271.91,0,lost,6797.75
+ORD-00169,2024-07-20,LATAM,Online,Team,139,10,218.17,10,won,1963.53
+ORD-02109,2024-07-20,Europe,Online,Starter,318,11,171.25,0,won,1883.75
+ORD-02126,2024-07-20,North America,Partner,Team,220,29,192.28,10,won,5018.51
+ORD-01373,2024-07-20,North America,Online,Business,94,4,286.23,0,won,1144.92
+ORD-02138,2024-07-20,Europe,Online,Enterprise,66,38,200.81,10,won,6867.7
+ORD-02046,2024-07-21,North America,Retail,Starter,29,31,301.79,10,won,8419.94
+ORD-00364,2024-07-22,Europe,Online,Team,251,33,195.55,5,lost,6130.49
+ORD-00462,2024-07-22,Europe,Retail,Team,184,13,234.36,10,won,2742.01
+ORD-01939,2024-07-22,Europe,Online,Team,279,37,356.6,20,won,10555.36
+ORD-01549,2024-07-22,North America,Retail,Team,95,1,178.12,10,won,160.31
+ORD-01961,2024-07-22,Europe,Online,Enterprise,270,33,287.08,20,won,7578.91
+ORD-01754,2024-07-23,North America,Partner,Team,299,29,222.72,5,won,6135.94
+ORD-00906,2024-07-24,North America,Retail,Team,85,11,216.63,10,won,2144.64
+ORD-02327,2024-07-24,North America,Retail,Starter,269,24,246.46,5,won,5619.29
+ORD-00244,2024-07-24,North America,Retail,Starter,101,5,156.03,0,won,780.15
+ORD-00581,2024-07-24,APAC,Retail,Starter,110,18,182.21,5,lost,3115.79
+ORD-01666,2024-07-24,North America,Partner,Starter,257,18,225.12,0,won,4052.16
+ORD-00767,2024-07-24,Europe,Partner,Starter,10,3,235.42,10,won,635.63
+ORD-00377,2024-07-24,Europe,Online,Enterprise,285,8,287.65,20,lost,1840.96
+ORD-01970,2024-07-25,Europe,Online,Business,112,6,317.58,10,won,1714.93
+ORD-01142,2024-07-25,Europe,Retail,Starter,82,14,238.66,10,won,3007.12
+ORD-01981,2024-07-25,Europe,Retail,Team,165,19,240.17,5,won,4335.07
+ORD-02332,2024-07-25,LATAM,Online,Starter,26,1,237.98,0,won,237.98
+ORD-00937,2024-07-25,Europe,Partner,Business,47,23,256.27,20,lost,4715.37
+ORD-01599,2024-07-25,APAC,Online,Team,280,27,163.58,0,lost,4416.66
+ORD-01151,2024-07-25,Europe,Online,Starter,177,3,265.88,0,won,797.64
+ORD-00201,2024-07-26,Europe,Partner,Enterprise,111,9,318.46,0,won,2866.14
+ORD-02063,2024-07-26,North America,Online,Starter,24,21,335.2,10,won,6335.28
+ORD-00859,2024-07-27,North America,Online,Starter,169,17,286.69,5,won,4630.04
+ORD-01607,2024-07-27,Europe,Retail,Business,245,15,255.68,0,lost,3835.2
+ORD-01211,2024-07-27,North America,Retail,Starter,242,4,236.39,5,lost,898.28
+ORD-00586,2024-07-27,LATAM,Retail,Starter,110,27,232.57,0,won,6279.39
+ORD-01137,2024-07-28,North America,Online,Enterprise,198,9,415.75,0,lost,3741.75
+ORD-01634,2024-07-28,APAC,Online,Business,290,24,145.42,0,lost,3490.08
+ORD-01415,2024-07-28,Europe,Retail,Business,78,34,238.01,10,won,7283.11
+ORD-02387,2024-07-28,APAC,Online,Team,160,27,,0,won,7302.15
+ORD-02090,2024-07-28,Europe,Retail,Starter,250,28,257.16,5,won,6840.46
+ORD-00260,2024-07-28,North America,Partner,Enterprise,253,22,208.37,0,lost,4584.14
+ORD-01489,2024-07-29,Europe,Retail,Business,23,35,297.28,0,lost,10404.8
+ORD-00765,2024-07-29,APAC,Online,Team,78,35,136.23,0,won,4768.05
+ORD-01772,2024-07-29,LATAM,Retail,Team,152,1,322.9,0,won,322.9
+ORD-00238,2024-07-29,Europe,Online,Business,69,34,229.1,0,won,7789.4
+ORD-01604,2024-07-29,North America,Online,Business,35,23,219.73,0,lost,5053.79
+ORD-01253,2024-07-29,North America,Retail,Starter,20,3,144.71,0,won,434.13
+ORD-01118,2024-07-29,LATAM,Online,Business,48,13,209.36,0,won,2721.68
+ORD-00758,2024-07-29,North America,Online,Starter,41,30,173.72,0,won,5211.6
+ORD-01146,2024-07-30,APAC,Online,Business,300,39,328.66,0,won,12817.74
+ORD-01606,2024-07-30,North America,Retail,Business,26,10,226.06,0,lost,2260.6
+ORD-01339,2024-07-30,Europe,Online,Starter,133,28,157.63,10,lost,3972.28
+ORD-00256,2024-07-30,North America,Online,Team,91,13,262.07,0,lost,3406.91
+ORD-02300,2024-07-30,LATAM,Online,Business,180,31,188.11,0,lost,5831.41
+ORD-00958,2024-07-30,Europe,Online,Starter,171,4,263.33,0,won,1053.32
+ORD-00929,2024-07-31,APAC,Retail,Starter,313,25,287.96,20,lost,5759.2
+ORD-00365,2024-07-31,Europe,Online,Business,57,31,262.99,0,won,8152.69
+ORD-02189,2024-07-31,APAC,Online,Team,8,9,234.72,0,won,2112.48
+ORD-02139,2024-08-01,Europe,Retail,Starter,92,37,303.06,0,lost,11213.22
+ORD-01311,2024-08-01,Europe,Online,Team,201,22,303.84,5,won,6350.26
+ORD-01323,2024-08-01,Europe,Partner,Business,215,27,225.87,5,won,5793.57
+ORD-02394,2024-08-01,Europe,Online,Business,318,2,297.51,10,won,535.52
+ORD-01533,2024-08-01,Europe,Retail,Team,182,31,299.3,0,won,9278.3
+ORD-02023,2024-08-01,North America,Online,Starter,123,19,312.6,10,won,5345.46
+ORD-02308,2024-08-01,North America,Retail,Starter,251,7,245.84,10,won,1548.79
+ORD-00340,2024-08-02,North America,Retail,Starter,136,9,222.1,0,won,1998.9
+ORD-00073,2024-08-02,Europe,Partner,Team,288,16,260.25,0,lost,4164.0
+ORD-01908,2024-08-02,LATAM,Retail,Team,199,26,243.07,0,won,6319.82
+ORD-02123,2024-08-02,North America,Online,Starter,291,36,191.98,0,won,6911.28
+ORD-00642,2024-08-03,Europe,Retail,Starter,230,25,132.61,0,lost,3315.25
+ORD-00420,2024-08-03,Europe,Online,Team,271,38,197.55,10,won,6756.21
+ORD-02350,2024-08-03,LATAM,Partner,Starter,13,38,225.54,10,lost,7713.47
+ORD-01797,2024-08-04,LATAM,Partner,Team,109,31,227.68,10,lost,6352.27
+ORD-01281,2024-08-04,North America,Retail,Business,128,27,187.57,5,won,4811.17
+ORD-01429,2024-08-05,North America,Partner,Starter,251,6,279.74,10,won,1510.6
+ORD-01267,2024-08-05,North America,Retail,Business,26,11,256.02,20,won,2252.98
+ORD-00286,2024-08-05,North America,Partner,Starter,55,3,319.32,5,lost,910.06
+ORD-01587,2024-08-06,North America,Online,Team,308,7,311.1,0,lost,2177.7
+ORD-01526,2024-08-06,North America,Online,Starter,121,24,266.71,5,won,6080.99
+ORD-01433,2024-08-06,APAC,Retail,Enterprise,88,24,,5,won,7007.35
+ORD-02200,2024-08-06,Europe,Online,Team,65,26,201.81,10,won,4722.35
+ORD-01300,2024-08-06,North America,Partner,Starter,21,17,242.88,0,won,4128.96
+ORD-00665,2024-08-06,North America,Retail,Starter,81,10,208.96,10,won,1880.64
+ORD-01094,2024-08-06,North America,Online,Enterprise,51,33,264.15,10,won,7845.25
+ORD-01264,2024-08-07,LATAM,Online,Team,68,22,270.41,0,won,5949.02
+ORD-00884,2024-08-07,North America,Online,Team,120,6,297.72,0,won,1786.32
+ORD-01309,2024-08-08,Europe,Online,Team,210,9,252.0,10,won,2041.2
+ORD-01379,2024-08-08,APAC,Online,Team,57,15,334.49,0,won,5017.35
+ORD-02045,2024-08-08,North America,Online,Business,89,38,204.49,5,won,7382.09
+ORD-00481,2024-08-08,North America,Partner,Enterprise,296,15,284.24,0,won,4263.6
+ORD-02393,2024-08-08,Europe,Retail,Starter,67,32,261.64,0,won,8372.48
+ORD-02328,2024-08-09,APAC,Partner,Starter,105,12,278.86,0,lost,3346.32
+ORD-02011,2024-08-09,APAC,Partner,Business,114,28,133.21,10,won,3356.89
+ORD-01061,2024-08-09,North America,Online,Team,164,7,230.19,0,won,1611.33
+ORD-00722,2024-08-09,LATAM,Online,Team,169,31,267.07,0,won,8279.17
+ORD-02252,2024-08-09,Europe,Online,Enterprise,34,22,251.1,0,lost,5524.2
+ORD-02161,2024-08-10,North America,Online,Team,96,30,165.13,0,lost,4953.9
+ORD-01555,2024-08-10,North America,Partner,Team,191,4,261.83,5,won,994.95
+ORD-02154,2024-08-11,North America,Online,Starter,184,26,201.71,0,won,5244.46
+ORD-00943,2024-08-11,LATAM,Online,Starter,122,5,,5,lost,748.08
+ORD-02110,2024-08-11,North America,Online,Business,272,16,172.85,5,won,2627.32
+ORD-01070,2024-08-11,Europe,Online,Starter,292,31,279.6,20,won,6934.08
+ORD-00686,2024-08-11,APAC,Online,Starter,131,37,183.34,0,won,6783.58
+ORD-01155,2024-08-12,Europe,Retail,Team,274,39,304.15,0,won,11861.85
+ORD-01407,2024-08-12,North America,Online,Business,254,10,263.31,0,won,2633.1
+ORD-01525,2024-08-12,North America,Partner,Starter,52,29,233.56,10,lost,6095.92
+ORD-01977,2024-08-12,North America,Partner,Team,280,25,143.35,0,won,3583.75
+ORD-00090,2024-08-13,North America,Online,Starter,118,4,326.38,10,lost,1174.97
+ORD-02235,2024-08-13,LATAM,Online,Business,185,9,275.3,5,won,2353.82
+ORD-02322,2024-08-13,North America,Retail,Team,201,31,308.25,10,won,8600.18
+ORD-01531,2024-08-14,Europe,Online,Team,201,38,424.5,5,won,15324.45
+ORD-01404,2024-08-14,LATAM,Retail,Starter,274,1,238.83,0,lost,238.83
+ORD-01872,2024-08-14,LATAM,Retail,Enterprise,142,27,175.12,20,won,3782.59
+ORD-00832,2024-08-15,North America,Retail,Business,125,10,271.89,0,won,2718.9
+ORD-01844,2024-08-15,APAC,Online,Starter,242,8,206.79,10,lost,1488.89
+ORD-02279,2024-08-15,Europe,Online,Team,56,33,136.57,20,won,3605.45
+ORD-00924,2024-08-16,Europe,Partner,Enterprise,99,12,276.02,10,lost,2981.02
+ORD-01247,2024-08-16,Europe,Retail,Business,199,13,140.65,0,won,1828.45
+ORD-00528,2024-08-16,North America,Partner,Starter,221,12,195.19,0,won,2342.28
+ORD-01338,2024-08-16,North America,Online,Business,8,22,182.61,5,won,3816.55
+ORD-01408,2024-08-16,APAC,Online,Starter,9,15,253.61,0,won,3804.15
+ORD-01619,2024-08-16,APAC,Retail,Starter,66,10,282.07,10,won,2538.63
+ORD-01460,2024-08-16,North America,Online,Team,190,3,339.05,0,won,1017.15
+ORD-00717,2024-08-16,Europe,Online,Business,16,9,315.27,0,lost,2837.43
+ORD-01437,2024-08-16,North America,Retail,Business,153,7,198.15,10,won,1248.34
+ORD-02207,2024-08-16,Europe,Retail,Team,20,12,303.92,5,won,3464.69
+ORD-01054,2024-08-16,APAC,Online,Enterprise,297,30,330.89,5,lost,9430.36
+ORD-01806,2024-08-17,North America,Online,Team,5,21,350.35,20,won,5885.88
+ORD-00974,2024-08-17,Europe,Retail,Starter,52,8,314.71,5,lost,2391.8
+ORD-01598,2024-08-17,North America,Online,Starter,126,31,251.91,10,won,7028.29
+ORD-01817,2024-08-17,Europe,Partner,Business,211,28,322.24,0,won,9022.72
+ORD-00562,2024-08-18,Europe,Online,Starter,27,19,289.5,5,lost,5225.47
+ORD-00504,2024-08-18,APAC,Online,Team,114,6,320.65,5,won,1827.7
+ORD-01345,2024-08-18,Europe,Partner,Starter,23,20,261.12,10,won,4700.16
+ORD-00945,2024-08-18,North America,Retail,Team,94,13,252.24,10,won,2951.21
+ORD-00759,2024-08-19,Europe,Retail,Team,275,14,,20,won,3805.65
+ORD-02197,2024-08-19,North America,Partner,Team,250,39,205.77,0,won,8025.03
+ORD-00020,2024-08-19,North America,Retail,Starter,133,8,262.92,0,won,2103.36
+ORD-01950,2024-08-19,Europe,Online,Team,125,16,312.5,0,lost,5000.0
+ORD-02167,2024-08-20,APAC,Partner,Team,9,16,345.61,0,won,5529.76
+ORD-01447,2024-08-20,LATAM,Online,Enterprise,287,25,215.49,5,lost,5117.89
+ORD-00588,2024-08-20,Europe,Retail,Starter,293,35,238.27,0,won,8339.45
+ORD-00531,2024-08-20,North America,Online,Business,226,9,271.75,5,won,2323.46
+ORD-00976,2024-08-20,North America,Online,Starter,22,38,220.34,0,won,8372.92
+ORD-00746,2024-08-20,APAC,Retail,Business,281,4,211.63,0,won,846.52
+ORD-00257,2024-08-21,APAC,Online,Enterprise,4,20,242.45,0,won,4849.0
+ORD-01759,2024-08-21,North America,Online,Team,127,32,238.6,0,won,7635.2
+ORD-01582,2024-08-21,Europe,Partner,Starter,122,29,231.64,0,lost,6717.56
+ORD-02281,2024-08-22,North America,Online,Starter,163,6,242.49,0,won,1454.94
+ORD-00334,2024-08-22,LATAM,Online,Starter,255,24,297.64,0,won,7143.36
+ORD-01579,2024-08-22,LATAM,Partner,Starter,252,32,257.27,10,won,7409.38
+ORD-01880,2024-08-22,North America,Retail,Starter,129,39,372.83,5,won,13813.35
+ORD-01697,2024-08-23,Europe,Online,Business,13,15,119.86,0,lost,1797.9
+ORD-01889,2024-08-23,Europe,Partner,Business,212,27,217.79,0,lost,5880.33
+ORD-00788,2024-08-23,North America,Partner,Enterprise,60,14,240.3,5,lost,3195.99
+ORD-00561,2024-08-23,North America,Online,Team,137,32,236.0,0,won,7552.0
+ORD-00104,2024-08-24,APAC,Online,Business,56,11,298.5,0,won,3283.5
+ORD-00993,2024-08-24,LATAM,Online,Business,4,35,246.73,5,won,8203.77
+ORD-01856,2024-08-24,Europe,Retail,Team,319,32,300.4,5,won,9132.16
+ORD-01059,2024-08-24,APAC,Retail,Enterprise,263,16,355.9,10,won,5124.96
+ORD-00500,2024-08-24,Europe,Online,Business,5,9,313.59,0,won,2822.31
+ORD-00984,2024-08-25,APAC,Online,Team,97,4,149.1,5,won,566.58
+ORD-02157,2024-08-25,Europe,Retail,Enterprise,202,1,258.33,0,won,258.33
+ORD-00616,2024-08-25,North America,Partner,Starter,102,12,341.55,0,won,4098.6
+ORD-00794,2024-08-25,North America,Online,Team,203,31,318.56,5,won,9381.59
+ORD-00439,2024-08-26,North America,Online,Team,211,22,228.58,10,won,4525.88
+ORD-00059,2024-08-26,Europe,Online,Business,4,17,232.28,20,lost,3159.01
+ORD-02175,2024-08-26,North America,Retail,Team,35,31,258.73,10,lost,7218.57
+ORD-00194,2024-08-26,North America,Online,Business,57,34,284.2,20,won,7730.24
+ORD-02052,2024-08-26,North America,Retail,Starter,316,22,163.24,0,won,3591.28
+ORD-00022,2024-08-27,Europe,Online,Business,171,6,314.7,0,won,1888.2
+ORD-02150,2024-08-27,APAC,Retail,Team,79,26,297.95,0,won,7746.7
+ORD-00463,2024-08-27,North America,Online,Team,230,11,,10,won,2387.78
+ORD-02277,2024-08-27,North America,Partner,Enterprise,46,32,315.49,10,won,9086.11
+ORD-01139,2024-08-28,Europe,Online,Starter,207,22,254.69,0,won,5603.18
+ORD-01749,2024-08-28,North America,Partner,Starter,39,17,197.74,0,won,3361.58
+ORD-00704,2024-08-28,Europe,Online,Enterprise,99,33,238.71,0,won,7877.43
+ORD-01029,2024-08-29,North America,Online,Team,187,6,,0,won,1660.5
+ORD-01273,2024-08-29,North America,Online,Business,200,29,258.27,0,won,7489.83
+ORD-00867,2024-08-29,Europe,Retail,Team,234,11,217.74,10,won,2155.63
+ORD-00646,2024-08-29,Europe,Online,Business,56,14,356.93,0,won,4997.02
+ORD-01997,2024-08-29,APAC,Online,Team,279,37,229.65,10,won,7647.35
+ORD-00422,2024-08-29,North America,Online,Team,207,29,165.32,0,won,4794.28
+ORD-00209,2024-08-29,North America,Online,Business,206,12,279.59,0,won,3355.08
+ORD-01227,2024-08-29,North America,Online,Starter,240,38,293.03,10,won,10021.63
+ORD-00756,2024-08-30,North America,Partner,Business,80,19,275.39,20,won,4185.93
+ORD-01218,2024-08-30,North America,Online,Starter,176,3,296.22,0,won,888.66
+ORD-01554,2024-08-30,Europe,Online,Business,270,18,295.17,0,won,5313.06
+ORD-00615,2024-08-31,APAC,Online,Starter,47,35,149.67,0,won,5238.45
+ORD-00893,2024-08-31,North America,Online,Business,64,27,312.57,0,won,8439.39
+ORD-01614,2024-08-31,Europe,Retail,Team,228,2,309.12,0,lost,618.24
+ORD-01816,2024-08-31,North America,Partner,Business,72,22,,0,lost,5370.64
+ORD-01443,2024-09-01,North America,Online,Business,142,18,180.49,5,won,3086.38
+ORD-00626,2024-09-01,APAC,Retail,Team,204,33,285.09,0,won,9407.97
+ORD-02306,2024-09-01,North America,Online,Team,312,28,217.63,0,won,6093.64
+ORD-01828,2024-09-01,North America,Retail,Enterprise,295,34,189.57,10,lost,5800.84
+ORD-00015,2024-09-02,Europe,Online,Starter,229,18,166.45,5,won,2846.29
+ORD-02191,2024-09-02,Europe,Retail,Business,38,19,295.31,10,won,5049.8
+ORD-01200,2024-09-02,North America,Online,Business,229,15,200.79,0,won,3011.85
+ORD-01188,2024-09-02,Europe,Online,Business,195,21,204.94,0,won,4303.74
+ORD-01879,2024-09-02,North America,Online,Starter,239,21,332.09,0,lost,6973.89
+ORD-00096,2024-09-03,North America,Partner,Business,299,37,259.87,0,won,9615.19
+ORD-00912,2024-09-03,APAC,Retail,Business,28,18,264.51,5,won,4523.12
+ORD-01052,2024-09-03,Europe,Retail,Starter,212,32,317.19,0,won,10150.08
+ORD-00379,2024-09-04,LATAM,Online,Business,249,35,277.45,10,lost,8739.68
+ORD-02362,2024-09-04,North America,Online,Starter,108,16,252.8,10,won,3640.32
+ORD-01040,2024-09-04,North America,Online,Business,296,3,268.94,0,won,806.82
+ORD-00409,2024-09-05,APAC,Retail,Starter,112,13,298.4,0,won,3879.2
+ORD-00425,2024-09-05,LATAM,Partner,Business,68,8,293.88,0,won,2351.04
+ORD-02144,2024-09-05,Europe,Retail,Starter,14,39,191.25,10,won,6712.88
+ORD-00077,2024-09-05,LATAM,Online,Team,162,2,174.41,0,won,348.82
+ORD-00221,2024-09-05,North America,Partner,Starter,183,27,224.61,0,won,6064.47
+ORD-01927,2024-09-05,Europe,Online,Business,166,19,192.04,5,won,3466.32
+ORD-01286,2024-09-05,North America,Online,Starter,114,23,329.43,5,won,7198.05
+ORD-02054,2024-09-05,APAC,Partner,Team,33,26,316.8,0,won,8236.8
+ORD-00511,2024-09-05,APAC,Online,Starter,59,38,286.77,0,won,10897.26
+ORD-00640,2024-09-05,North America,Retail,Team,67,24,276.49,10,won,5972.18
+ORD-02174,2024-09-06,North America,Online,Team,217,20,248.74,5,lost,4726.06
+ORD-00457,2024-09-07,North America,Online,Business,202,20,334.6,0,won,6692.0
+ORD-00888,2024-09-07,Europe,Partner,Starter,314,3,141.74,0,lost,425.22
+ORD-00662,2024-09-07,North America,Retail,Starter,32,20,245.33,20,won,3925.28
+ORD-01925,2024-09-08,North America,Online,Team,311,31,307.99,10,won,8592.92
+ORD-00546,2024-09-08,North America,Retail,Business,5,15,183.97,0,won,2759.55
+ORD-01398,2024-09-08,North America,Online,Enterprise,300,29,227.15,20,won,5269.88
+ORD-01140,2024-09-08,Europe,Retail,Enterprise,62,19,286.09,10,won,4892.14
+ORD-00196,2024-09-08,North America,Partner,Starter,164,36,248.4,0,won,8942.4
+ORD-00607,2024-09-08,Europe,Retail,Enterprise,64,8,197.16,5,lost,1498.42
+ORD-02326,2024-09-08,Europe,Retail,Team,164,7,251.27,5,lost,1670.95
+ORD-01096,2024-09-09,North America,Online,Team,127,20,197.05,0,lost,3941.0
+ORD-02177,2024-09-09,Europe,Online,Team,274,21,165.47,0,lost,3474.87
+ORD-01527,2024-09-09,APAC,Partner,Starter,49,25,252.84,10,lost,5688.9
+ORD-00795,2024-09-09,Europe,Online,Starter,280,24,277.96,0,lost,6671.04
+ORD-01733,2024-09-09,Europe,Partner,Starter,173,10,312.73,0,lost,3127.3
+ORD-01917,2024-09-10,LATAM,Partner,Starter,143,2,247.99,0,won,495.98
+ORD-02282,2024-09-10,Europe,Online,Team,272,33,297.86,10,lost,8846.44
+ORD-00270,2024-09-10,Europe,Online,Starter,129,14,272.97,20,won,3057.26
+ORD-00055,2024-09-10,North America,Online,Starter,93,38,261.09,0,won,9921.42
+ORD-02258,2024-09-10,North America,Retail,Team,225,16,278.91,0,lost,4462.56
+ORD-01886,2024-09-10,North America,Online,Enterprise,125,16,256.36,10,won,3691.58
+ORD-00503,2024-09-10,Europe,Retail,Team,113,20,288.56,5,won,5482.64
+ORD-00410,2024-09-10,APAC,Partner,Team,202,29,274.85,0,won,7970.65
+ORD-01845,2024-09-11,North America,Partner,Enterprise,209,10,99.65,0,won,996.5
+ORD-00739,2024-09-11,North America,Partner,Business,188,10,249.61,0,won,2496.1
+ORD-01129,2024-09-11,North America,Online,Starter,87,22,160.85,5,won,3361.76
+ORD-02262,2024-09-11,North America,Online,Enterprise,262,8,367.18,10,lost,2643.7
+ORD-02016,2024-09-12,North America,Retail,Starter,293,6,,0,won,1596.66
+ORD-00397,2024-09-12,North America,Online,Starter,246,17,180.58,10,lost,2762.87
+ORD-01973,2024-09-12,Europe,Online,Team,274,23,161.07,0,won,3704.61
+ORD-00036,2024-09-12,North America,Partner,Business,130,4,177.4,20,won,567.68
+ORD-01372,2024-09-12,North America,Retail,Starter,101,33,382.7,0,lost,12629.1
+ORD-01100,2024-09-13,APAC,Online,Starter,154,35,195.37,5,won,6496.05
+ORD-00337,2024-09-13,North America,Partner,Team,248,8,252.52,0,lost,2020.16
+ORD-01104,2024-09-13,North America,Retail,Starter,44,21,219.63,0,lost,4612.23
+ORD-02132,2024-09-13,Europe,Online,Starter,269,30,308.54,5,lost,8793.39
+ORD-01272,2024-09-13,Europe,Retail,Team,242,10,148.78,0,won,1487.8
+ORD-01198,2024-09-13,North America,Retail,Starter,54,18,238.2,5,lost,4073.22
+ORD-01334,2024-09-13,Europe,Online,Business,233,9,191.08,0,lost,1719.72
+ORD-00010,2024-09-13,North America,Online,Starter,180,29,247.6,0,won,7180.4
+ORD-01277,2024-09-13,North America,Online,Starter,49,31,341.78,5,won,10065.42
+ORD-00216,2024-09-13,APAC,Retail,Business,188,7,252.3,5,lost,1677.8
+ORD-01799,2024-09-14,North America,Online,Team,244,36,301.86,0,won,10866.96
+ORD-02398,2024-09-14,Europe,Online,Business,43,6,242.16,10,won,1307.66
+ORD-00903,2024-09-14,APAC,Retail,Starter,220,18,267.7,0,won,4818.6
+ORD-00540,2024-09-14,LATAM,Partner,Team,238,16,216.42,5,lost,3289.58
+ORD-00184,2024-09-15,LATAM,Online,Business,90,24,166.87,0,won,4004.88
+ORD-01349,2024-09-16,Europe,Online,Team,209,30,306.67,0,won,9200.1
+ORD-01703,2024-09-16,APAC,Online,Starter,312,16,335.2,10,lost,4826.88
+ORD-02375,2024-09-16,North America,Retail,Business,34,26,185.89,5,won,4591.48
+ORD-00513,2024-09-16,APAC,Partner,Starter,285,21,167.78,10,won,3171.04
+ORD-02103,2024-09-17,Europe,Retail,Team,70,1,219.24,0,lost,219.24
+ORD-00089,2024-09-17,North America,Partner,Business,54,22,297.75,5,won,6222.98
+ORD-01251,2024-09-17,North America,Partner,Enterprise,59,16,241.7,20,won,3093.76
+ORD-00779,2024-09-18,North America,Online,Starter,251,35,218.21,10,won,6873.62
+ORD-01156,2024-09-18,Europe,Online,Starter,135,27,234.12,0,lost,6321.24
+ORD-00918,2024-09-18,North America,Retail,Business,18,36,286.42,20,won,8248.9
+ORD-01285,2024-09-18,APAC,Partner,Business,250,5,287.88,0,won,1439.4
+ORD-01152,2024-09-18,Europe,Online,Starter,119,8,228.78,0,won,1830.24
+ORD-00164,2024-09-18,Europe,Online,Starter,235,16,250.68,10,lost,3609.79
+ORD-01032,2024-09-18,Europe,Partner,Team,26,16,355.7,10,won,5122.08
+ORD-00823,2024-09-18,Europe,Retail,Team,63,22,281.87,5,won,5891.08
+ORD-00339,2024-09-19,North America,Retail,Business,260,39,200.5,10,lost,7037.55
+ORD-01783,2024-09-19,North America,Retail,Business,200,8,237.37,0,lost,1898.96
+ORD-01949,2024-09-19,Europe,Partner,Business,90,25,157.25,5,won,3734.69
+ORD-02043,2024-09-19,Europe,Partner,Starter,308,25,186.14,10,lost,4188.15
+ORD-00879,2024-09-19,LATAM,Retail,Business,238,28,250.73,0,won,7020.44
+ORD-00195,2024-09-19,Europe,Partner,Starter,70,19,304.31,0,won,5781.89
+ORD-01355,2024-09-19,APAC,Online,Starter,80,32,235.84,0,won,7546.88
+ORD-00684,2024-09-20,North America,Retail,Business,286,26,266.47,5,won,6581.81
+ORD-00630,2024-09-20,Europe,Partner,Enterprise,188,35,252.61,0,won,8841.35
+ORD-01394,2024-09-20,Europe,Online,Starter,61,36,167.14,20,won,4813.63
+ORD-00123,2024-09-20,Europe,Retail,Starter,234,8,200.36,0,won,1602.88
+ORD-00750,2024-09-20,Europe,Online,Starter,34,11,264.42,0,won,2908.62
+ORD-00459,2024-09-20,North America,Online,Starter,180,26,274.38,5,won,6777.19
+ORD-01694,2024-09-20,North America,Partner,Business,163,36,193.92,0,won,6981.12
+ORD-00909,2024-09-21,North America,Online,Business,303,27,289.72,10,won,7040.2
+ORD-01427,2024-09-21,Europe,Retail,Starter,76,30,304.37,5,lost,8674.54
+ORD-00857,2024-09-21,LATAM,Partner,Starter,260,10,210.99,10,lost,1898.91
+ORD-02314,2024-09-22,LATAM,Online,Business,7,39,361.48,0,won,14097.72
+ORD-02294,2024-09-22,Europe,Online,Team,40,38,301.86,0,won,11470.68
+ORD-00625,2024-09-22,North America,Retail,Starter,66,8,284.83,10,won,2050.78
+ORD-00093,2024-09-22,Europe,Partner,Team,72,10,299.68,5,won,2846.96
+ORD-00137,2024-09-23,Europe,Online,Team,194,10,209.68,5,lost,1991.96
+ORD-00499,2024-09-23,North America,Online,Starter,9,8,219.25,5,lost,1666.3
+ORD-00654,2024-09-23,Europe,Retail,Team,311,37,226.69,0,won,8387.53
+ORD-02286,2024-09-23,APAC,Retail,Starter,31,38,294.31,0,won,11183.78
+ORD-02106,2024-09-23,Europe,Retail,Team,10,10,204.73,0,won,2047.3
+ORD-01976,2024-09-23,APAC,Retail,Enterprise,248,9,244.93,0,won,2204.37
+ORD-01422,2024-09-23,APAC,Online,Starter,237,38,284.81,10,lost,9740.5
+ORD-01529,2024-09-23,North America,Retail,Business,255,30,265.14,0,won,7954.2
+ORD-01946,2024-09-24,North America,Retail,Starter,310,18,336.83,5,won,5759.79
+ORD-00343,2024-09-24,Europe,Online,Business,103,8,235.77,20,won,1508.93
+ORD-01328,2024-09-24,APAC,Retail,Team,226,10,416.99,10,won,3752.91
+ORD-01302,2024-09-24,North America,Online,Team,110,18,213.08,0,lost,3835.44
+ORD-00311,2024-09-24,North America,Online,Business,36,14,219.11,0,won,3067.54
+ORD-02291,2024-09-26,Europe,Retail,Team,53,34,204.18,20,won,5553.7
+ORD-00634,2024-09-26,APAC,Online,Team,22,25,243.48,20,won,4869.6
+ORD-00707,2024-09-26,Europe,Retail,Team,238,10,,0,won,3195.5
+ORD-00509,2024-09-26,North America,Online,Team,311,17,118.71,0,won,2018.07
+ORD-00811,2024-09-27,North America,Online,Starter,123,29,271.48,10,lost,7085.63
+ORD-01366,2024-09-27,North America,Retail,Team,111,34,252.8,10,won,7735.68
+ORD-01855,2024-09-27,Europe,Online,Enterprise,193,11,248.54,10,lost,2460.55
+ORD-00963,2024-09-28,North America,Online,Team,127,19,292.27,0,lost,5553.13
+ORD-01793,2024-09-28,North America,Retail,Starter,301,22,223.56,20,won,3934.66
+ORD-01172,2024-09-28,North America,Retail,Business,281,8,267.39,0,won,2139.12
+ORD-00516,2024-09-28,North America,Partner,Starter,285,18,228.01,10,lost,3693.76
+ORD-00245,2024-09-28,North America,Partner,Team,72,24,181.22,0,won,4349.28
+ORD-01469,2024-09-28,Europe,Retail,Starter,163,28,301.6,5,won,8022.56
+ORD-00681,2024-09-28,Europe,Partner,Starter,302,18,217.09,0,lost,3907.62
+ORD-01842,2024-09-28,North America,Partner,Business,31,3,272.74,10,lost,736.4
+ORD-02255,2024-09-28,LATAM,Online,Team,157,39,372.27,0,won,14518.53
+ORD-00743,2024-09-28,North America,Online,Business,314,25,337.46,5,won,8014.67
+ORD-00598,2024-09-29,Europe,Retail,Business,16,26,332.93,0,won,8656.18
+ORD-00318,2024-09-29,North America,Online,Starter,279,11,310.37,0,won,3414.07
+ORD-01814,2024-09-29,North America,Online,Business,185,38,364.87,0,won,13865.06
+ORD-01268,2024-09-29,Europe,Retail,Team,69,10,228.85,0,lost,2288.5
+ORD-01732,2024-09-29,APAC,Online,Starter,26,36,330.74,0,won,11906.64
+ORD-02365,2024-09-29,Europe,Online,Team,96,17,265.72,20,won,3613.79
+ORD-00858,2024-09-29,LATAM,Online,Enterprise,79,28,298.64,5,won,7943.82
+ORD-02228,2024-09-30,Europe,Retail,Starter,144,2,288.1,5,won,547.39
+ORD-01641,2024-09-30,Europe,Partner,Business,43,21,190.32,5,won,3796.88
+ORD-00438,2024-09-30,Europe,Online,Team,266,15,321.11,0,won,4816.65
+ORD-01316,2024-09-30,Europe,Retail,Team,27,9,220.12,10,won,1782.97
+ORD-00398,2024-09-30,LATAM,Online,Business,111,34,174.51,10,won,5340.01
+ORD-02389,2024-09-30,LATAM,Online,Team,302,21,286.45,5,lost,5714.68
+ORD-00033,2024-10-01,North America,Partner,Starter,99,26,231.84,10,lost,5425.06
+ORD-00116,2024-10-01,APAC,Online,Starter,120,36,294.79,0,won,10612.44
+ORD-00628,2024-10-01,Europe,Online,Enterprise,102,19,244.84,0,lost,4651.96
+ORD-00416,2024-10-02,APAC,Retail,Team,172,36,241.61,10,lost,7828.16
+ORD-00426,2024-10-02,Europe,Online,Starter,1,39,177.8,0,lost,6934.2
+ORD-01187,2024-10-02,Europe,Partner,Business,203,18,280.57,10,won,4545.23
+ORD-02015,2024-10-02,LATAM,Online,Enterprise,84,6,198.69,0,won,1192.14
+ORD-00314,2024-10-02,North America,Retail,Business,258,37,,5,won,9037.42
+ORD-02068,2024-10-02,Europe,Partner,Starter,174,16,181.94,0,won,2911.04
+ORD-01676,2024-10-03,Europe,Online,Starter,129,30,210.94,0,lost,6328.2
+ORD-00636,2024-10-03,North America,Retail,Team,165,30,291.94,0,won,8758.2
+ORD-00023,2024-10-03,North America,Partner,Team,9,6,308.15,5,won,1756.45
+ORD-00907,2024-10-03,APAC,Online,Business,218,13,248.52,5,lost,3069.22
+ORD-00246,2024-10-03,North America,Online,Enterprise,163,34,232.52,20,won,6324.54
+ORD-02164,2024-10-03,North America,Partner,Starter,301,28,234.95,0,won,6578.6
+ORD-01679,2024-10-03,Europe,Partner,Enterprise,248,5,251.99,0,won,1259.95
+ORD-02367,2024-10-04,North America,Partner,Business,265,18,235.23,10,won,3810.73
+ORD-00156,2024-10-04,North America,Partner,Business,268,12,273.57,5,won,3118.7
+ORD-00451,2024-10-05,Europe,Online,Team,183,7,243.66,5,won,1620.34
+ORD-01894,2024-10-05,North America,Partner,Starter,67,18,266.33,5,won,4554.24
+ORD-01340,2024-10-06,North America,Online,Starter,150,39,314.51,0,won,12265.89
+ORD-01664,2024-10-07,North America,Partner,Starter,96,9,215.3,20,won,1550.16
+ORD-01321,2024-10-07,North America,Online,Business,311,3,355.77,0,lost,1067.31
+ORD-02082,2024-10-07,Europe,Online,Starter,317,32,300.57,20,won,7694.59
+ORD-00493,2024-10-08,Europe,Online,Starter,154,10,324.91,0,lost,3249.1
+ORD-01712,2024-10-08,APAC,Online,Team,43,12,,0,won,3896.04
+ORD-01270,2024-10-08,Europe,Retail,Starter,75,3,288.66,20,won,692.78
+ORD-02141,2024-10-08,North America,Retail,Team,38,25,182.86,0,won,4571.5
+ORD-01904,2024-10-08,LATAM,Retail,Business,64,11,247.19,0,won,2719.09
+ORD-00202,2024-10-08,Europe,Retail,Business,132,30,214.97,0,won,6449.1
+ORD-00837,2024-10-09,APAC,Online,Team,22,23,277.17,5,won,6056.16
+ORD-01477,2024-10-09,Europe,Online,Business,21,22,236.73,0,won,5208.06
+ORD-00180,2024-10-09,LATAM,Retail,Starter,220,33,290.85,20,won,7678.44
+ORD-01646,2024-10-09,Europe,Partner,Team,5,29,245.5,10,lost,6407.55
+ORD-02097,2024-10-09,APAC,Retail,Team,86,6,301.33,20,won,1446.38
+ORD-00274,2024-10-09,North America,Partner,Business,124,36,263.4,0,lost,9482.4
+ORD-00709,2024-10-10,Europe,Partner,Team,176,31,334.98,5,won,9865.16
+ORD-01207,2024-10-11,North America,Online,Starter,126,11,280.76,0,lost,3088.36
+ORD-00366,2024-10-12,North America,Partner,Team,282,5,271.37,5,won,1289.01
+ORD-00211,2024-10-12,North America,Retail,Starter,51,19,384.72,0,won,7309.68
+ORD-00990,2024-10-12,Europe,Online,Starter,200,28,272.33,0,won,7625.24
+ORD-01750,2024-10-12,APAC,Online,Business,111,37,217.17,20,lost,6428.23
+ORD-00527,2024-10-12,LATAM,Online,Team,134,6,263.0,0,won,1578.0
+ORD-02274,2024-10-12,APAC,Retail,Starter,111,30,190.83,0,won,5724.9
+ORD-01400,2024-10-13,Europe,Online,Starter,307,1,284.41,10,won,255.97
+ORD-00870,2024-10-13,North America,Partner,Team,278,28,354.63,10,lost,8936.68
+ORD-02037,2024-10-13,North America,Online,Starter,145,5,266.89,10,lost,1201.0
+ORD-00225,2024-10-13,North America,Partner,Starter,35,11,251.1,10,won,2485.89
+ORD-01157,2024-10-14,APAC,Online,Team,107,6,185.75,0,won,1114.5
+ORD-01900,2024-10-14,North America,Online,Business,178,30,215.23,20,lost,5165.52
+ORD-01499,2024-10-14,Europe,Partner,Starter,266,8,267.73,20,won,1713.47
+ORD-00881,2024-10-14,Europe,Partner,Team,159,29,269.63,0,won,7819.27
+ORD-00629,2024-10-15,North America,Partner,Starter,282,10,212.99,20,lost,1703.92
+ORD-01933,2024-10-15,Europe,Retail,Team,148,30,294.18,0,won,8825.4
+ORD-01424,2024-10-15,Europe,Online,Starter,166,22,169.02,10,won,3346.6
+ORD-00335,2024-10-15,North America,Retail,Team,215,37,164.68,5,lost,5788.5
+ORD-01643,2024-10-15,Europe,Online,Team,39,14,164.03,5,lost,2181.6
+ORD-00004,2024-10-16,North America,Online,Starter,116,18,278.46,10,won,4511.05
+ORD-00046,2024-10-16,North America,Online,Starter,43,24,82.72,20,won,1588.22
+ORD-00248,2024-10-17,APAC,Online,Team,220,24,174.73,5,lost,3983.84
+ORD-01854,2024-10-17,Europe,Partner,Starter,158,5,270.22,0,won,1351.1
+ORD-00861,2024-10-17,Europe,Online,Starter,198,34,286.75,0,won,9749.5
+ORD-00328,2024-10-17,North America,Online,Enterprise,71,26,254.24,10,won,5949.22
+ORD-01410,2024-10-17,APAC,Partner,Starter,316,1,103.39,0,won,103.39
+ORD-01847,2024-10-18,APAC,Online,Team,256,38,243.68,5,won,8796.85
+ORD-01807,2024-10-18,North America,Online,Team,171,18,253.41,0,won,4561.38
+ORD-00559,2024-10-19,North America,Online,Starter,16,36,313.3,20,won,9023.04
+ORD-01344,2024-10-19,North America,Online,Enterprise,30,11,,10,won,2339.57
+ORD-00853,2024-10-19,North America,Retail,Enterprise,184,38,318.81,0,won,12114.78
+ORD-00573,2024-10-19,APAC,Online,Business,249,7,283.28,0,lost,1982.96
+ORD-01508,2024-10-19,Europe,Online,Starter,183,11,299.53,0,lost,3294.83
+ORD-00254,2024-10-19,North America,Online,Business,72,39,334.33,5,won,12386.93
+ORD-00674,2024-10-20,Europe,Partner,Starter,187,34,321.77,0,won,10940.18
+ORD-01350,2024-10-20,APAC,Online,Team,279,22,222.73,5,lost,4655.06
+ORD-00069,2024-10-20,North America,Online,Enterprise,134,18,314.67,5,won,5380.86
+ORD-00232,2024-10-20,APAC,Retail,Team,235,16,131.72,5,lost,2002.14
+ORD-00880,2024-10-20,APAC,Retail,Team,149,35,237.03,0,won,8296.05
+ORD-02021,2024-10-21,Europe,Retail,Business,145,9,344.27,20,won,2478.74
+ORD-02198,2024-10-21,North America,Online,Enterprise,282,5,259.16,5,lost,1231.01
+ORD-01418,2024-10-21,North America,Partner,Team,195,16,247.11,5,won,3756.07
+ORD-01758,2024-10-21,LATAM,Retail,Business,170,4,272.19,0,won,1088.76
+ORD-01428,2024-10-21,North America,Partner,Enterprise,144,15,369.71,5,won,5268.37
+ORD-01062,2024-10-21,LATAM,Online,Enterprise,168,3,172.42,0,lost,517.26
+ORD-00877,2024-10-22,North America,Online,Business,36,22,187.17,5,lost,3911.85
+ORD-00388,2024-10-22,APAC,Partner,Team,306,7,333.8,0,lost,2336.6
+ORD-01789,2024-10-22,LATAM,Partner,Business,3,10,271.52,0,lost,2715.2
+ORD-00692,2024-10-23,North America,Retail,Enterprise,5,15,233.14,5,won,3322.24
+ORD-02201,2024-10-23,North America,Online,Starter,98,23,319.0,10,won,6603.3
+ORD-00920,2024-10-23,Europe,Partner,Starter,185,17,280.65,0,won,4771.05
+ORD-01802,2024-10-23,Europe,Partner,Business,50,16,277.31,0,lost,4436.96
+ORD-01909,2024-10-24,Europe,Online,Starter,155,36,290.92,0,won,10473.12
+ORD-01234,2024-10-24,North America,Retail,Starter,262,22,279.08,5,won,5832.77
+ORD-01324,2024-10-24,Europe,Partner,Team,12,18,293.26,0,won,5278.68
+ORD-01033,2024-10-25,North America,Retail,Team,122,27,317.15,0,lost,8563.05
+ORD-01609,2024-10-25,North America,Retail,Starter,158,18,219.62,0,won,3953.16
+ORD-01851,2024-10-25,APAC,Online,Starter,121,34,196.0,0,won,6664.0
+ORD-01863,2024-10-25,North America,Partner,Team,22,27,243.86,0,won,6584.22
+ORD-00680,2024-10-26,North America,Partner,Enterprise,263,18,211.29,0,lost,3803.22
+ORD-00904,2024-10-26,Europe,Partner,Team,218,6,241.28,10,won,1302.91
+ORD-00799,2024-10-26,Europe,Online,Team,235,2,333.26,10,lost,599.87
+ORD-02158,2024-10-26,APAC,Partner,Business,248,20,315.6,0,won,6312.0
+ORD-00091,2024-10-26,APAC,Online,Business,83,38,202.29,0,won,7687.02
+ORD-01903,2024-10-26,Europe,Online,Business,35,3,217.82,5,lost,620.79
+ORD-00593,2024-10-26,Europe,Retail,Team,301,9,225.19,0,won,2026.71
+ORD-01147,2024-10-26,Europe,Online,Starter,88,10,189.24,0,won,1892.4
+ORD-00372,2024-10-26,LATAM,Online,Enterprise,18,9,222.49,0,won,2002.41
+ORD-00374,2024-10-27,North America,Online,Starter,109,20,215.08,0,won,4301.6
+ORD-00190,2024-10-27,North America,Online,Team,35,18,317.2,0,won,5709.6
+ORD-00240,2024-10-27,North America,Retail,Team,1,29,320.67,0,won,9299.43
+ORD-00472,2024-10-28,APAC,Retail,Starter,162,26,175.65,0,lost,4566.9
+ORD-01866,2024-10-28,APAC,Online,Business,231,29,212.47,0,lost,6161.63
+ORD-01364,2024-10-28,North America,Online,Enterprise,109,33,214.79,0,won,7088.07
+ORD-01403,2024-10-28,APAC,Online,Starter,281,16,122.47,0,lost,1959.52
+ORD-00637,2024-10-28,Europe,Online,Business,40,11,304.16,10,won,3011.18
+ORD-01836,2024-10-28,LATAM,Online,Starter,218,21,296.36,0,lost,6223.56
+ORD-01662,2024-10-30,APAC,Retail,Enterprise,148,13,199.69,5,won,2466.17
+ORD-01471,2024-10-30,APAC,Retail,Starter,290,19,248.08,20,won,3770.82
+ORD-01840,2024-10-30,APAC,Partner,Enterprise,194,34,276.75,20,won,7527.6
+ORD-00567,2024-10-30,Europe,Online,Starter,105,31,226.72,5,lost,6676.9
+ORD-01657,2024-10-31,Europe,Retail,Business,187,7,,0,won,2427.18
+ORD-01547,2024-10-31,APAC,Online,Team,250,27,309.4,0,won,8353.8
+ORD-01869,2024-10-31,North America,Retail,Starter,186,30,184.49,10,won,4981.23
+ORD-01725,2024-10-31,Europe,Online,Starter,150,9,237.3,10,won,1922.13
+ORD-00983,2024-11-01,North America,Partner,Business,316,23,277.92,10,won,5752.94
+ORD-01704,2024-11-01,North America,Retail,Business,290,2,139.1,0,lost,278.2
+ORD-00519,2024-11-01,Europe,Partner,Business,79,22,202.01,0,won,4444.22
+ORD-00727,2024-11-02,LATAM,Retail,Business,121,19,304.59,0,won,5787.21
+ORD-00999,2024-11-02,North America,Retail,Starter,32,24,228.2,10,lost,4929.12
+ORD-00780,2024-11-02,APAC,Online,Enterprise,285,7,289.01,0,won,2023.07
+ORD-01292,2024-11-02,Europe,Retail,Starter,43,11,272.75,10,won,2700.22
+ORD-01913,2024-11-02,Europe,Online,Starter,72,37,249.22,0,lost,9221.14
+ORD-01425,2024-11-02,LATAM,Partner,Business,15,25,261.61,20,won,5232.2
+ORD-01374,2024-11-03,APAC,Retail,Starter,204,38,,10,won,8197.4
+ORD-00494,2024-11-03,Europe,Partner,Team,12,12,260.61,10,won,2814.59
+ORD-00094,2024-11-04,North America,Retail,Starter,30,3,275.05,0,won,825.15
+ORD-01038,2024-11-05,LATAM,Retail,Business,38,26,223.2,10,won,5222.88
+ORD-01127,2024-11-05,North America,Partner,Team,302,24,262.64,0,won,6303.36
+ORD-00732,2024-11-05,LATAM,Partner,Enterprise,11,15,169.29,0,won,2539.35
+ORD-01677,2024-11-05,North America,Online,Starter,133,9,240.96,5,won,2060.21
+ORD-00846,2024-11-05,Europe,Online,Team,14,26,271.22,5,lost,6699.13
+ORD-00217,2024-11-05,APAC,Retail,Business,277,23,344.93,5,lost,7536.72
+ORD-01589,2024-11-06,North America,Retail,Team,16,18,270.87,10,won,4388.09
+ORD-01503,2024-11-07,North America,Retail,Starter,77,24,336.61,0,won,8078.64
+ORD-01923,2024-11-07,Europe,Retail,Starter,142,10,217.43,0,won,2174.3
+ORD-01276,2024-11-07,Europe,Retail,Business,77,39,250.89,0,won,9784.71
+ORD-01713,2024-11-07,Europe,Partner,Starter,127,3,312.08,0,won,936.24
+ORD-00074,2024-11-07,North America,Online,Team,312,14,294.4,0,won,4121.6
+ORD-00995,2024-11-07,APAC,Online,Business,157,23,201.98,10,lost,4180.99
+ORD-00179,2024-11-07,North America,Retail,Business,239,3,135.22,0,won,405.66
+ORD-00029,2024-11-08,Europe,Online,Team,123,38,254.42,5,lost,9184.56
+ORD-00408,2024-11-08,North America,Online,Starter,84,19,309.92,5,won,5594.06
+ORD-00627,2024-11-08,North America,Partner,Starter,137,36,205.73,0,lost,7406.28
+ORD-01505,2024-11-09,North America,Retail,Business,239,5,251.25,0,lost,1256.25
+ORD-00994,2024-11-09,LATAM,Online,Team,160,7,337.03,0,won,2359.21
+ORD-00258,2024-11-09,Europe,Online,Business,225,35,351.86,0,won,12315.1
+ORD-01304,2024-11-09,Europe,Online,Enterprise,213,38,253.67,0,won,9639.46
+ORD-00970,2024-11-09,North America,Online,Starter,53,37,179.79,20,won,5321.78
+ORD-00437,2024-11-10,Europe,Retail,Team,143,14,199.36,0,won,2791.04
+ORD-02075,2024-11-10,North America,Partner,Business,37,20,317.21,10,won,5709.78
+ORD-00224,2024-11-10,Europe,Partner,Starter,30,10,,10,lost,2952.36
+ORD-00150,2024-11-10,North America,Partner,Business,51,11,315.34,10,won,3121.87
+ORD-00289,2024-11-10,APAC,Partner,Business,91,9,268.7,10,won,2176.47
+ORD-02270,2024-11-11,LATAM,Online,Starter,306,4,260.94,10,won,939.38
+ORD-00544,2024-11-11,APAC,Retail,Starter,186,38,216.34,0,lost,8220.92
+ORD-02316,2024-11-12,Europe,Online,Starter,43,5,159.11,20,won,636.44
+ORD-00998,2024-11-13,LATAM,Online,Enterprise,160,24,273.9,10,lost,5916.24
+ORD-00564,2024-11-13,North America,Online,Enterprise,235,25,329.16,5,won,7817.55
+ORD-00648,2024-11-14,North America,Retail,Starter,235,5,,0,lost,1396.95
+ORD-00281,2024-11-14,North America,Online,Business,91,16,111.15,20,won,1422.72
+ORD-01265,2024-11-14,North America,Retail,Team,60,15,319.83,5,won,4557.58
+ORD-02315,2024-11-14,Europe,Retail,Starter,72,36,192.19,0,won,6918.84
+ORD-01897,2024-11-15,North America,Partner,Starter,253,36,221.35,10,won,7171.74
+ORD-01723,2024-11-15,North America,Retail,Starter,289,11,259.47,0,won,2854.17
+ORD-00060,2024-11-15,Europe,Partner,Business,187,21,311.54,0,won,6542.34
+ORD-02305,2024-11-15,Europe,Retail,Starter,272,35,236.98,0,won,8294.3
+ORD-01792,2024-11-15,LATAM,Retail,Team,47,20,221.54,0,won,4430.8
+ORD-00575,2024-11-16,North America,Online,Starter,193,16,247.59,0,lost,3961.44
+ORD-00309,2024-11-16,APAC,Retail,Enterprise,70,8,,0,won,2635.04
+ORD-01089,2024-11-16,North America,Online,Team,26,3,382.46,10,won,1032.64
+ORD-01498,2024-11-16,Europe,Online,Team,67,36,253.92,0,lost,9141.12
+ORD-01596,2024-11-17,Europe,Online,Starter,282,3,260.22,20,lost,624.53
+ORD-01868,2024-11-17,Europe,Online,Business,35,36,290.05,5,won,9919.71
+ORD-02007,2024-11-17,Europe,Retail,Team,72,31,391.98,0,lost,12151.38
+ORD-02131,2024-11-17,North America,Online,Team,242,39,289.24,0,won,11280.36
+ORD-01572,2024-11-17,APAC,Partner,Team,163,23,250.41,10,lost,5183.49
+ORD-00429,2024-11-17,Europe,Online,Starter,77,7,153.55,0,won,1074.85
+ORD-02179,2024-11-17,LATAM,Online,Team,240,31,231.85,10,won,6468.62
+ORD-01141,2024-11-18,APAC,Retail,Enterprise,16,13,206.47,5,won,2549.9
+ORD-00553,2024-11-18,North America,Partner,Business,138,37,328.57,0,won,12157.09
+ORD-00596,2024-11-18,North America,Online,Starter,27,39,278.66,0,won,10867.74
+ORD-02152,2024-11-18,North America,Partner,Enterprise,46,1,301.06,0,won,301.06
+ORD-01086,2024-11-19,North America,Retail,Starter,236,20,293.17,10,won,5277.06
+ORD-01021,2024-11-19,North America,Retail,Business,265,29,283.02,0,lost,8207.58
+ORD-02199,2024-11-19,North America,Online,Business,183,29,208.23,0,won,6038.67
+ORD-01724,2024-11-20,North America,Retail,Starter,126,11,,0,won,3089.46
+ORD-00547,2024-11-20,Europe,Partner,Business,95,34,225.67,0,won,7672.78
+ORD-00368,2024-11-20,APAC,Partner,Team,59,12,372.22,0,won,4466.64
+ORD-01734,2024-11-20,Europe,Partner,Starter,112,5,203.54,5,lost,966.82
+ORD-01087,2024-11-21,Europe,Retail,Team,135,37,183.98,20,won,5445.81
+ORD-02114,2024-11-21,APAC,Online,Team,194,19,260.55,0,won,4950.45
+ORD-02081,2024-11-21,Europe,Online,Enterprise,239,37,40.38,5,won,1419.36
+ORD-01481,2024-11-21,Europe,Online,Starter,275,26,237.59,5,won,5868.47
+ORD-00720,2024-11-21,North America,Online,Business,256,19,149.62,10,won,2558.5
+ORD-00142,2024-11-21,Europe,Online,Business,74,13,384.31,0,lost,4996.03
+ORD-01452,2024-11-21,North America,Partner,Starter,274,5,249.65,20,lost,998.6
+ORD-01004,2024-11-21,North America,Retail,Team,295,29,207.44,0,won,6015.76
+ORD-01602,2024-11-21,North America,Partner,Enterprise,251,14,216.55,0,lost,3031.7
+ORD-01472,2024-11-21,North America,Online,Starter,123,16,273.61,0,lost,4377.76
+ORD-00895,2024-11-21,APAC,Online,Team,263,36,377.38,0,lost,13585.68
+ORD-00710,2024-11-22,APAC,Online,Team,298,3,179.78,10,lost,485.41
+ORD-01196,2024-11-22,North America,Retail,Team,250,37,328.43,0,won,12151.91
+ORD-02053,2024-11-23,North America,Retail,Business,207,30,196.91,0,won,5907.3
+ORD-01295,2024-11-23,LATAM,Retail,Enterprise,133,32,239.91,0,won,7677.12
+ORD-01810,2024-11-23,North America,Retail,Team,267,26,318.74,0,lost,8287.24
+ORD-01468,2024-11-24,Europe,Online,Business,209,36,159.0,0,won,5724.0
+ORD-01448,2024-11-24,APAC,Online,Business,271,3,337.46,20,lost,809.9
+ORD-01728,2024-11-24,North America,Retail,Team,21,13,208.62,0,lost,2712.06
+ORD-02012,2024-11-25,Europe,Retail,Team,258,37,265.67,0,won,9829.79
+ORD-01669,2024-11-25,North America,Retail,Team,305,16,302.29,0,won,4836.64
+ORD-02169,2024-11-25,LATAM,Online,Business,305,22,,5,lost,5263.04
+ORD-00652,2024-11-25,APAC,Partner,Team,305,8,331.63,0,won,2653.04
+ORD-01731,2024-11-25,LATAM,Retail,Enterprise,187,24,254.93,10,won,5506.49
+ORD-00497,2024-11-25,North America,Retail,Team,156,33,268.94,10,won,7987.52
+ORD-02335,2024-11-26,Europe,Online,Team,13,5,256.1,0,lost,1280.5
+ORD-01803,2024-11-26,North America,Retail,Business,188,5,,10,won,1306.8
+ORD-00043,2024-11-26,APAC,Partner,Starter,169,35,111.48,20,won,3121.44
+ORD-00247,2024-11-26,Europe,Partner,Enterprise,257,7,247.88,0,won,1735.16
+ORD-00188,2024-11-27,North America,Retail,Enterprise,204,13,277.84,0,won,3611.92
+ORD-00324,2024-11-27,LATAM,Online,Starter,170,31,224.33,10,won,6258.81
+ORD-01457,2024-11-27,Europe,Retail,Team,116,21,107.78,0,lost,2263.38
+ORD-01648,2024-11-27,North America,Partner,Business,286,25,377.61,0,won,9440.25
+ORD-01413,2024-11-27,North America,Retail,Team,181,20,271.38,10,lost,4884.84
+ORD-01631,2024-11-27,North America,Retail,Business,52,7,212.52,0,won,1487.64
+ORD-00038,2024-11-27,APAC,Online,Business,174,21,226.42,10,won,4279.34
+ORD-00915,2024-11-28,North America,Partner,Starter,257,1,235.52,0,won,235.52
+ORD-00533,2024-11-28,APAC,Partner,Starter,6,32,206.22,20,won,5279.23
+ORD-00664,2024-11-28,Europe,Online,Business,243,1,207.64,0,lost,207.64
+ORD-02116,2024-11-28,Europe,Online,Starter,17,39,205.09,0,won,7998.51
+ORD-00303,2024-11-28,APAC,Partner,Business,49,24,240.12,0,won,5762.88
+ORD-01221,2024-11-28,North America,Online,Business,29,10,242.67,0,lost,2426.7
+ORD-00415,2024-11-29,Europe,Online,Starter,123,11,292.39,10,won,2894.66
+ORD-00828,2024-11-29,North America,Online,Starter,102,34,273.25,0,won,9290.5
+ORD-01524,2024-11-29,LATAM,Online,Team,75,30,216.5,20,won,5196.0
+ORD-01624,2024-11-30,APAC,Retail,Starter,83,32,177.02,0,won,5664.64
+ORD-01068,2024-11-30,Europe,Retail,Starter,38,5,262.13,20,lost,1048.52
+ORD-01637,2024-11-30,APAC,Retail,Team,157,18,220.55,5,lost,3771.4
+ORD-01787,2024-11-30,North America,Online,Starter,318,37,258.91,10,lost,8621.7
+ORD-00539,2024-11-30,Europe,Partner,Team,71,21,255.62,5,won,5099.62
+ORD-01072,2024-11-30,Europe,Retail,Business,241,26,261.8,10,won,6126.12
+ORD-00474,2024-12-01,Europe,Partner,Team,174,18,268.02,10,won,4341.92
+ORD-00683,2024-12-01,APAC,Online,Starter,70,35,351.39,5,won,11683.72
+ORD-01214,2024-12-01,LATAM,Partner,Team,233,27,369.99,0,lost,9989.73
+ORD-01519,2024-12-02,North America,Online,Business,237,18,227.88,0,won,4101.84
+ORD-00175,2024-12-02,Europe,Online,Starter,310,6,312.04,0,won,1872.24
+ORD-02036,2024-12-02,North America,Partner,Starter,191,11,291.23,0,won,3203.53
+ORD-00465,2024-12-02,North America,Online,Starter,149,21,238.08,0,won,4999.68
+ORD-00829,2024-12-03,North America,Partner,Enterprise,234,36,304.53,10,won,9866.77
+ORD-00371,2024-12-03,North America,Online,Business,206,36,284.44,10,won,9215.86
+ORD-00442,2024-12-03,North America,Online,Starter,231,7,305.37,5,won,2030.71
+ORD-01944,2024-12-03,LATAM,Partner,Starter,170,32,169.03,0,won,5408.96
+ORD-02006,2024-12-03,Europe,Retail,Business,205,8,222.45,10,won,1601.64
+ORD-00037,2024-12-03,North America,Online,Starter,160,21,128.87,5,won,2570.96
+ORD-00181,2024-12-04,APAC,Online,Team,230,33,212.95,0,won,7027.35
+ORD-02086,2024-12-04,LATAM,Online,Business,49,10,252.06,0,won,2520.6
+ORD-01436,2024-12-04,Europe,Partner,Starter,74,27,284.8,5,lost,7305.12
+ORD-00935,2024-12-05,North America,Online,Team,22,8,225.04,5,lost,1710.3
+ORD-02292,2024-12-05,North America,Retail,Team,153,15,286.0,0,won,4290.0
+ORD-02348,2024-12-05,APAC,Online,Business,28,13,380.43,10,won,4451.03
+ORD-00822,2024-12-05,APAC,Online,Business,141,11,187.38,0,won,2061.18
+ORD-00024,2024-12-05,North America,Retail,Team,234,33,358.4,0,lost,11827.2
+ORD-02101,2024-12-06,Europe,Partner,Team,274,8,270.86,0,lost,2166.88
+ORD-02182,2024-12-06,North America,Online,Team,20,30,178.08,0,won,5342.4
+ORD-01773,2024-12-06,Europe,Retail,Starter,303,32,200.04,5,lost,6081.22
+ORD-00359,2024-12-06,Europe,Retail,Team,294,26,282.63,5,lost,6980.96
+ORD-00052,2024-12-06,North America,Retail,Team,34,13,311.95,5,lost,3852.58
+ORD-02263,2024-12-07,North America,Online,Team,102,19,204.3,0,won,3881.7
+ORD-01593,2024-12-07,North America,Online,Team,235,18,279.15,0,won,5024.7
+ORD-00734,2024-12-07,North America,Retail,Team,70,19,301.39,10,lost,5153.77
+ORD-00590,2024-12-07,Europe,Online,Team,214,19,309.55,0,lost,5881.45
+ORD-02049,2024-12-07,North America,Partner,Team,109,13,281.93,10,won,3298.58
+ORD-01226,2024-12-07,LATAM,Online,Starter,294,23,298.19,0,won,6858.37
+ORD-01507,2024-12-07,LATAM,Partner,Enterprise,274,30,314.45,0,won,9433.5
+ORD-00973,2024-12-07,Europe,Partner,Team,181,3,211.82,0,lost,635.46
+ORD-01755,2024-12-08,North America,Partner,Starter,42,12,176.19,0,won,2114.28
+ORD-01672,2024-12-08,North America,Retail,Starter,183,22,181.64,5,won,3796.28
+ORD-00953,2024-12-09,North America,Online,Starter,257,33,311.11,0,won,10266.63
+ORD-01575,2024-12-09,North America,Online,Team,35,26,191.81,20,won,3989.65
+ORD-01260,2024-12-10,APAC,Partner,Starter,202,1,266.77,0,lost,266.77
+ORD-01947,2024-12-10,APAC,Retail,Business,208,15,178.48,0,won,2677.2
+ORD-01393,2024-12-10,Europe,Online,Enterprise,239,10,251.38,10,won,2262.42
+ORD-01354,2024-12-10,North America,Retail,Enterprise,263,10,255.55,5,won,2427.72
+ORD-01580,2024-12-10,LATAM,Online,Team,318,27,229.83,5,lost,5895.14
+ORD-00382,2024-12-11,Europe,Online,Team,19,28,256.91,0,lost,7193.48
+ORD-01256,2024-12-11,Europe,Partner,Starter,255,37,168.02,0,won,6216.74
+ORD-01517,2024-12-11,APAC,Partner,Enterprise,106,34,328.9,20,won,8946.08
+ORD-01230,2024-12-11,North America,Retail,Enterprise,79,4,413.62,5,won,1571.76
+ORD-01765,2024-12-12,APAC,Partner,Starter,130,13,264.39,0,won,3437.07
+ORD-00869,2024-12-12,North America,Partner,Business,192,24,201.78,0,lost,4842.72
+ORD-01397,2024-12-12,APAC,Online,Business,85,29,224.81,0,won,6519.49
+ORD-02172,2024-12-12,APAC,Retail,Starter,261,30,319.57,10,won,8628.39
+ORD-00444,2024-12-13,North America,Retail,Starter,33,25,,0,won,5399.0
+ORD-00525,2024-12-13,Europe,Online,Team,289,33,216.06,0,won,7129.98
+ORD-02048,2024-12-14,APAC,Online,Team,8,5,283.93,0,lost,1419.65
+ORD-01645,2024-12-14,Europe,Partner,Enterprise,271,10,356.14,20,won,2849.12
+ORD-02237,2024-12-14,APAC,Online,Starter,207,10,134.42,5,lost,1276.99
+ORD-01500,2024-12-14,Europe,Retail,Team,181,25,248.28,0,lost,6207.0
+ORD-00587,2024-12-14,LATAM,Online,Team,118,21,295.4,10,lost,5583.06
+ORD-00611,2024-12-14,Europe,Partner,Enterprise,168,21,291.73,10,lost,5513.7
+ORD-00282,2024-12-14,North America,Retail,Business,5,12,347.6,0,won,4171.2
+ORD-01475,2024-12-15,Europe,Partner,Starter,276,28,359.08,0,lost,10054.24
+ORD-01691,2024-12-15,North America,Online,Starter,262,30,302.2,20,won,7252.8
+ORD-01656,2024-12-15,Europe,Online,Starter,96,31,218.82,20,won,5426.74
+ORD-00287,2024-12-15,Europe,Partner,Enterprise,201,29,262.28,0,won,7606.12
+ORD-00151,2024-12-15,APAC,Partner,Business,187,20,303.41,0,lost,6068.2
+ORD-01603,2024-12-15,North America,Partner,Business,27,31,194.72,20,won,4829.06
+ORD-02155,2024-12-16,LATAM,Retail,Starter,269,12,300.29,20,won,2882.78
+ORD-00405,2024-12-16,LATAM,Online,Starter,58,15,337.33,0,lost,5059.95
+ORD-00847,2024-12-16,North America,Online,Team,164,8,263.39,0,lost,2107.12
+ORD-01762,2024-12-17,North America,Online,Team,82,38,238.03,10,won,8140.63
+ORD-00524,2024-12-17,Europe,Partner,Business,246,29,235.82,5,won,6496.84
+ORD-01305,2024-12-17,North America,Retail,Starter,87,36,237.99,5,won,8139.26
+ORD-01171,2024-12-17,APAC,Online,Starter,179,32,285.29,10,won,8216.35
+ORD-01808,2024-12-17,LATAM,Retail,Team,4,39,205.7,0,won,8022.3
+ORD-02372,2024-12-18,North America,Online,Business,27,31,313.86,5,won,9243.18
+ORD-00898,2024-12-18,Europe,Retail,Team,79,2,238.89,5,won,453.89
+ORD-01488,2024-12-19,APAC,Retail,Starter,241,29,205.67,20,won,4771.54
+ORD-01073,2024-12-19,Europe,Retail,Enterprise,281,25,286.94,0,lost,7173.5
+ORD-01132,2024-12-19,Europe,Partner,Starter,263,22,206.66,5,won,4319.19
+ORD-00113,2024-12-19,LATAM,Online,Starter,65,36,221.23,0,won,7964.28
+ORD-00713,2024-12-19,APAC,Retail,Starter,227,20,297.21,10,won,5349.78
+ORD-00657,2024-12-20,North America,Partner,Team,172,31,262.78,20,won,6516.94
+ORD-00610,2024-12-20,APAC,Partner,Starter,177,37,267.55,10,won,8909.42
+ORD-00002,2024-12-20,APAC,Partner,Starter,138,8,393.56,20,won,2518.78
+ORD-01557,2024-12-20,APAC,Online,Team,117,26,256.06,0,won,6657.56
+ORD-00006,2024-12-20,North America,Online,Enterprise,163,28,227.43,0,lost,6368.04
+ORD-01640,2024-12-20,North America,Retail,Enterprise,234,28,244.61,5,won,6506.63
+ORD-01078,2024-12-21,Europe,Online,Business,14,37,257.62,0,won,9531.94
+ORD-02008,2024-12-21,North America,Partner,Team,186,39,226.02,5,won,8374.04
+ORD-00266,2024-12-21,LATAM,Retail,Business,283,22,249.49,5,won,5214.34
+ORD-02004,2024-12-21,Europe,Retail,Starter,196,37,264.88,20,lost,7840.45
+ORD-00613,2024-12-21,Europe,Partner,Starter,108,21,235.83,0,lost,4952.43
+ORD-00949,2024-12-22,APAC,Retail,Business,26,24,300.81,10,won,6497.5
+ORD-00268,2024-12-22,North America,Online,Enterprise,160,13,331.03,0,won,4303.39
+ORD-00526,2024-12-23,North America,Online,Business,280,18,271.37,0,lost,4884.66
+ORD-01688,2024-12-23,Europe,Online,Team,148,37,243.59,5,won,8562.19
+ORD-01275,2024-12-23,Europe,Retail,Business,26,3,276.35,0,won,829.05
+ORD-01864,2024-12-23,APAC,Online,Starter,259,28,273.64,5,lost,7278.82
+ORD-01083,2024-12-24,Europe,Online,Starter,239,15,280.96,10,won,3792.96
+ORD-02385,2024-12-24,LATAM,Retail,Team,128,24,252.31,5,lost,5752.67
+ORD-00736,2024-12-24,Europe,Retail,Starter,291,21,236.56,10,won,4470.98
+ORD-02217,2024-12-24,North America,Online,Team,170,9,207.84,0,lost,1870.56
+ORD-02307,2024-12-25,North America,Online,Team,126,23,223.67,10,won,4629.97
+ORD-01197,2024-12-25,LATAM,Retail,Starter,231,27,331.93,5,won,8514.0
+ORD-01365,2024-12-25,APAC,Online,Starter,318,34,225.79,0,won,7676.86
+ORD-01479,2024-12-25,APAC,Online,Starter,26,17,212.36,0,lost,3610.12
+ORD-00230,2024-12-25,North America,Online,Starter,21,24,268.51,0,won,6444.24
+ORD-00329,2024-12-25,North America,Retail,Starter,274,3,266.26,5,won,758.84
+ORD-01184,2024-12-25,LATAM,Retail,Team,202,35,316.52,0,lost,11078.2
+ORD-00088,2024-12-25,Europe,Online,Team,215,27,234.34,5,won,6010.82
+ORD-00111,2024-12-26,LATAM,Partner,Starter,116,12,260.66,0,won,3127.92
+ORD-00454,2024-12-26,Europe,Partner,Business,317,19,220.38,20,lost,3349.78
+ORD-00659,2024-12-26,North America,Partner,Enterprise,37,12,227.73,10,won,2459.48
+ORD-00901,2024-12-26,Europe,Partner,Starter,113,21,203.41,5,lost,4058.03
+ORD-01445,2024-12-26,LATAM,Online,Business,269,22,124.03,0,won,2728.66
+ORD-00076,2024-12-26,LATAM,Online,Team,271,37,236.42,10,won,7872.79
+ORD-01647,2024-12-27,Europe,Online,Business,261,23,259.97,5,won,5680.34
+ORD-01371,2024-12-27,APAC,Partner,Starter,33,36,265.1,5,won,9066.42
+ORD-02079,2024-12-27,North America,Online,Team,210,6,231.94,0,won,1391.64
+ORD-00748,2024-12-27,APAC,Online,Business,99,34,234.86,0,won,7985.24
+ORD-00177,2024-12-27,APAC,Partner,Business,68,32,303.96,5,won,9240.38
+ORD-00392,2024-12-27,Europe,Retail,Starter,128,5,268.51,20,won,1074.04
+ORD-02078,2024-12-27,North America,Online,Enterprise,167,36,193.19,0,won,6954.84
+ORD-01069,2024-12-28,APAC,Retail,Team,318,5,257.57,20,won,1030.28
+ORD-00723,2024-12-28,North America,Online,Business,256,3,335.89,0,won,1007.67
+ORD-01626,2024-12-28,Europe,Partner,Business,120,8,335.78,10,won,2417.62
+ORD-00468,2024-12-28,Europe,Retail,Enterprise,43,10,187.75,10,won,1689.75
+ORD-01168,2024-12-29,Europe,Online,Starter,32,33,136.02,0,won,4488.66
+ORD-01748,2024-12-29,North America,Retail,Enterprise,52,18,161.43,0,lost,2905.74
+ORD-00233,2024-12-29,APAC,Retail,Team,139,15,230.53,10,won,3112.16
+ORD-01361,2024-12-29,North America,Retail,Starter,6,32,216.12,0,lost,6915.84
+ORD-00102,2024-12-29,Europe,Retail,Business,74,39,283.97,5,won,10521.09
+ORD-01538,2024-12-30,Europe,Online,Starter,295,4,253.08,0,lost,1012.32
+ORD-01244,2024-12-30,Europe,Retail,Enterprise,46,38,304.58,0,lost,11574.04
+ORD-02368,2024-12-30,LATAM,Retail,Enterprise,278,38,270.12,10,lost,9238.1
+ORD-02271,2024-12-30,North America,Online,Business,110,16,221.14,0,won,3538.24
+ORD-00100,2024-12-30,LATAM,Retail,Enterprise,190,7,252.59,10,lost,1591.32
+ORD-02142,2024-12-31,Europe,Online,Enterprise,70,9,324.56,10,won,2628.94
+ORD-00167,2025-01-01,Europe,Retail,Starter,100,11,303.16,10,won,3001.28
+ORD-01095,2025-01-01,Europe,Retail,Business,268,21,236.48,0,won,4966.08
+ORD-00824,2025-01-01,Europe,Retail,Business,215,28,246.73,10,lost,6217.6
+ORD-01266,2025-01-01,APAC,Retail,Starter,114,6,261.28,0,lost,1567.68
+ORD-01209,2025-01-02,LATAM,Online,Starter,239,14,143.09,5,lost,1903.1
+ORD-00443,2025-01-02,APAC,Retail,Starter,132,4,291.82,5,won,1108.92
+ORD-00749,2025-01-02,North America,Online,Team,14,16,209.91,0,won,3358.56
+ORD-00160,2025-01-03,North America,Online,Enterprise,293,28,256.09,10,won,6453.47
+ORD-01210,2025-01-03,APAC,Online,Enterprise,172,35,197.27,0,won,6904.45
+ORD-01649,2025-01-03,APAC,Retail,Starter,315,3,212.34,0,won,637.02
+ORD-00432,2025-01-03,Europe,Online,Enterprise,94,18,196.49,5,won,3359.98
+ORD-01037,2025-01-03,North America,Online,Starter,10,27,331.98,0,won,8963.46
+ORD-00396,2025-01-03,APAC,Online,Team,240,12,184.15,0,won,2209.8
+ORD-00471,2025-01-03,North America,Partner,Team,105,26,319.17,0,won,8298.42
+ORD-01735,2025-01-04,Europe,Partner,Starter,305,10,261.09,20,won,2088.72
+ORD-01502,2025-01-04,North America,Retail,Starter,27,16,165.41,10,lost,2381.9
+ORD-02317,2025-01-05,APAC,Online,Starter,52,7,317.65,5,won,2112.37
+ORD-01830,2025-01-05,North America,Retail,Team,229,30,230.03,0,lost,6900.9
+ORD-01269,2025-01-05,Europe,Retail,Enterprise,67,3,252.03,0,won,756.09
+ORD-02102,2025-01-05,North America,Online,Starter,239,23,211.64,10,lost,4380.95
+ORD-00944,2025-01-05,North America,Retail,Starter,310,32,213.81,20,won,5473.54
+ORD-00204,2025-01-05,Europe,Retail,Business,300,18,211.86,5,lost,3622.81
+ORD-01050,2025-01-06,North America,Partner,Team,289,23,243.81,5,won,5327.25
+ORD-02236,2025-01-06,North America,Partner,Team,190,18,270.75,5,won,4629.82
+ORD-00971,2025-01-06,LATAM,Online,Starter,287,15,296.67,5,won,4227.55
+ORD-00597,2025-01-06,APAC,Online,Team,251,5,183.34,0,won,916.7
+ORD-02194,2025-01-06,LATAM,Online,Starter,123,7,209.9,0,won,1469.3
+ORD-00363,2025-01-06,Europe,Online,Starter,278,38,248.32,20,won,7548.93
+ORD-00781,2025-01-06,Europe,Retail,Enterprise,122,7,196.16,0,won,1373.12
+ORD-00136,2025-01-06,LATAM,Online,Team,53,14,187.63,0,lost,2626.82
+ORD-00851,2025-01-06,North America,Online,Team,278,31,245.74,5,won,7237.04
+ORD-00131,2025-01-06,Europe,Partner,Starter,234,33,249.89,0,won,8246.37
+ORD-00675,2025-01-07,APAC,Online,Starter,9,5,299.79,0,won,1498.95
+ORD-00427,2025-01-07,Europe,Retail,Enterprise,312,3,255.32,0,won,765.96
+ORD-00125,2025-01-07,North America,Retail,Starter,308,10,348.39,10,won,3135.51
+ORD-00168,2025-01-07,North America,Online,Team,314,19,301.01,20,won,4575.35
+ORD-00987,2025-01-07,North America,Online,Business,144,27,364.75,0,won,9848.25
+ORD-02100,2025-01-07,APAC,Retail,Team,122,5,217.45,5,won,1032.89
+ORD-00719,2025-01-07,Europe,Online,Business,38,11,246.87,0,lost,2715.57
+ORD-02215,2025-01-08,APAC,Online,Starter,126,9,135.01,5,lost,1154.34
+ORD-00694,2025-01-08,North America,Retail,Team,315,22,333.28,5,lost,6965.55
+ORD-00475,2025-01-09,Europe,Online,Team,185,3,371.15,10,won,1002.1
+ORD-00098,2025-01-09,North America,Retail,Starter,110,28,231.6,10,won,5836.32
+ORD-02188,2025-01-09,APAC,Online,Business,243,1,236.91,10,lost,213.22
+ORD-01551,2025-01-09,Europe,Online,Starter,241,5,296.55,5,won,1408.61
+ORD-01241,2025-01-10,North America,Retail,Team,56,20,185.74,5,won,3529.06
+ORD-01312,2025-01-11,North America,Retail,Team,119,39,285.72,0,lost,11143.08
+ORD-00618,2025-01-11,APAC,Online,Business,155,10,148.1,0,won,1481.0
+ORD-02051,2025-01-12,Europe,Online,Business,245,24,236.1,20,lost,4533.12
+ORD-02176,2025-01-12,North America,Online,Team,225,36,125.28,5,lost,4284.58
+ORD-00370,2025-01-12,North America,Partner,Starter,92,33,254.13,0,won,8386.29
+ORD-00418,2025-01-12,Europe,Retail,Business,318,19,150.99,5,won,2725.37
+ORD-00856,2025-01-12,Europe,Online,Business,156,9,161.57,0,lost,1454.13
+ORD-00742,2025-01-13,APAC,Online,Enterprise,314,26,221.68,5,won,5475.5
+ORD-00234,2025-01-13,North America,Retail,Starter,54,36,108.22,0,lost,3895.92
+ORD-01455,2025-01-13,Europe,Online,Team,224,4,89.68,5,won,340.78
+ORD-00034,2025-01-13,Europe,Online,Business,157,16,359.5,10,lost,5176.8
+ORD-00085,2025-01-13,Europe,Online,Business,12,4,226.23,5,lost,859.67
+ORD-01011,2025-01-13,North America,Retail,Business,174,34,220.26,0,won,7488.84
+ORD-02384,2025-01-14,APAC,Retail,Business,151,23,258.65,0,won,5948.95
+ORD-01565,2025-01-14,APAC,Online,Team,236,14,270.53,20,won,3029.94
+ORD-01020,2025-01-14,Europe,Online,Business,5,12,269.64,0,won,3235.68
+ORD-02324,2025-01-14,LATAM,Online,Starter,250,8,179.42,0,won,1435.36
+ORD-01905,2025-01-14,North America,Online,Team,275,14,254.76,0,won,3566.64
+ORD-00936,2025-01-14,LATAM,Retail,Team,252,8,291.85,10,lost,2101.32
+ORD-02041,2025-01-15,APAC,Online,Team,105,14,213.17,20,won,2387.5
+ORD-01982,2025-01-15,APAC,Online,Enterprise,154,2,381.31,0,won,762.62
+ORD-01191,2025-01-15,Europe,Retail,Business,133,5,231.49,0,won,1157.45
+ORD-00838,2025-01-15,North America,Online,Starter,263,23,324.52,10,won,6717.56
+ORD-02117,2025-01-15,Europe,Online,Team,52,4,303.99,0,won,1215.96
+ORD-01701,2025-01-15,APAC,Retail,Team,263,1,247.85,0,won,247.85
+ORD-02358,2025-01-16,North America,Online,Business,210,13,203.63,0,lost,2647.19
+ORD-02390,2025-01-16,North America,Online,Enterprise,98,26,222.63,5,won,5498.96
+ORD-00793,2025-01-16,Europe,Online,Enterprise,5,39,256.86,10,won,9015.79
+ORD-01280,2025-01-16,North America,Online,Team,1,30,287.14,10,won,7752.78
+ORD-02313,2025-01-16,North America,Online,Business,259,13,146.67,5,won,1811.37
+ORD-02028,2025-01-16,Europe,Retail,Team,263,34,173.23,20,lost,4711.86
+ORD-01438,2025-01-16,Europe,Online,Starter,36,4,282.32,20,won,903.42
+ORD-00959,2025-01-17,North America,Partner,Enterprise,168,10,176.28,5,won,1674.66
+ORD-00538,2025-01-18,APAC,Retail,Starter,56,10,337.02,0,won,3370.2
+ORD-00580,2025-01-18,LATAM,Online,Starter,191,14,182.38,0,won,2553.32
+ORD-00801,2025-01-18,North America,Retail,Business,168,11,268.19,5,lost,2802.59
+ORD-01461,2025-01-19,Europe,Online,Starter,126,27,216.67,0,won,5850.09
+ORD-01934,2025-01-19,Europe,Online,Team,204,37,248.11,5,lost,8721.07
+ORD-00362,2025-01-19,North America,Online,Starter,136,12,276.31,10,lost,2984.15
+ORD-01980,2025-01-19,Europe,Retail,Team,193,39,362.8,0,won,14149.2
+ORD-01544,2025-01-19,Europe,Online,Business,105,15,238.09,0,won,3571.35
+ORD-01288,2025-01-19,LATAM,Retail,Starter,309,20,165.64,0,lost,3312.8
+ORD-00886,2025-01-19,North America,Retail,Starter,30,31,294.86,0,won,9140.66
+ORD-00298,2025-01-20,APAC,Partner,Business,135,29,262.29,10,lost,6845.77
+ORD-01738,2025-01-20,North America,Partner,Starter,263,12,272.15,5,won,3102.51
+ORD-00841,2025-01-20,Europe,Online,Enterprise,104,22,213.13,0,lost,4688.86
+ORD-00193,2025-01-20,Europe,Retail,Starter,124,26,165.71,0,won,4308.46
+ORD-00317,2025-01-20,North America,Retail,Starter,204,31,178.91,20,won,4436.97
+ORD-00814,2025-01-20,North America,Retail,Starter,148,10,222.18,0,won,2221.8
+ORD-02265,2025-01-21,North America,Retail,Starter,319,18,237.27,0,won,4270.86
+ORD-01485,2025-01-21,North America,Online,Starter,83,4,248.21,10,won,893.56
+ORD-01110,2025-01-21,North America,Partner,Team,319,13,256.86,20,lost,2671.34
+ORD-01459,2025-01-21,APAC,Online,Starter,53,20,201.96,0,won,4039.2
+ORD-00423,2025-01-22,APAC,Retail,Business,194,13,211.35,0,lost,2747.55
+ORD-00313,2025-01-22,APAC,Online,Starter,301,35,168.61,0,won,5901.35
+ORD-01313,2025-01-22,Europe,Online,Team,243,14,254.58,0,won,3564.12
+ORD-01228,2025-01-22,LATAM,Retail,Business,241,9,235.49,0,lost,2119.41
+ORD-01174,2025-01-22,APAC,Retail,Starter,82,31,323.53,10,lost,9026.49
+ORD-00302,2025-01-23,APAC,Online,Starter,102,9,191.65,0,won,1724.85
+ORD-00322,2025-01-24,APAC,Online,Starter,6,34,289.65,0,won,9848.1
+ORD-01520,2025-01-24,North America,Partner,Starter,79,8,262.31,0,won,2098.48
+ORD-01667,2025-01-24,North America,Retail,Starter,304,25,235.58,0,won,5889.5
+ORD-01740,2025-01-24,Europe,Online,Starter,9,33,339.8,0,won,11213.4
+ORD-00101,2025-01-24,Europe,Online,Business,255,14,186.86,0,lost,2616.04
+ORD-01441,2025-01-25,North America,Partner,Enterprise,214,31,230.44,0,won,7143.64
+ORD-00079,2025-01-25,North America,Online,Starter,233,14,210.57,5,won,2800.58
+ORD-00140,2025-01-25,APAC,Partner,Business,190,33,156.27,5,won,4899.06
+ORD-01258,2025-01-25,APAC,Partner,Team,35,34,224.79,0,lost,7642.86
+ORD-00790,2025-01-25,LATAM,Retail,Starter,248,11,430.38,0,won,4734.18
+ORD-00385,2025-01-25,Europe,Online,Team,80,27,150.03,10,won,3645.73
+ORD-01388,2025-01-25,Europe,Retail,Starter,180,37,288.57,5,lost,10143.24
+ORD-00579,2025-01-26,North America,Retail,Team,204,18,243.39,0,won,4381.02
+ORD-02230,2025-01-26,North America,Online,Team,224,21,205.49,5,won,4099.53
+ORD-00053,2025-01-26,North America,Retail,Starter,277,21,,10,lost,3489.7
+ORD-01012,2025-01-27,North America,Retail,Team,205,34,,0,won,6648.02
+ORD-00117,2025-01-27,North America,Online,Business,253,20,294.92,10,won,5308.56
+ORD-00508,2025-01-27,North America,Online,Business,189,28,180.73,0,won,5060.44
+ORD-00840,2025-01-28,North America,Partner,Business,187,29,272.25,10,won,7105.72
+ORD-01423,2025-01-28,Europe,Partner,Team,45,14,256.25,0,lost,3587.5
+ORD-01780,2025-01-28,Europe,Online,Business,179,22,290.25,0,lost,6385.5
+ORD-00299,2025-01-28,North America,Retail,Team,169,21,304.61,10,won,5757.13
+ORD-00200,2025-01-28,APAC,Retail,Starter,301,27,269.67,0,won,7281.09
+ORD-00751,2025-01-28,Europe,Online,Starter,205,28,329.43,10,won,8301.64
+ORD-00649,2025-01-28,LATAM,Online,Starter,261,14,230.32,0,lost,3224.48
+ORD-01493,2025-01-28,North America,Online,Business,283,21,225.0,0,lost,4725.0
+ORD-00523,2025-01-29,Europe,Retail,Enterprise,185,26,195.97,20,won,4076.18
+ORD-02261,2025-01-29,North America,Online,Starter,50,26,328.02,0,lost,8528.52
+ORD-01910,2025-01-29,Europe,Online,Enterprise,217,25,314.07,10,lost,7066.58
+ORD-01594,2025-01-29,APAC,Online,Team,225,5,185.91,5,won,883.07
+ORD-00651,2025-01-29,North America,Retail,Business,299,29,393.84,0,won,11421.36
+ORD-01215,2025-01-29,APAC,Retail,Team,199,6,288.65,10,won,1558.71
+ORD-01895,2025-01-29,Europe,Online,Starter,222,4,237.59,5,won,902.84
+ORD-00835,2025-01-30,North America,Online,Business,108,24,300.51,0,lost,7212.24
+ORD-00445,2025-01-30,Europe,Online,Starter,178,3,182.54,0,lost,547.62
+ORD-00550,2025-01-30,Europe,Online,Team,296,29,261.4,10,won,6822.54
+ORD-02133,2025-01-30,APAC,Retail,Starter,140,23,304.74,10,won,6308.12
+ORD-00960,2025-01-31,Europe,Online,Starter,292,32,227.46,10,lost,6550.85
+ORD-00044,2025-01-31,Europe,Online,Starter,5,23,257.61,10,won,5332.53
+ORD-00608,2025-01-31,LATAM,Online,Starter,241,17,370.46,0,won,6297.82
+ORD-01131,2025-02-01,North America,Retail,Business,271,37,176.99,5,won,6221.2
+ORD-00352,2025-02-01,North America,Retail,Team,290,2,293.34,0,lost,586.68
+ORD-00502,2025-02-01,APAC,Partner,Enterprise,9,39,237.72,0,won,9271.08
+ORD-00373,2025-02-01,LATAM,Retail,Business,115,16,176.25,10,lost,2538.0
+ORD-01881,2025-02-02,North America,Partner,Team,54,19,268.43,0,won,5100.17
+ORD-01385,2025-02-02,North America,Partner,Starter,225,13,279.75,0,lost,3636.75
+ORD-01912,2025-02-02,Europe,Retail,Starter,310,4,235.54,0,lost,942.16
+ORD-01325,2025-02-02,LATAM,Online,Starter,284,1,220.32,5,lost,209.3
+ORD-01746,2025-02-02,North America,Partner,Starter,84,33,309.97,5,won,9717.56
+ORD-02205,2025-02-03,APAC,Partner,Business,203,23,216.52,0,won,4979.96
+ORD-02153,2025-02-03,APAC,Online,Team,254,23,299.82,0,lost,6895.86
+ORD-00802,2025-02-03,APAC,Retail,Enterprise,253,32,254.82,0,won,8154.24
+ORD-02005,2025-02-03,Europe,Online,Starter,233,3,263.77,0,won,791.31
+ORD-02243,2025-02-04,APAC,Online,Team,251,36,242.02,10,won,7841.45
+ORD-01798,2025-02-04,APAC,Retail,Enterprise,91,5,197.91,0,won,989.55
+ORD-00554,2025-02-04,North America,Partner,Team,287,5,242.92,5,won,1153.87
+ORD-01747,2025-02-05,APAC,Partner,Starter,147,14,272.03,20,won,3046.74
+ORD-01176,2025-02-05,North America,Online,Starter,16,38,194.5,5,lost,7021.45
+ORD-01665,2025-02-05,Europe,Online,Team,289,26,267.95,10,won,6270.03
+ORD-01058,2025-02-05,Europe,Online,Team,93,15,253.34,0,won,3800.1
+ORD-01035,2025-02-05,LATAM,Retail,Business,291,20,254.69,20,lost,4075.04
+ORD-00356,2025-02-05,APAC,Online,Team,91,17,,0,won,5601.5
+ORD-00964,2025-02-05,North America,Online,Business,190,28,184.33,0,won,5161.24
+ORD-01785,2025-02-05,North America,Partner,Team,299,38,253.48,0,won,9632.24
+ORD-01768,2025-02-06,APAC,Online,Team,5,32,162.37,10,won,4676.26
+ORD-00668,2025-02-06,North America,Online,Business,302,28,323.44,5,lost,8603.5
+ORD-02033,2025-02-06,LATAM,Online,Starter,205,15,236.27,5,won,3366.85
+ORD-02057,2025-02-06,APAC,Online,Starter,66,38,216.63,0,won,8231.94
+ORD-00705,2025-02-06,North America,Online,Business,45,31,186.78,10,lost,5211.16
+ORD-02149,2025-02-07,LATAM,Online,Starter,2,2,266.9,0,won,533.8
+ORD-00320,2025-02-07,LATAM,Partner,Team,60,12,168.45,0,lost,2021.4
+ORD-01811,2025-02-07,Europe,Online,Starter,37,19,168.72,10,won,2885.11
+ORD-01036,2025-02-07,North America,Online,Business,298,25,248.69,0,won,6217.25
+ORD-01608,2025-02-07,Europe,Partner,Enterprise,218,9,318.16,0,won,2863.44
+ORD-02127,2025-02-07,APAC,Online,Team,255,27,265.18,10,won,6443.87
+ORD-00141,2025-02-08,Europe,Partner,Business,5,3,269.91,10,lost,728.76
+ORD-01386,2025-02-08,North America,Retail,Starter,190,12,211.24,5,won,2408.14
+ORD-00487,2025-02-08,Europe,Partner,Team,185,34,259.6,0,won,8826.4
+ORD-00483,2025-02-08,LATAM,Online,Business,19,18,199.0,5,won,3402.9
+ORD-00066,2025-02-08,Europe,Online,Enterprise,65,1,270.4,5,won,256.88
+ORD-01336,2025-02-08,Europe,Retail,Enterprise,47,37,265.55,0,won,9825.35
+ORD-01892,2025-02-09,Europe,Online,Business,300,34,342.12,0,lost,11632.08
+ORD-01375,2025-02-09,LATAM,Online,Starter,248,18,240.96,0,lost,4337.28
+ORD-01177,2025-02-09,APAC,Retail,Enterprise,42,14,226.01,20,won,2531.31
+ORD-01346,2025-02-09,North America,Retail,Team,89,17,273.55,0,won,4650.35
+ORD-01236,2025-02-09,APAC,Partner,Team,84,30,225.95,10,won,6100.65
+ORD-02156,2025-02-10,APAC,Partner,Team,125,12,286.49,5,lost,3265.99
+ORD-01534,2025-02-10,North America,Online,Team,218,32,211.05,20,won,5402.88
+ORD-00047,2025-02-10,Europe,Partner,Team,32,6,317.14,20,won,1522.27
+ORD-01034,2025-02-10,North America,Retail,Team,248,25,405.85,0,lost,10146.25
+ORD-01681,2025-02-10,APAC,Partner,Starter,26,28,,0,lost,7246.4
+ORD-01178,2025-02-11,Europe,Online,Enterprise,64,23,205.9,10,won,4262.13
+ORD-00631,2025-02-11,APAC,Retail,Starter,277,13,207.16,0,won,2693.08
+ORD-01890,2025-02-11,Europe,Retail,Business,13,15,244.34,0,won,3665.1
+ORD-01736,2025-02-12,North America,Partner,Team,315,8,151.15,0,won,1209.2
+ORD-01421,2025-02-12,Europe,Retail,Team,258,36,274.82,0,won,9893.52
+ORD-01053,2025-02-12,Europe,Online,Team,306,37,302.11,0,won,11178.07
+ORD-01486,2025-02-12,LATAM,Retail,Team,50,8,159.62,5,lost,1213.11
+ORD-02392,2025-02-13,North America,Online,Business,18,20,343.04,0,won,6860.8
+ORD-00295,2025-02-13,LATAM,Retail,Team,277,7,292.66,0,lost,2048.62
+ORD-00706,2025-02-13,Europe,Online,Business,47,36,217.85,10,won,7058.34
+ORD-00138,2025-02-13,Europe,Retail,Team,236,32,251.42,0,lost,8045.44
+ORD-00592,2025-02-13,LATAM,Online,Starter,5,14,224.16,10,won,2824.42
+ORD-00087,2025-02-14,North America,Online,Starter,218,14,261.29,10,lost,3292.25
+ORD-01005,2025-02-14,Europe,Retail,Team,17,28,235.8,5,won,6272.28
+ORD-02376,2025-02-14,North America,Online,Starter,126,9,241.21,0,won,2170.89
+ORD-01907,2025-02-14,APAC,Retail,Starter,303,31,213.55,0,won,6620.05
+ORD-02178,2025-02-14,APAC,Retail,Enterprise,63,4,311.29,10,lost,1120.64
+ORD-00255,2025-02-14,Europe,Retail,Team,150,39,358.79,20,won,11194.25
+ORD-01545,2025-02-14,North America,Retail,Starter,83,5,264.36,0,won,1321.8
+ORD-00121,2025-02-15,Europe,Online,Starter,54,4,152.55,20,won,488.16
+ORD-02280,2025-02-15,North America,Online,Team,126,3,213.41,0,won,640.23
+ORD-01381,2025-02-15,North America,Partner,Team,110,18,284.14,0,lost,5114.52
+ORD-01473,2025-02-15,APAC,Online,Team,187,17,258.96,10,lost,3962.09
+ORD-01278,2025-02-15,Europe,Online,Starter,43,38,177.25,0,won,6735.5
+ORD-00325,2025-02-15,North America,Online,Starter,284,17,191.59,10,lost,2931.33
+ORD-00441,2025-02-15,North America,Partner,Starter,36,6,296.41,20,lost,1422.77
+ORD-02218,2025-02-15,Europe,Retail,Starter,144,12,150.95,5,won,1720.83
+ORD-01442,2025-02-15,LATAM,Online,Starter,268,16,261.17,5,lost,3969.78
+ORD-00510,2025-02-16,APAC,Online,Team,288,5,131.74,10,won,592.83
+ORD-00300,2025-02-16,Europe,Retail,Starter,111,25,252.59,0,won,6314.75
+ORD-00129,2025-02-16,North America,Retail,Business,46,20,234.41,0,won,4688.2
+ORD-02170,2025-02-17,North America,Online,Starter,10,23,296.33,5,won,6474.81
+ORD-00967,2025-02-17,Europe,Partner,Team,250,5,187.93,5,won,892.67
+ORD-02136,2025-02-17,North America,Retail,Business,151,23,284.3,0,won,6538.9
+ORD-02105,2025-02-17,North America,Online,Starter,227,25,200.85,0,won,5021.25
+ORD-01348,2025-02-17,North America,Online,Team,143,14,245.04,10,lost,3087.5
+ORD-00667,2025-02-17,LATAM,Retail,Enterprise,53,3,155.83,10,won,420.74
+ORD-00417,2025-02-17,North America,Online,Enterprise,148,28,284.56,0,won,7967.68
+ORD-01367,2025-02-17,Europe,Retail,Team,236,34,165.28,5,won,5338.54
+ORD-00119,2025-02-18,APAC,Partner,Starter,167,11,260.91,5,lost,2726.51
+ORD-00566,2025-02-18,North America,Online,Business,249,19,281.07,20,won,4272.26
+ORD-00332,2025-02-18,APAC,Online,Business,307,3,116.66,5,won,332.48
+ORD-00644,2025-02-19,North America,Online,Team,279,17,138.84,0,won,2360.28
+ORD-01044,2025-02-19,Europe,Online,Starter,210,8,236.0,20,won,1510.4
+ORD-00889,2025-02-19,North America,Partner,Business,85,31,215.62,0,won,6684.22
+ORD-00602,2025-02-20,North America,Retail,Business,150,12,163.14,5,lost,1859.8
+ORD-00301,2025-02-20,North America,Partner,Business,147,37,214.54,10,lost,7144.18
+ORD-00080,2025-02-21,North America,Online,Business,112,29,238.38,5,won,6567.37
+ORD-01769,2025-02-21,APAC,Partner,Enterprise,211,35,202.35,0,won,7082.25
+ORD-01711,2025-02-22,Europe,Partner,Team,50,21,269.89,0,won,5667.69
+ORD-00591,2025-02-22,Europe,Online,Business,141,12,297.05,0,won,3564.6
+ORD-00826,2025-02-22,North America,Online,Starter,9,6,340.15,20,won,1632.72
+ORD-02354,2025-02-22,North America,Online,Team,117,21,209.22,0,won,4393.62
+ORD-00687,2025-02-23,Europe,Online,Starter,178,31,168.2,5,won,4953.49
+ORD-00619,2025-02-23,Europe,Retail,Business,74,29,200.51,10,lost,5233.31
+ORD-02359,2025-02-23,North America,Retail,Starter,96,15,261.5,0,won,3922.5
+ORD-01610,2025-02-23,North America,Online,Business,127,24,238.81,20,lost,4585.15
+ORD-01149,2025-02-23,Europe,Online,Starter,218,25,260.58,0,won,6514.5
+ORD-00375,2025-02-23,LATAM,Online,Business,12,18,315.49,10,won,5110.94
+ORD-01577,2025-02-24,Europe,Retail,Business,121,17,276.67,5,won,4468.22
+ORD-01560,2025-02-24,APAC,Online,Business,8,4,257.18,20,won,822.98
+ORD-00930,2025-02-24,North America,Online,Team,42,1,271.92,5,won,258.32
+ORD-02391,2025-02-25,Europe,Retail,Starter,294,39,279.5,0,lost,10900.5
+ORD-00735,2025-02-25,Europe,Retail,Business,292,14,283.43,0,won,3968.02
+ORD-00972,2025-02-25,LATAM,Online,Enterprise,17,1,305.25,5,lost,289.99
+ORD-00921,2025-02-25,North America,Online,Starter,296,8,312.88,20,lost,2002.43
+ORD-01835,2025-02-26,North America,Partner,Team,161,31,268.7,0,lost,8329.7
+ORD-00708,2025-02-26,North America,Retail,Business,81,1,235.81,0,won,235.81
+ORD-00985,2025-02-27,Europe,Online,Business,95,20,320.83,10,won,5774.94
+ORD-00892,2025-02-27,North America,Online,Team,58,2,236.79,20,lost,378.86
+ORD-00173,2025-02-27,North America,Partner,Team,45,27,297.87,10,lost,7238.24
+ORD-00253,2025-02-27,North America,Partner,Starter,72,29,194.73,0,won,5647.17
+ORD-01936,2025-02-27,APAC,Retail,Starter,119,28,350.92,10,won,8843.18
+ORD-01702,2025-02-27,North America,Online,Team,52,31,211.86,0,lost,6567.66
+ORD-01812,2025-02-27,Europe,Online,Team,31,4,325.49,5,lost,1236.86
+ORD-02122,2025-02-28,Europe,Online,Starter,308,17,238.26,0,won,4050.42
+ORD-01613,2025-02-28,Europe,Retail,Starter,150,6,220.83,10,lost,1192.48
+ORD-01873,2025-02-28,North America,Partner,Business,216,30,300.52,5,won,8564.82
+ORD-02264,2025-02-28,APAC,Retail,Starter,207,10,287.16,5,won,2728.02
+ORD-01692,2025-02-28,North America,Partner,Enterprise,144,31,275.1,0,won,8528.1
+ORD-00555,2025-03-01,North America,Online,Starter,184,5,135.95,10,lost,611.78
+ORD-00552,2025-03-01,North America,Online,Starter,26,27,261.48,10,lost,6353.96
+ORD-00928,2025-03-02,APAC,Partner,Starter,12,1,238.19,0,won,238.19
+ORD-01932,2025-03-02,North America,Retail,Business,267,21,191.28,10,won,3615.19
+ORD-02371,2025-03-02,APAC,Online,Team,126,28,296.3,0,won,8296.4
+ORD-00307,2025-03-03,Europe,Online,Starter,74,20,217.91,0,won,4358.2
+ORD-02242,2025-03-03,Europe,Online,Starter,252,38,236.47,0,won,8985.86
+ORD-00304,2025-03-03,APAC,Online,Business,157,26,282.91,0,won,7355.66
+ORD-02180,2025-03-03,North America,Online,Team,138,39,356.29,0,won,13895.31
+ORD-00957,2025-03-03,LATAM,Online,Team,227,12,312.81,10,won,3378.35
+ORD-00065,2025-03-04,North America,Partner,Team,241,8,220.88,0,won,1767.04
+ORD-00757,2025-03-04,North America,Retail,Starter,112,26,358.88,10,won,8397.79
+ORD-02192,2025-03-04,North America,Online,Starter,57,9,204.21,0,lost,1837.89
+ORD-00939,2025-03-04,Europe,Online,Enterprise,15,34,265.82,0,lost,9037.88
+ORD-01105,2025-03-04,APAC,Retail,Enterprise,66,20,267.9,0,lost,5358.0
+ORD-02360,2025-03-05,APAC,Online,Team,257,13,253.54,0,won,3296.02
+ORD-02219,2025-03-05,LATAM,Online,Team,78,16,228.67,0,won,3658.72
+ORD-00969,2025-03-05,Europe,Retail,Starter,195,37,205.66,0,lost,7609.42
+ORD-02374,2025-03-06,North America,Partner,Business,81,34,249.94,20,won,6798.37
+ORD-01564,2025-03-06,APAC,Online,Business,113,28,270.26,0,lost,7567.28
+ORD-01022,2025-03-06,North America,Online,Starter,105,26,299.22,0,lost,7779.72
+ORD-01125,2025-03-07,APAC,Online,Starter,6,2,363.06,10,won,653.51
+ORD-00690,2025-03-07,North America,Retail,Starter,126,38,189.82,10,won,6491.84
+ORD-01627,2025-03-08,North America,Online,Business,129,33,305.03,20,won,8052.79
+ORD-00773,2025-03-08,APAC,Online,Starter,273,33,263.36,5,won,8256.34
+ORD-01719,2025-03-08,North America,Online,Business,105,9,357.34,0,won,3216.06
+ORD-01341,2025-03-09,Europe,Partner,Business,159,3,296.96,0,lost,890.88
+ORD-00848,2025-03-10,APAC,Online,Starter,293,33,317.58,0,won,10480.14
+ORD-00384,2025-03-10,North America,Online,Business,177,37,340.68,5,won,11974.9
+ORD-00950,2025-03-10,Europe,Online,Team,198,7,238.49,0,won,1669.43
+ORD-00126,2025-03-10,North America,Online,Starter,43,14,137.16,20,won,1536.19
+ORD-01233,2025-03-10,LATAM,Retail,Team,228,12,220.74,0,won,2648.88
+ORD-00933,2025-03-10,Europe,Online,Starter,93,23,339.91,0,won,7817.93
+ORD-00689,2025-03-10,LATAM,Online,Business,226,2,315.08,10,won,567.14
+ORD-01402,2025-03-11,APAC,Retail,Business,257,22,252.04,0,won,5544.88
+ORD-00062,2025-03-11,Europe,Partner,Enterprise,32,12,,5,won,2392.86
+ORD-00839,2025-03-12,Europe,Partner,Starter,119,31,222.45,5,won,6551.15
+ORD-00206,2025-03-13,APAC,Retail,Enterprise,109,37,267.06,5,won,9387.16
+ORD-01399,2025-03-13,North America,Partner,Team,89,38,209.68,20,won,6374.27
+ORD-02166,2025-03-13,Europe,Retail,Starter,235,31,231.62,0,lost,7180.22
+ORD-02395,2025-03-13,North America,Online,Starter,146,7,213.37,0,lost,1493.59
+ORD-01574,2025-03-14,North America,Retail,Starter,62,1,230.19,10,won,207.17
+ORD-00172,2025-03-14,Europe,Online,Starter,19,6,253.62,20,won,1217.38
+ORD-01064,2025-03-14,Europe,Online,Business,172,26,213.87,0,lost,5560.62
+ORD-00812,2025-03-14,LATAM,Online,Starter,50,6,230.31,20,won,1105.49
+ORD-01293,2025-03-15,LATAM,Online,Starter,207,21,202.32,0,won,4248.72
+ORD-01966,2025-03-15,North America,Retail,Business,259,27,352.21,0,lost,9509.67
+ORD-01039,2025-03-15,North America,Online,Team,244,5,226.37,0,lost,1131.85
+ORD-01202,2025-03-15,North America,Retail,Business,16,13,208.37,20,won,2167.05
+ORD-00647,2025-03-15,North America,Retail,Starter,295,15,255.62,0,won,3834.3
+ORD-00505,2025-03-15,Europe,Partner,Starter,231,32,218.18,0,won,6981.76
+ORD-00532,2025-03-16,Europe,Online,Enterprise,126,12,382.91,0,won,4594.92
+ORD-01995,2025-03-16,North America,Retail,Team,130,17,267.52,0,won,4547.84
+ORD-01028,2025-03-16,APAC,Online,Enterprise,309,1,309.29,0,won,309.29
+ORD-00440,2025-03-16,Europe,Partner,Starter,50,27,264.83,5,won,6792.89
+ORD-01622,2025-03-16,APAC,Online,Starter,247,7,339.08,20,lost,1898.85
+ORD-00819,2025-03-16,Europe,Online,Business,267,7,337.75,20,won,1891.4
+ORD-00891,2025-03-17,LATAM,Online,Business,223,14,400.39,0,won,5605.46
+ORD-01084,2025-03-17,North America,Retail,Team,216,14,158.37,20,won,1773.74
+ORD-01636,2025-03-17,Europe,Online,Team,193,33,332.03,0,lost,10956.99
+ORD-00931,2025-03-17,North America,Online,Team,145,19,353.68,20,won,5375.94
+ORD-02285,2025-03-17,North America,Online,Business,313,28,341.87,5,won,9093.74
+ORD-00868,2025-03-18,North America,Online,Team,198,33,280.03,0,won,9240.99
+ORD-02001,2025-03-18,Europe,Retail,Starter,46,14,280.18,10,won,3530.27
+ORD-00187,2025-03-18,North America,Retail,Starter,71,39,208.7,5,won,7732.33
+ORD-02361,2025-03-19,North America,Retail,Team,81,4,279.36,5,won,1061.57
+ORD-02091,2025-03-19,North America,Online,Enterprise,267,13,252.15,0,won,3277.95
+ORD-01356,2025-03-19,North America,Online,Starter,164,20,222.55,10,lost,4005.9
+ORD-01726,2025-03-19,North America,Retail,Starter,37,2,307.02,0,won,614.04
+ORD-02227,2025-03-19,Europe,Online,Starter,263,36,197.91,0,won,7124.76
+ORD-02238,2025-03-20,APAC,Retail,Team,11,17,315.39,5,won,5093.55
+ORD-01075,2025-03-20,LATAM,Online,Team,167,13,102.35,10,won,1197.49
+ORD-00031,2025-03-21,North America,Retail,Starter,122,18,113.51,5,lost,1941.02
+ORD-00402,2025-03-21,North America,Partner,Team,229,37,405.83,20,won,12012.57
+ORD-00452,2025-03-22,APAC,Online,Starter,103,29,360.13,5,won,9921.58
+ORD-00641,2025-03-22,APAC,Online,Team,223,34,314.33,20,won,8549.78
+ORD-00072,2025-03-22,APAC,Online,Business,209,14,171.99,5,won,2287.47
+ORD-00231,2025-03-22,APAC,Online,Team,170,34,229.49,20,lost,6242.13
+ORD-01953,2025-03-22,APAC,Online,Team,233,31,323.07,5,won,9514.41
+ORD-02184,2025-03-22,LATAM,Partner,Enterprise,10,21,418.83,0,lost,8795.43
+ORD-01991,2025-03-23,North America,Retail,Business,272,21,236.25,10,lost,4465.12
+ORD-01249,2025-03-23,North America,Retail,Starter,81,38,174.5,0,won,6631.0
+ORD-00638,2025-03-23,Europe,Online,Business,14,29,245.82,10,lost,6415.9
+ORD-02232,2025-03-24,North America,Partner,Starter,236,29,226.13,10,won,5901.99
+ORD-01434,2025-03-24,Europe,Online,Starter,235,14,182.6,0,won,2556.4
+ORD-01144,2025-03-24,North America,Retail,Business,288,16,203.15,10,won,2925.36
+ORD-00040,2025-03-24,North America,Online,Business,177,20,256.41,5,won,4871.79
+ORD-01958,2025-03-24,APAC,Retail,Starter,193,12,301.11,10,won,3251.99
+ORD-00013,2025-03-25,Europe,Online,Team,31,11,,0,won,3135.11
+ORD-01164,2025-03-25,North America,Online,Team,262,14,159.48,0,won,2232.72
+ORD-00491,2025-03-25,North America,Retail,Starter,97,16,263.62,20,won,3374.34
+ORD-00991,2025-03-25,North America,Retail,Business,271,25,,0,lost,1768.75
+ORD-01231,2025-03-25,North America,Online,Team,319,8,221.52,5,won,1683.55
+ORD-01994,2025-03-26,APAC,Retail,Starter,206,2,294.27,0,lost,588.54
+ORD-01512,2025-03-26,LATAM,Retail,Starter,42,14,290.88,0,lost,4072.32
+ORD-01729,2025-03-26,Europe,Retail,Business,114,38,306.38,0,won,11642.44
+ORD-02380,2025-03-26,Europe,Partner,Starter,26,10,245.99,20,won,1967.92
+ORD-00331,2025-03-26,Europe,Online,Business,222,14,118.57,0,lost,1659.98
+ORD-00947,2025-03-27,APAC,Online,Starter,262,28,246.57,10,lost,6213.56
+ORD-01192,2025-03-27,LATAM,Retail,Starter,84,10,135.85,0,lost,1358.5
+ORD-00979,2025-03-27,APAC,Retail,Business,54,3,264.96,5,won,755.14
+ORD-00955,2025-03-28,North America,Online,Enterprise,265,35,304.03,10,lost,9576.94
+ORD-01804,2025-03-28,North America,Retail,Business,38,22,247.69,0,lost,5449.18
+ORD-00792,2025-03-28,LATAM,Partner,Team,274,10,293.22,10,won,2638.98
+ORD-01924,2025-03-29,APAC,Online,Business,26,31,337.54,0,won,10463.74
+ORD-00672,2025-03-29,North America,Partner,Business,131,21,271.2,0,won,5695.2
+ORD-02209,2025-03-29,North America,Retail,Team,61,34,281.55,10,lost,8615.43
+ORD-01716,2025-03-30,Europe,Online,Team,241,13,,20,lost,2570.26
+ORD-00048,2025-03-30,Europe,Online,Business,89,21,277.84,0,won,5834.64
+ORD-00978,2025-03-30,North America,Partner,Team,104,39,247.94,0,won,9669.66
+ORD-00726,2025-03-30,APAC,Retail,Team,59,3,189.14,10,lost,510.68
+ORD-00807,2025-03-31,North America,Online,Starter,153,6,257.97,5,won,1470.43
+ORD-01224,2025-04-01,Europe,Online,Business,200,7,201.83,0,lost,1412.81
+ORD-02031,2025-04-01,North America,Retail,Starter,303,10,320.18,0,lost,3201.8
+ORD-00798,2025-04-01,APAC,Retail,Business,221,36,395.02,20,won,11376.58
+ORD-00464,2025-04-01,APAC,Online,Starter,274,28,319.1,5,won,8488.06
+ORD-00316,2025-04-02,LATAM,Online,Starter,41,7,241.67,0,won,1691.69
+ORD-01497,2025-04-02,North America,Online,Business,80,5,223.23,0,won,1116.15
+ORD-00122,2025-04-02,APAC,Online,Team,217,28,227.5,5,won,6051.5
+ORD-01284,2025-04-02,APAC,Online,Starter,53,17,132.24,0,won,2248.08
+ORD-00424,2025-04-02,North America,Online,Starter,287,20,319.12,0,won,6382.4
+ORD-00810,2025-04-02,LATAM,Retail,Team,302,4,296.92,0,won,1187.68
+ORD-00058,2025-04-03,LATAM,Retail,Starter,203,18,365.94,10,lost,5928.23
+ORD-01023,2025-04-03,Europe,Retail,Team,139,13,199.5,20,won,2074.8
+ORD-01055,2025-04-03,North America,Online,Starter,34,18,247.16,0,won,4448.88
+ORD-00078,2025-04-03,Europe,Online,Team,49,2,331.91,10,won,597.44
+ORD-00049,2025-04-03,APAC,Online,Enterprise,81,7,268.6,10,won,1692.18
+ORD-00797,2025-04-03,Europe,Partner,Starter,153,24,,0,won,6516.48
+ORD-00900,2025-04-03,North America,Online,Starter,5,39,190.13,10,won,6673.56
+ORD-01016,2025-04-04,Europe,Retail,Team,160,23,241.36,0,won,5551.28
+ORD-01501,2025-04-04,APAC,Retail,Business,60,13,285.93,0,lost,3717.09
+ORD-01216,2025-04-04,APAC,Partner,Business,63,15,284.62,5,won,4055.84
+ORD-02239,2025-04-04,Europe,Retail,Team,224,22,248.69,0,lost,5471.18
+ORD-01570,2025-04-04,Europe,Partner,Business,2,28,263.33,0,lost,7373.24
+ORD-01884,2025-04-04,Europe,Partner,Starter,107,18,244.47,0,won,4400.46
+ORD-01771,2025-04-04,APAC,Partner,Business,229,1,229.74,0,lost,229.74
+ORD-01999,2025-04-04,North America,Online,Enterprise,39,35,321.02,0,won,11235.7
+ORD-00183,2025-04-05,Europe,Retail,Starter,235,33,202.08,0,won,6668.64
+ORD-02296,2025-04-05,APAC,Online,Starter,84,26,320.43,0,won,8331.18
+ORD-00871,2025-04-05,North America,Retail,Starter,118,8,286.44,0,won,2291.52
+ORD-00484,2025-04-05,North America,Partner,Starter,126,39,178.99,0,won,6980.61
+ORD-00205,2025-04-05,North America,Online,Team,78,23,268.47,5,won,5866.07
+ORD-00099,2025-04-05,North America,Online,Business,318,25,,10,won,8715.6
+ORD-00601,2025-04-06,APAC,Partner,Team,73,33,306.5,0,lost,10114.5
+ORD-01217,2025-04-06,APAC,Partner,Starter,257,20,220.41,10,lost,3967.38
+ORD-00535,2025-04-06,North America,Partner,Business,298,13,336.98,0,won,4380.74
+ORD-01279,2025-04-06,North America,Retail,Starter,9,16,191.03,20,won,2445.18
+ORD-00568,2025-04-07,Europe,Retail,Team,66,28,253.37,5,lost,6739.64
+ORD-00393,2025-04-07,APAC,Retail,Business,11,11,261.65,5,won,2734.24
+ORD-00278,2025-04-07,APAC,Partner,Business,306,34,239.6,5,won,7739.08
+ORD-01928,2025-04-07,APAC,Partner,Business,117,3,199.01,10,won,537.33
+ORD-01600,2025-04-07,APAC,Retail,Starter,281,16,,10,won,3745.3
+ORD-02223,2025-04-08,LATAM,Partner,Starter,45,7,85.07,10,won,535.94
+ORD-00507,2025-04-08,Europe,Online,Starter,297,17,267.52,5,won,4320.45
+ORD-02341,2025-04-08,North America,Retail,Enterprise,27,37,305.23,5,won,10728.83
+ORD-00112,2025-04-08,North America,Online,Starter,28,16,208.72,10,won,3005.57
+ORD-00162,2025-04-08,APAC,Partner,Business,170,39,194.35,0,won,7579.65
+ORD-00185,2025-04-08,North America,Online,Team,97,5,231.19,5,won,1098.15
+ORD-02311,2025-04-09,Europe,Online,Business,114,22,251.45,5,won,5255.3
+ORD-00940,2025-04-09,Europe,Partner,Starter,309,7,213.52,0,won,1494.64
+ORD-01969,2025-04-09,Europe,Partner,Business,235,37,236.06,0,lost,8734.22
+ORD-01378,2025-04-09,LATAM,Retail,Business,282,12,230.89,10,lost,2493.61
+ORD-02069,2025-04-09,North America,Retail,Starter,207,19,243.29,0,lost,4622.51
+ORD-01678,2025-04-09,North America,Retail,Business,199,7,173.95,20,won,974.12
+ORD-00769,2025-04-10,Europe,Online,Business,228,35,114.52,0,lost,4008.2
+ORD-00399,2025-04-10,Europe,Partner,Starter,282,35,167.4,0,lost,5859.0
+ORD-01983,2025-04-10,North America,Online,Business,176,34,289.44,0,lost,9840.96
+ORD-00897,2025-04-10,Europe,Partner,Starter,215,5,289.83,0,won,1449.15
+ORD-00809,2025-04-10,LATAM,Online,Team,58,11,295.22,10,won,2922.68
+ORD-01984,2025-04-11,APAC,Retail,Starter,80,26,277.7,20,lost,5776.16
+ORD-00820,2025-04-11,North America,Partner,Starter,136,24,215.54,5,lost,4914.31
+ORD-00774,2025-04-12,North America,Retail,Starter,96,30,200.36,0,won,6010.8
+ORD-02181,2025-04-12,LATAM,Partner,Starter,13,17,355.68,0,won,6046.56
+ORD-01430,2025-04-12,LATAM,Online,Team,82,20,189.64,0,lost,3792.8
+ORD-01470,2025-04-12,North America,Online,Enterprise,227,20,278.34,5,won,5288.46
+ORD-00541,2025-04-12,Europe,Online,Team,180,38,328.19,0,lost,12471.22
+ORD-01439,2025-04-12,North America,Retail,Business,220,7,204.17,0,won,1429.19
+ORD-00517,2025-04-12,Europe,Retail,Team,209,27,,10,won,6029.07
+ORD-00910,2025-04-13,Europe,Partner,Business,137,19,305.32,5,won,5511.03
+ORD-00521,2025-04-13,Europe,Retail,Starter,46,17,202.74,10,won,3101.92
+ORD-01242,2025-04-13,Europe,Retail,Team,230,22,253.33,0,won,5573.26
+ORD-00345,2025-04-13,LATAM,Retail,Enterprise,84,1,288.63,20,won,230.9
+ORD-01160,2025-04-13,APAC,Retail,Starter,102,29,207.82,0,won,6026.78
+ORD-01833,2025-04-13,APAC,Online,Starter,204,17,223.44,20,won,3038.78
+ORD-00691,2025-04-13,North America,Online,Business,289,38,287.77,0,won,10935.26
+ORD-02303,2025-04-13,North America,Retail,Starter,101,16,168.01,0,lost,2688.16
+ORD-00872,2025-04-14,North America,Online,Starter,281,1,321.49,20,lost,257.19
+ORD-01158,2025-04-14,APAC,Partner,Starter,5,9,,0,won,966.6
+ORD-01079,2025-04-15,LATAM,Online,Starter,235,1,350.91,0,won,350.91
+ORD-01071,2025-04-15,APAC,Online,Team,312,39,270.6,0,won,10553.4
+ORD-01237,2025-04-15,Europe,Retail,Starter,238,23,267.33,0,won,6148.59
+ORD-02346,2025-04-15,APAC,Retail,Starter,140,3,144.93,0,won,434.79
+ORD-00042,2025-04-15,Europe,Online,Starter,97,32,201.79,5,won,6134.42
+ORD-01653,2025-04-15,LATAM,Online,Enterprise,162,16,268.03,0,won,4288.48
+ORD-01974,2025-04-15,APAC,Retail,Business,55,23,223.59,0,lost,5142.57
+ORD-00051,2025-04-15,Europe,Retail,Team,47,6,185.41,0,won,1112.46
+ORD-00146,2025-04-16,North America,Partner,Enterprise,289,13,321.9,0,won,4184.7
+ORD-00338,2025-04-16,Europe,Online,Business,272,8,263.35,10,won,1896.12
+ORD-00980,2025-04-16,North America,Retail,Team,25,34,,10,won,3321.32
+ORD-00312,2025-04-16,Europe,Online,Enterprise,113,20,295.5,0,won,5910.0
+ORD-01303,2025-04-16,Europe,Partner,Enterprise,199,9,258.12,0,won,2323.08
+ORD-01625,2025-04-16,North America,Online,Enterprise,111,33,214.4,0,lost,7075.2
+ORD-02151,2025-04-16,APAC,Retail,Team,282,14,248.5,5,won,3305.05
+ORD-01898,2025-04-17,LATAM,Retail,Business,104,2,257.87,0,won,515.74
+ORD-00496,2025-04-17,APAC,Online,Starter,260,3,165.06,20,won,396.14
+ORD-02338,2025-04-17,North America,Online,Starter,303,8,304.85,0,won,2438.8
+ORD-00678,2025-04-17,APAC,Online,Team,184,5,176.61,5,won,838.9
+ORD-00643,2025-04-17,APAC,Retail,Team,79,21,284.68,5,won,5679.37
+ORD-01800,2025-04-18,Europe,Retail,Starter,91,9,259.61,10,lost,2102.84
+ORD-01911,2025-04-18,North America,Partner,Enterprise,289,7,261.54,5,won,1739.24
+ORD-02229,2025-04-18,Europe,Online,Starter,159,36,250.4,0,lost,9014.4
+ORD-02135,2025-04-18,Europe,Online,Business,68,32,302.52,20,won,7744.51
+ORD-00369,2025-04-19,North America,Online,Team,226,12,204.77,0,won,2457.24
+ORD-01154,2025-04-19,North America,Partner,Starter,289,35,322.89,0,won,11301.15
+ORD-01826,2025-04-19,APAC,Partner,Business,22,7,284.05,0,lost,1988.35
+ORD-01203,2025-04-19,LATAM,Online,Enterprise,35,4,285.18,0,won,1140.72
+ORD-02163,2025-04-20,APAC,Retail,Team,125,15,242.93,5,lost,3461.75
+ORD-00380,2025-04-20,North America,Online,Team,40,31,208.42,0,won,6461.02
+ORD-01796,2025-04-20,North America,Online,Enterprise,115,8,306.96,10,won,2210.11
+ORD-02231,2025-04-20,North America,Retail,Team,312,15,174.77,0,won,2621.55
+ORD-01926,2025-04-20,North America,Online,Team,243,34,201.44,10,lost,6164.06
+ORD-00926,2025-04-20,APAC,Retail,Business,314,24,203.52,5,won,4640.26
+ORD-01287,2025-04-20,Europe,Online,Enterprise,273,30,260.64,5,won,7428.24
+ORD-00326,2025-04-20,North America,Online,Business,40,30,249.69,0,won,7490.7
+ORD-01862,2025-04-20,Europe,Online,Starter,61,36,321.12,5,won,10982.3
+ORD-02159,2025-04-20,Europe,Retail,Business,67,17,346.9,0,lost,5897.3
+ORD-01985,2025-04-21,North America,Online,Starter,195,32,223.49,0,won,7151.68
+ORD-01043,2025-04-21,Europe,Online,Business,239,36,269.66,10,won,8736.98
+ORD-00267,2025-04-21,North America,Partner,Starter,142,7,236.33,0,lost,1654.31
+ORD-00653,2025-04-21,North America,Partner,Team,158,13,230.77,10,won,2700.01
+ORD-02088,2025-04-21,APAC,Online,Enterprise,39,35,174.25,20,won,4879.0
+ORD-00852,2025-04-21,North America,Online,Starter,184,29,156.96,0,won,4551.84
+ORD-00105,2025-04-21,North America,Retail,Team,220,13,234.85,0,won,3053.05
+ORD-02256,2025-04-22,North America,Online,Business,197,14,129.49,10,won,1631.57
+ORD-01767,2025-04-22,North America,Retail,Starter,2,21,212.5,5,won,4239.38
+ORD-01435,2025-04-22,APAC,Online,Starter,307,11,299.73,0,won,3297.03
+ORD-01335,2025-04-22,Europe,Partner,Business,291,27,205.66,5,lost,5275.18
+ORD-00770,2025-04-22,APAC,Online,Team,314,27,177.51,5,won,4553.13
+ORD-02083,2025-04-22,LATAM,Retail,Team,294,6,249.98,5,won,1424.89
+ORD-01225,2025-04-23,Europe,Retail,Business,142,16,120.52,10,lost,1735.49
+ORD-01106,2025-04-23,North America,Online,Starter,127,32,309.32,5,won,9403.33
+ORD-02168,2025-04-23,North America,Retail,Team,211,37,266.72,10,won,8881.78
+ORD-02208,2025-04-23,Europe,Retail,Business,260,5,175.66,0,won,878.3
+ORD-00054,2025-04-24,North America,Online,Team,131,25,362.23,5,won,8602.96
+ORD-01941,2025-04-24,APAC,Retail,Business,220,29,210.81,10,won,5502.14
+ORD-01002,2025-04-24,Europe,Retail,Business,5,33,170.62,5,lost,5348.94
+ORD-00014,2025-04-24,Europe,Partner,Starter,270,17,306.42,5,lost,4948.68
+ORD-01968,2025-04-24,Europe,Online,Team,203,23,235.45,10,won,4873.81
+ORD-00975,2025-04-24,APAC,Retail,Team,271,8,311.45,5,won,2367.02
+ORD-01757,2025-04-25,North America,Retail,Starter,27,5,407.45,10,won,1833.52
+ORD-00153,2025-04-25,APAC,Online,Business,86,10,,10,lost,1066.5
+ORD-01474,2025-04-25,Europe,Online,Starter,162,9,215.2,0,lost,1936.8
+ORD-01483,2025-04-26,North America,Online,Business,235,24,244.85,5,won,5582.58
+ORD-02220,2025-04-26,APAC,Retail,Team,276,2,112.37,0,won,224.74
+ORD-00171,2025-04-27,Europe,Partner,Business,75,33,232.0,0,won,7656.0
+ORD-01615,2025-04-27,North America,Retail,Team,33,32,316.52,5,won,9622.21
+ORD-02067,2025-04-27,APAC,Online,Starter,25,7,240.32,5,won,1598.13
+ORD-01906,2025-04-27,Europe,Retail,Team,110,2,224.13,10,won,403.43
+ORD-01825,2025-04-27,LATAM,Online,Enterprise,235,13,128.0,0,won,1664.0
+ORD-02185,2025-04-27,North America,Retail,Starter,238,15,205.12,0,won,3076.8
+ORD-02128,2025-04-28,APAC,Online,Team,186,30,272.63,10,won,7361.01
+ORD-00449,2025-04-28,APAC,Partner,Team,283,23,244.72,20,won,4502.85
+ORD-00166,2025-04-28,Europe,Online,Team,121,4,150.06,5,won,570.23
+ORD-00866,2025-04-28,North America,Partner,Starter,134,15,226.84,10,won,3062.34
+ORD-01122,2025-04-28,APAC,Retail,Business,140,9,248.67,0,won,2238.03
+ORD-02266,2025-04-28,North America,Retail,Starter,212,26,308.16,20,won,6409.73
+ORD-00110,2025-04-28,APAC,Retail,Business,205,18,200.06,5,lost,3421.03
+ORD-00186,2025-04-28,North America,Retail,Starter,294,29,204.63,0,lost,5934.27
+ORD-00461,2025-04-29,APAC,Retail,Team,152,2,404.77,5,lost,769.06
+ORD-00800,2025-04-29,LATAM,Online,Business,257,12,,20,won,1413.89
+ORD-01353,2025-04-29,Europe,Online,Business,189,1,218.35,0,won,218.35
+ORD-00387,2025-04-29,APAC,Online,Starter,270,10,349.18,0,won,3491.8
+ORD-02196,2025-04-29,APAC,Retail,Business,54,10,269.39,5,won,2559.2
+ORD-00486,2025-04-29,North America,Online,Starter,211,20,339.73,0,won,6794.6
+ORD-01618,2025-04-29,Europe,Retail,Starter,77,23,194.71,0,won,4478.33
+ORD-02370,2025-04-29,North America,Partner,Enterprise,267,7,243.57,5,lost,1619.74
+ORD-00570,2025-04-30,APAC,Partner,Starter,30,17,284.67,0,lost,4839.39
+ORD-00358,2025-04-30,North America,Online,Team,208,30,119.85,0,won,3595.5
+ORD-02383,2025-04-30,North America,Online,Team,319,28,186.89,0,lost,5232.92
+ORD-01000,2025-04-30,APAC,Retail,Enterprise,199,8,305.54,5,won,2322.1
+ORD-01199,2025-05-01,North America,Online,Starter,28,21,282.58,0,won,5934.18
+ORD-01537,2025-05-01,APAC,Online,Starter,215,10,352.88,5,won,3352.36
+ORD-01098,2025-05-01,LATAM,Partner,Starter,165,2,371.28,0,won,742.56
+ORD-01790,2025-05-01,North America,Online,Starter,56,33,251.84,0,won,8310.72
+ORD-01412,2025-05-02,APAC,Retail,Team,307,39,217.97,10,won,7650.75
+ORD-00008,2025-05-02,APAC,Online,Business,173,21,242.5,10,won,4583.25
+ORD-00319,2025-05-02,APAC,Online,Team,169,17,353.5,10,won,5408.55
+ORD-01940,2025-05-02,North America,Online,Team,290,26,326.1,5,won,8054.67
+ORD-01915,2025-05-02,APAC,Online,Team,13,8,303.12,0,won,2424.96
+ORD-00018,2025-05-03,Europe,Partner,Business,254,18,252.69,10,won,4093.58
+ORD-00843,2025-05-03,North America,Online,Business,36,1,354.94,0,lost,354.94
+ORD-00012,2025-05-03,North America,Retail,Business,140,26,319.3,10,won,7471.62
+ORD-02257,2025-05-03,Europe,Online,Starter,303,3,183.26,0,won,549.78
+ORD-01942,2025-05-03,APAC,Online,Business,57,39,269.56,20,won,8410.27
+ORD-01522,2025-05-03,APAC,Online,Team,84,17,308.37,0,won,5242.29
+ORD-02190,2025-05-04,Europe,Partner,Business,217,18,249.94,20,lost,3599.14
+ORD-00962,2025-05-04,North America,Partner,Starter,4,32,279.29,5,won,8490.42
+ORD-00378,2025-05-04,Europe,Retail,Starter,150,3,204.81,0,lost,614.43
+ORD-00754,2025-05-05,North America,Retail,Team,56,31,239.56,10,lost,6683.72
+ORD-01699,2025-05-05,APAC,Online,Starter,128,8,251.84,5,won,1913.98
+ORD-01630,2025-05-05,North America,Partner,Starter,286,7,285.13,10,won,1796.32
+ORD-01838,2025-05-05,North America,Online,Starter,52,35,248.12,10,won,7815.78
+ORD-00021,2025-05-05,North America,Partner,Starter,283,13,236.97,0,won,3080.61
+ORD-00745,2025-05-06,North America,Partner,Business,221,39,276.14,0,won,10769.46
+ORD-02289,2025-05-06,North America,Partner,Business,178,2,291.84,0,lost,583.68
+ORD-00283,2025-05-06,Europe,Online,Starter,124,36,220.22,0,lost,7927.92
+ORD-01290,2025-05-06,Europe,Online,Team,233,1,186.87,0,won,186.87
+ORD-00622,2025-05-06,LATAM,Online,Team,24,3,272.37,0,won,817.11
+ORD-02056,2025-05-06,North America,Online,Business,11,35,226.69,5,lost,7537.44
+ORD-01639,2025-05-06,North America,Online,Starter,35,18,190.06,0,won,3421.08
+ORD-01204,2025-05-06,APAC,Online,Business,51,11,173.44,0,won,1907.84
+ORD-00135,2025-05-06,Europe,Online,Team,258,30,161.55,5,lost,4604.18
+ORD-01401,2025-05-06,North America,Online,Business,314,15,301.97,5,won,4303.07
+ORD-02124,2025-05-06,North America,Retail,Business,292,22,225.3,0,won,4956.6
+ORD-00152,2025-05-06,Europe,Retail,Team,8,35,116.98,0,lost,4094.3
+ORD-00817,2025-05-07,Europe,Online,Starter,228,15,370.46,0,lost,5556.9
+ORD-01026,2025-05-07,APAC,Partner,Team,24,37,226.29,0,won,8372.73
+ORD-00083,2025-05-07,North America,Online,Enterprise,151,18,154.51,0,lost,2781.18
+ORD-02203,2025-05-07,North America,Retail,Starter,251,12,283.51,0,won,3402.12
+ORD-01013,2025-05-07,North America,Online,Starter,243,17,293.37,5,lost,4737.93
+ORD-00716,2025-05-07,North America,Online,Team,270,10,306.78,5,won,2914.41
+ORD-00479,2025-05-07,North America,Online,Business,20,6,298.41,10,lost,1611.41
+ORD-02233,2025-05-07,North America,Retail,Starter,217,36,318.18,0,won,11454.48
+ORD-01170,2025-05-08,North America,Online,Business,218,21,199.77,0,won,4195.17
+ORD-00263,2025-05-08,North America,Online,Enterprise,30,38,384.55,0,won,14612.9
+ORD-01683,2025-05-08,North America,Retail,Business,77,8,300.41,0,won,2403.28
+ORD-00421,2025-05-08,APAC,Partner,Starter,66,13,153.88,0,won,2000.44
+ORD-01857,2025-05-08,North America,Partner,Business,205,17,258.65,20,lost,3517.64
+ORD-00057,2025-05-08,North America,Retail,Team,207,22,299.68,10,won,5933.66
+ORD-01232,2025-05-08,North America,Retail,Enterprise,144,15,176.53,10,won,2383.15
+ORD-00766,2025-05-08,North America,Online,Starter,195,27,191.42,10,won,4651.51
+ORD-01541,2025-05-09,North America,Retail,Team,120,37,231.63,0,won,8570.31
+ORD-01918,2025-05-09,North America,Online,Team,9,23,220.75,0,lost,5077.25
+ORD-01380,2025-05-09,Europe,Partner,Starter,183,30,184.54,5,won,5259.39
+ORD-00276,2025-05-09,North America,Online,Business,169,31,128.88,0,lost,3995.28
+ORD-00747,2025-05-09,North America,Online,Starter,144,12,236.03,0,won,2832.36
+ORD-02171,2025-05-09,LATAM,Partner,Business,125,7,297.33,0,won,2081.31
+ORD-00914,2025-05-09,North America,Retail,Enterprise,99,7,189.2,10,lost,1191.96
+ORD-00155,2025-05-09,LATAM,Retail,Team,241,18,157.37,5,lost,2691.03
+ORD-02129,2025-05-09,APAC,Partner,Starter,115,13,212.33,5,won,2622.28
+ORD-00763,2025-05-10,North America,Online,Business,122,13,305.26,10,won,3571.54
+ORD-00226,2025-05-10,Europe,Retail,Team,157,10,308.73,0,won,3087.3
+ORD-01865,2025-05-10,Europe,Retail,Team,317,18,231.98,0,won,4175.64
+ORD-02030,2025-05-10,APAC,Retail,Business,198,9,246.6,10,won,1997.46
+ORD-00577,2025-05-10,Europe,Online,Business,317,1,261.81,0,lost,261.81
+ORD-00825,2025-05-10,APAC,Online,Starter,54,21,287.76,0,lost,6042.96
+ORD-02104,2025-05-10,Europe,Online,Enterprise,142,9,104.14,0,won,937.26
+ORD-02210,2025-05-10,North America,Retail,Team,108,23,278.22,0,won,6399.06
+ORD-00992,2025-05-11,Europe,Online,Team,286,14,207.91,10,lost,2619.67
+ORD-01509,2025-05-11,North America,Partner,Team,301,27,297.74,0,won,8038.98
+ORD-02381,2025-05-12,APAC,Online,Team,29,35,208.98,20,won,5851.44
+ORD-00063,2025-05-12,North America,Online,Starter,305,15,92.67,0,lost,1390.05
+ORD-01770,2025-05-12,North America,Online,Team,17,10,321.19,0,won,3211.9
+ORD-00703,2025-05-13,APAC,Retail,Business,173,26,245.35,20,won,5103.28
+ORD-00571,2025-05-13,North America,Partner,Starter,156,17,168.56,0,won,2865.52
+ORD-00863,2025-05-13,North America,Partner,Team,151,33,268.59,5,lost,8420.3
+ORD-01978,2025-05-13,Europe,Partner,Team,31,28,279.96,0,lost,7838.88
+ORD-00039,2025-05-13,North America,Retail,Team,53,37,233.11,10,won,7762.56
+ORD-01888,2025-05-13,APAC,Online,Enterprise,148,30,291.12,10,won,7860.24
+ORD-00134,2025-05-13,LATAM,Retail,Business,213,5,200.11,0,lost,1000.55
+ORD-01063,2025-05-14,APAC,Retail,Starter,12,18,293.73,10,won,4758.43
+ORD-00563,2025-05-14,North America,Online,Starter,142,21,161.55,0,lost,3392.55
+ORD-01546,2025-05-14,North America,Retail,Team,179,25,222.13,20,won,4442.6
+ORD-01590,2025-05-14,North America,Partner,Starter,167,6,287.39,0,won,1724.34
+ORD-01569,2025-05-14,North America,Retail,Team,138,12,312.01,0,lost,3744.12
+ORD-01848,2025-05-14,Europe,Online,Business,211,31,363.9,0,won,11280.9
+ORD-00215,2025-05-14,North America,Retail,Business,308,15,239.38,10,won,3231.63
+ORD-00495,2025-05-15,North America,Partner,Starter,179,21,263.79,10,won,4985.63
+ORD-01882,2025-05-15,North America,Online,Starter,33,19,229.67,0,lost,4363.73
+ORD-01956,2025-05-15,APAC,Partner,Starter,277,38,303.38,10,lost,10375.6
+ORD-00808,2025-05-16,Europe,Partner,Starter,162,9,141.88,0,lost,1276.92
+ORD-00189,2025-05-16,North America,Retail,Enterprise,197,36,176.59,10,won,5721.52
+ORD-00603,2025-05-16,North America,Retail,Starter,189,37,185.73,0,lost,6872.01
+ORD-01831,2025-05-16,North America,Online,Team,110,3,224.78,0,won,674.34
+ORD-00323,2025-05-16,APAC,Online,Business,119,32,388.9,10,lost,11200.32
+ORD-01737,2025-05-16,LATAM,Online,Business,163,15,,10,won,3359.21
+ORD-00009,2025-05-16,Europe,Partner,Team,253,24,222.79,0,won,5346.96
+ORD-01561,2025-05-17,North America,Online,Team,120,16,203.12,5,won,3087.42
+ORD-01259,2025-05-17,LATAM,Retail,Team,108,6,257.66,0,won,1545.96
+ORD-00522,2025-05-17,North America,Retail,Starter,257,11,211.41,5,lost,2209.23
+ORD-02195,2025-05-17,North America,Online,Starter,247,34,281.46,5,won,9091.16
+ORD-01658,2025-05-17,Europe,Retail,Business,278,35,187.76,0,won,6571.6
+ORD-00682,2025-05-18,North America,Retail,Business,229,19,174.49,10,lost,2983.78
+ORD-00977,2025-05-18,APAC,Online,Starter,289,37,371.12,0,won,13731.44
+ORD-00874,2025-05-19,Europe,Online,Team,128,17,304.19,5,won,4912.67
+ORD-01708,2025-05-19,North America,Retail,Starter,199,31,215.41,10,won,6009.94
+ORD-00114,2025-05-19,North America,Online,Business,86,24,235.94,0,won,5662.56
+ORD-01387,2025-05-20,North America,Retail,Starter,247,28,380.44,20,won,8521.86
+ORD-01376,2025-05-20,Europe,Retail,Team,26,6,247.79,10,won,1338.07
+ORD-00882,2025-05-20,North America,Online,Team,242,23,205.41,0,won,4724.43
+ORD-01670,2025-05-20,Europe,Online,Starter,167,32,224.03,0,won,7168.96
+ORD-01101,2025-05-20,Europe,Online,Enterprise,174,22,231.16,5,won,4831.24
+ORD-01837,2025-05-20,North America,Retail,Team,258,10,293.91,5,lost,2792.15
+ORD-00961,2025-05-20,Europe,Retail,Business,51,38,230.9,10,lost,7896.78
+ORD-00968,2025-05-20,North America,Online,Starter,165,6,301.23,0,won,1807.38
+ORD-02352,2025-05-20,North America,Online,Starter,268,33,398.92,0,won,13164.36
+ORD-00367,2025-05-21,APAC,Partner,Business,165,1,280.31,5,won,266.29
+ORD-00695,2025-05-21,Europe,Retail,Enterprise,269,27,268.97,5,won,6899.08
+ORD-00671,2025-05-21,North America,Online,Business,222,8,228.97,10,lost,1648.58
+ORD-00760,2025-05-21,North America,Online,Starter,65,6,213.76,0,won,1282.56
+ORD-01965,2025-05-21,North America,Retail,Starter,290,1,241.86,5,won,229.77
+ORD-00259,2025-05-21,North America,Online,Starter,104,3,278.95,10,won,753.16
+ORD-00285,2025-05-21,North America,Retail,Team,295,15,335.53,10,lost,4529.66
+ORD-01042,2025-05-21,North America,Retail,Business,257,3,170.54,20,lost,409.3
+ORD-01581,2025-05-22,APAC,Online,Team,313,13,201.83,0,won,2623.79
+ORD-00132,2025-05-22,North America,Partner,Starter,26,30,202.17,0,won,6065.1
+ORD-01333,2025-05-22,Europe,Retail,Business,257,21,289.44,5,won,5774.33
+ORD-00806,2025-05-22,LATAM,Online,Team,207,2,205.81,0,won,411.62
+ORD-01031,2025-05-22,APAC,Online,Team,44,21,270.72,0,lost,5685.12
+ORD-01357,2025-05-22,North America,Online,Starter,268,23,330.27,5,won,7216.4
+ORD-01116,2025-05-22,North America,Online,Enterprise,111,29,242.56,20,won,5627.39
+ORD-02302,2025-05-22,APAC,Retail,Business,124,8,333.99,0,lost,2671.92
+ORD-00336,2025-05-22,APAC,Partner,Starter,19,23,281.83,10,won,5833.88
+ORD-01056,2025-05-22,Europe,Online,Enterprise,273,13,263.67,5,won,3256.32
+ORD-01103,2025-05-23,APAC,Retail,Starter,98,8,,5,won,2681.28
+ORD-00583,2025-05-23,North America,Online,Starter,135,39,232.16,5,lost,8601.53
+ORD-00728,2025-05-23,North America,Online,Business,44,37,96.31,5,lost,3385.3
+ORD-02183,2025-05-23,LATAM,Online,Starter,65,17,268.93,0,lost,4571.81
+ORD-00731,2025-05-23,Europe,Online,Starter,83,4,289.88,0,lost,1159.52
+ORD-01920,2025-05-23,Europe,Retail,Team,279,1,154.93,0,lost,154.93
+ORD-02369,2025-05-24,APAC,Online,Starter,313,7,255.8,5,lost,1701.07
+ORD-00948,2025-05-24,Europe,Partner,Enterprise,27,26,169.13,5,won,4177.51
+ORD-01964,2025-05-24,North America,Partner,Starter,14,18,359.06,0,lost,6463.08
+ORD-00489,2025-05-24,APAC,Online,Team,39,26,267.72,0,lost,6960.72
+ORD-00068,2025-05-24,LATAM,Online,Team,156,9,193.08,5,won,1650.83
+ORD-01644,2025-05-24,North America,Online,Team,233,8,217.29,0,won,1738.32
+ORD-00019,2025-05-25,LATAM,Retail,Enterprise,58,18,323.94,20,won,4664.74
+ORD-01563,2025-05-25,APAC,Retail,Enterprise,190,34,225.16,5,lost,7272.67
+ORD-00056,2025-05-25,APAC,Retail,Starter,218,6,136.88,0,won,821.28
+ORD-01752,2025-05-25,LATAM,Online,Starter,197,3,255.66,20,won,613.58
+ORD-00400,2025-05-25,North America,Online,Starter,80,13,243.89,0,won,3170.57
+ORD-00883,2025-05-25,North America,Retail,Enterprise,297,23,302.76,5,won,6615.31
+ORD-00182,2025-05-26,APAC,Retail,Team,27,26,206.58,0,won,5371.08
+ORD-00086,2025-05-26,Europe,Online,Team,152,37,354.98,0,won,13134.26
+ORD-00606,2025-05-26,North America,Online,Team,42,13,238.6,0,won,3101.8
+ORD-01329,2025-05-27,North America,Online,Team,315,17,184.68,5,won,2982.58
+ORD-02212,2025-05-27,LATAM,Online,Team,16,10,284.53,5,lost,2703.03
+ORD-01047,2025-05-27,APAC,Online,Starter,210,4,243.34,0,lost,973.36
+ORD-00604,2025-05-28,North America,Online,Team,119,38,227.17,5,lost,8200.84
+ORD-01343,2025-05-28,Europe,Online,Enterprise,42,4,191.44,5,won,727.47
+ORD-02112,2025-05-28,APAC,Online,Enterprise,1,11,,10,won,1911.99
+ORD-00446,2025-05-29,APAC,Online,Team,30,22,202.16,5,won,4225.14
+ORD-02018,2025-05-29,Europe,Online,Team,274,4,190.78,5,won,724.96
+ORD-02044,2025-05-29,North America,Online,Business,33,17,251.58,20,won,3421.49
+ORD-02160,2025-05-30,APAC,Partner,Team,13,37,294.78,0,won,10906.86
+ORD-02140,2025-05-30,North America,Partner,Team,192,24,272.05,0,won,6529.2
+ORD-01605,2025-05-30,North America,Partner,Business,198,33,120.1,10,won,3566.97
+ORD-02143,2025-05-30,North America,Retail,Starter,277,28,204.95,0,won,5738.6
+ORD-01182,2025-05-31,Europe,Retail,Starter,100,33,276.1,10,won,8200.17
+ORD-02351,2025-05-31,APAC,Partner,Team,95,35,356.35,0,won,12472.25
+ORD-00537,2025-05-31,North America,Retail,Team,36,18,136.63,0,won,2459.34
+ORD-00350,2025-05-31,North America,Online,Team,52,26,316.81,5,won,7825.21
+ORD-01027,2025-05-31,North America,Online,Business,250,34,,5,won,8045.28
+ORD-01025,2025-05-31,North America,Retail,Team,127,8,272.86,10,won,1964.59
+ORD-00699,2025-05-31,North America,Partner,Starter,206,30,179.12,0,won,5373.6
+ORD-02047,2025-05-31,North America,Online,Team,298,29,128.32,0,won,3721.28
+ORD-02366,2025-06-01,North America,Online,Team,48,25,216.87,0,won,5421.75
+ORD-01827,2025-06-01,LATAM,Online,Starter,256,3,122.47,10,won,330.67
+ORD-01671,2025-06-01,North America,Retail,Starter,200,37,322.42,0,won,11929.54
+ORD-00203,2025-06-01,North America,Online,Starter,235,27,145.03,0,won,3915.81
+ORD-00333,2025-06-02,North America,Online,Starter,217,26,305.8,20,won,6360.64
+ORD-00218,2025-06-02,North America,Online,Business,116,26,341.37,10,won,7988.06
+ORD-00084,2025-06-02,APAC,Retail,Business,191,37,192.12,0,won,7108.44
+ORD-00787,2025-06-02,North America,Online,Team,300,19,198.73,10,lost,3398.28
+ORD-01169,2025-06-02,Europe,Online,Starter,221,24,294.08,5,lost,6705.02
+ORD-00003,2025-06-02,North America,Retail,Team,278,8,226.09,0,won,1808.72
+ORD-01282,2025-06-02,Europe,Online,Starter,264,36,267.75,0,won,9639.0
+ORD-00381,2025-06-03,North America,Online,Business,277,26,198.16,0,won,5152.16
+ORD-01135,2025-06-03,North America,Online,Team,268,31,315.86,0,won,9791.66
+ORD-02378,2025-06-04,APAC,Online,Starter,208,31,302.09,10,lost,8428.31
+ORD-01377,2025-06-04,APAC,Retail,Team,148,27,272.94,0,won,7369.38
+ORD-01114,2025-06-05,APAC,Online,Business,21,21,311.7,10,won,5891.13
+ORD-02344,2025-06-05,Europe,Partner,Starter,161,22,278.27,0,won,6121.94
+ORD-02019,2025-06-05,Europe,Online,Starter,144,38,237.18,0,won,9012.84
+ORD-00130,2025-06-05,LATAM,Retail,Starter,263,10,405.44,10,won,3648.96
+ORD-01552,2025-06-05,Europe,Online,Team,93,38,231.57,0,lost,8799.66
+ORD-01513,2025-06-05,Europe,Online,Business,106,10,336.06,0,lost,3360.6
+ORD-01453,2025-06-05,North America,Partner,Starter,299,18,211.85,0,lost,3813.3
+ORD-01048,2025-06-05,APAC,Retail,Enterprise,135,26,318.87,0,won,8290.62
+ORD-01007,2025-06-06,North America,Partner,Team,80,23,258.21,10,won,5344.95
+ORD-00905,2025-06-06,Europe,Retail,Enterprise,193,36,251.6,5,lost,8604.72
+ORD-00106,2025-06-06,Europe,Partner,Enterprise,219,24,326.91,10,won,7061.26
+ORD-01818,2025-06-06,LATAM,Retail,Business,4,21,323.3,0,lost,6789.3
+ORD-01576,2025-06-06,North America,Retail,Starter,133,3,255.04,0,won,765.12
+ORD-02278,2025-06-06,APAC,Retail,Starter,259,20,192.91,20,lost,3086.56
+ORD-00934,2025-06-06,North America,Online,Enterprise,275,31,204.85,0,won,6350.35
+ORD-02145,2025-06-06,North America,Online,Business,295,6,273.54,10,won,1477.12
+ORD-01850,2025-06-06,North America,Partner,Team,313,24,298.39,10,won,6445.22
+ORD-00850,2025-06-06,LATAM,Online,Team,200,13,195.3,5,won,2411.96
+ORD-01310,2025-06-07,North America,Partner,Team,266,19,315.91,0,lost,6002.29
+ORD-02173,2025-06-07,Europe,Online,Team,195,4,287.66,20,won,920.51
+ORD-00239,2025-06-07,LATAM,Partner,Enterprise,184,12,314.9,0,won,3778.8
+ORD-01820,2025-06-07,APAC,Online,Team,298,11,263.6,0,lost,2899.6
+ORD-00447,2025-06-07,APAC,Retail,Enterprise,311,23,,10,won,4573.66
+ORD-02093,2025-06-07,APAC,Partner,Starter,232,26,242.36,20,won,5041.09
+ORD-02206,2025-06-07,North America,Retail,Starter,304,29,314.36,5,won,8660.62
+ORD-00658,2025-06-07,North America,Online,Business,232,7,318.07,0,won,2226.49
+ORD-01161,2025-06-07,Europe,Retail,Business,16,21,260.86,10,won,4930.25
+ORD-00212,2025-06-07,North America,Retail,Team,127,24,251.64,5,won,5737.39
+ORD-01368,2025-06-08,Europe,Retail,Starter,179,30,225.49,0,won,6764.7
+ORD-00210,2025-06-08,North America,Retail,Team,284,13,126.37,20,won,1314.25
+ORD-02072,2025-06-09,North America,Retail,Team,29,12,222.21,0,lost,2666.52
+ORD-00419,2025-06-09,North America,Online,Enterprise,185,22,309.87,0,lost,6817.14
+ORD-00951,2025-06-09,North America,Online,Enterprise,135,16,323.17,10,won,4653.65
+ORD-01124,2025-06-09,APAC,Online,Business,232,6,206.77,10,won,1116.56
+ORD-01721,2025-06-09,North America,Online,Enterprise,139,12,127.6,10,won,1378.08
+ORD-00609,2025-06-09,North America,Online,Team,271,36,267.83,5,won,9159.79
+ORD-01308,2025-06-09,APAC,Partner,Business,11,32,211.19,5,lost,6420.18
+ORD-02034,2025-06-09,North America,Retail,Enterprise,208,15,172.01,10,lost,2322.13
+ORD-01591,2025-06-10,APAC,Retail,Business,12,13,223.35,0,won,2903.55
+ORD-00624,2025-06-10,APAC,Online,Starter,304,4,339.09,5,won,1288.54
+ORD-01383,2025-06-10,Europe,Retail,Business,92,5,182.36,5,lost,866.21
+ORD-00207,2025-06-10,LATAM,Online,Starter,144,21,316.1,0,lost,6638.1
+ORD-00406,2025-06-10,Europe,Partner,Starter,62,25,204.8,0,won,5120.0
+ORD-02309,2025-06-11,APAC,Online,Team,209,6,304.81,10,lost,1645.97
+ORD-00007,2025-06-11,APAC,Retail,Starter,271,25,303.68,0,won,7592.0
+ORD-01175,2025-06-11,North America,Retail,Business,255,26,205.87,10,won,4817.36
+ORD-00158,2025-06-11,North America,Online,Team,224,21,367.92,0,lost,7726.32
+ORD-00599,2025-06-12,Europe,Online,Team,142,26,337.84,0,won,8783.84
+ORD-02058,2025-06-12,North America,Retail,Team,36,5,246.95,5,lost,1173.01
+ORD-01008,2025-06-12,North America,Retail,Enterprise,50,19,286.81,0,won,5449.39
+ORD-00109,2025-06-13,Europe,Online,Business,104,34,173.04,0,won,5883.36
+ORD-00836,2025-06-13,Europe,Online,Team,45,25,210.12,0,won,5253.0
+ORD-01262,2025-06-13,North America,Retail,Starter,79,19,294.75,5,won,5320.24
+ORD-01238,2025-06-14,Europe,Online,Business,30,4,223.53,20,won,715.3
+ORD-00946,2025-06-14,Europe,Retail,Team,303,8,291.69,5,won,2216.84
+ORD-01449,2025-06-14,Europe,Partner,Starter,151,13,278.26,0,won,3617.38
+ORD-00251,2025-06-14,Europe,Online,Enterprise,165,28,221.35,10,won,5578.02
+ORD-02202,2025-06-15,North America,Retail,Starter,115,18,145.09,0,won,2611.62
+ORD-00273,2025-06-15,APAC,Online,Enterprise,156,31,204.29,0,won,6332.99
+ORD-00816,2025-06-15,Europe,Online,Starter,166,20,280.74,5,won,5334.06
+ORD-00986,2025-06-16,North America,Retail,Starter,224,13,338.82,5,lost,4184.43
+ORD-00284,2025-06-16,APAC,Retail,Team,240,37,282.24,20,won,8354.3
+ORD-00401,2025-06-16,LATAM,Retail,Team,113,18,269.16,0,won,4844.88
+ORD-00865,2025-06-16,North America,Retail,Business,124,3,220.18,20,won,528.43
+ORD-00220,2025-06-16,APAC,Partner,Business,151,31,,0,won,11472.48
+ORD-01208,2025-06-16,North America,Partner,Starter,64,36,123.2,0,won,4435.2
+ORD-02089,2025-06-16,APAC,Online,Business,201,21,257.82,0,won,5414.22
+ORD-01102,2025-06-17,North America,Online,Team,201,9,344.86,0,lost,3103.74
+ORD-01853,2025-06-17,North America,Retail,Team,283,21,199.65,10,won,3773.39
+ORD-00154,2025-06-17,Europe,Online,Starter,25,36,173.37,20,lost,4993.06
+ORD-01108,2025-06-17,APAC,Online,Enterprise,292,6,186.21,10,won,1005.53
+ORD-01009,2025-06-17,APAC,Online,Starter,194,5,299.65,0,won,1498.25
+ORD-02165,2025-06-17,North America,Online,Business,59,31,270.69,10,won,7552.25
+ORD-02320,2025-06-18,North America,Partner,Starter,15,20,306.36,0,won,6127.2
+ORD-00433,2025-06-18,Europe,Retail,Team,87,37,86.97,0,won,3217.89
+ORD-00791,2025-06-18,North America,Partner,Business,15,15,252.13,10,won,3403.76
+ORD-00669,2025-06-18,Europe,Retail,Business,83,16,273.37,20,won,3499.14
+ORD-02396,2025-06-19,North America,Retail,Business,36,38,230.3,0,won,8751.4
+ORD-01996,2025-06-19,North America,Retail,Business,229,25,269.77,5,won,6407.04
+ORD-00346,2025-06-19,APAC,Retail,Starter,272,29,153.16,0,lost,4441.64
+ORD-01289,2025-06-19,North America,Retail,Enterprise,292,35,294.94,10,won,9290.61
+ORD-00617,2025-06-19,North America,Partner,Enterprise,52,1,193.57,10,won,174.21
+ORD-01628,2025-06-20,North America,Online,Team,29,27,280.46,0,won,7572.42
+ORD-01173,2025-06-20,LATAM,Retail,Team,104,19,297.87,0,won,5659.53
+ORD-02119,2025-06-20,North America,Online,Team,238,13,191.8,5,lost,2368.73
+ORD-00908,2025-06-20,North America,Online,Starter,175,38,248.12,10,won,8485.7
+ORD-00685,2025-06-20,North America,Online,Starter,233,9,126.9,20,won,913.68
+ORD-00448,2025-06-21,Europe,Partner,Business,166,21,250.3,10,won,4730.67
+ORD-01220,2025-06-21,APAC,Online,Starter,161,1,289.44,0,won,289.44
+ORD-00520,2025-06-21,North America,Retail,Starter,183,24,258.74,0,lost,6209.76
+ORD-01229,2025-06-22,LATAM,Online,Starter,36,3,222.8,0,won,668.4
+ORD-00321,2025-06-22,North America,Online,Business,186,8,257.34,5,won,1955.78
+ORD-02099,2025-06-22,North America,Partner,Starter,233,10,218.91,0,won,2189.1
+ORD-02213,2025-06-22,APAC,Retail,Starter,181,16,294.68,10,lost,4243.39
+ORD-01389,2025-06-23,Europe,Online,Team,235,22,229.03,0,lost,5038.66
+ORD-02325,2025-06-23,Europe,Online,Starter,148,28,240.06,10,lost,6049.51
+ORD-01535,2025-06-23,LATAM,Partner,Team,120,13,272.47,0,won,3542.11
+ORD-00549,2025-06-23,North America,Online,Business,15,18,206.32,0,won,3713.76
+ORD-01558,2025-06-23,North America,Partner,Starter,190,10,235.26,5,won,2234.97
+ORD-01673,2025-06-23,LATAM,Retail,Starter,197,16,220.91,0,lost,3534.56
+ORD-00725,2025-06-24,North America,Retail,Business,43,20,198.55,5,won,3772.45
+ORD-01092,2025-06-24,APAC,Partner,Team,282,8,275.52,5,lost,2093.95
+ORD-02333,2025-06-24,LATAM,Retail,Enterprise,160,10,299.32,5,won,2843.54
+ORD-01955,2025-06-24,North America,Retail,Starter,26,27,236.28,10,lost,5741.6
+ORD-00277,2025-06-24,APAC,Online,Business,19,37,,5,won,9807.9
+ORD-01506,2025-06-25,APAC,Online,Business,216,9,277.7,10,won,2249.37
+ORD-02288,2025-06-25,Europe,Retail,Starter,61,29,206.56,0,won,5990.24
+ORD-01957,2025-06-25,LATAM,Online,Starter,266,19,233.75,0,won,4441.25
+ORD-01120,2025-06-25,APAC,Retail,Team,256,29,174.81,5,won,4816.02
+ORD-00981,2025-06-25,Europe,Retail,Enterprise,47,27,289.58,5,won,7427.73
+ORD-00124,2025-06-26,APAC,Partner,Enterprise,206,5,138.61,20,won,554.44
+ORD-00650,2025-06-26,APAC,Online,Starter,50,1,249.59,0,won,249.59
+ORD-00982,2025-06-26,LATAM,Online,Enterprise,67,11,214.42,0,lost,2358.62
+ORD-01212,2025-06-26,APAC,Partner,Team,136,1,258.02,20,lost,206.42
+ORD-01296,2025-06-27,Europe,Online,Enterprise,295,38,245.73,0,won,9337.74
+ORD-00661,2025-06-27,North America,Online,Business,38,10,330.99,20,lost,2647.92
+ORD-01937,2025-06-27,North America,Online,Starter,27,13,291.5,10,won,3410.55
+ORD-02298,2025-06-27,LATAM,Partner,Business,6,10,241.58,20,won,1932.64
+ORD-00556,2025-06-27,LATAM,Partner,Team,160,16,232.29,0,won,3716.64
+ORD-01067,2025-06-28,North America,Retail,Starter,163,21,326.72,10,lost,6175.01
+ORD-00501,2025-06-28,APAC,Online,Starter,318,10,182.98,5,won,1738.31
+ORD-01183,2025-06-28,Europe,Retail,Team,238,32,223.0,0,lost,7136.0
+ORD-00768,2025-06-29,APAC,Online,Team,90,6,251.47,0,lost,1508.82
+ORD-01327,2025-06-29,North America,Partner,Starter,106,4,293.39,10,won,1056.2
+ORD-01875,2025-06-29,APAC,Retail,Enterprise,50,17,276.35,10,won,4228.16
+ORD-00558,2025-06-29,North America,Partner,Team,106,39,312.37,0,lost,12182.43
+ORD-00174,2025-06-29,North America,Online,Team,132,2,199.74,0,won,399.48
+ORD-00434,2025-06-30,LATAM,Retail,Business,213,19,201.07,0,won,3820.33
+ORD-01739,2025-06-30,North America,Retail,Starter,253,29,149.42,20,won,3466.54
+ORD-01359,2025-06-30,North America,Retail,Starter,115,39,228.45,0,won,8909.55
+ORD-00237,2025-06-30,North America,Online,Team,32,2,360.87,5,lost,685.65
+ORD-01246,2025-06-30,Europe,Retail,Business,240,14,234.79,10,won,2958.35

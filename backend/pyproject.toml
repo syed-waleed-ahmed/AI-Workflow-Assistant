@@ -1,0 +1,51 @@
+[project]
+name = "ai-workflow-assistant-backend"
+version = "1.0.0"
+description = "AI data analysis platform: FastAPI backend with a LangGraph analysis agent."
+requires-python = ">=3.11"
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+extend-exclude = ["migrations/versions"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "S", "C4", "SIM", "RUF", "PT"]
+ignore = [
+    "E501",   # line length is handled by the formatter
+    "B008",   # FastAPI's Depends()/Query() in argument defaults
+    "RUF001", "RUF002", "RUF003",  # intentional typographic characters (×, –, …) in user-facing text
+    "S101",   # asserts narrow Optional types after an existence check
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/**" = ["S105", "S106", "S311", "S603", "S607", "PT018", "PT011", "SIM117"]
+
+[tool.mypy]
+python_version = "3.11"
+strict = true
+plugins = ["pydantic.mypy"]
+files = ["app"]
+warn_unused_ignores = false
+
+[[tool.mypy.overrides]]
+module = ["fpdf.*", "boto3.*", "botocore.*", "langchain_groq.*", "groq.*", "sentry_sdk.*", "itsdangerous.*", "charset_normalizer.*", "openpyxl.*"]
+ignore_missing_imports = true
+
+# pandas-stubs models Series and Index element types more narrowly than pandas behaves at
+# runtime (period indexes, nullable strings, numpy scalars), which produces false positives in
+# the modules that do the numerical work. Those modules are covered by value-level tests
+# instead; every other module is checked in strict mode.
+[[tool.mypy.overrides]]
+module = ["app.tools.*", "app.utils.file_validation", "app.utils.dataframe_utils"]
+disable_error_code = ["arg-type", "call-overload", "assignment", "attr-defined", "operator", "index", "union-attr", "return-value", "misc", "comparison-overlap", "no-any-return", "no-untyped-call"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --strict-markers -m 'not live'"
+markers = ["live: calls the real Groq API (needs GROQ_API_KEY; excluded by default)"]
+filterwarnings = ["ignore::DeprecationWarning:langchain_core.*", "ignore::DeprecationWarning:fpdf.*"]
+
+[tool.coverage.run]
+source = ["app"]
+omit = ["app/cli.py"]

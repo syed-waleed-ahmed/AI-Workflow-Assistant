@@ -1,0 +1,34 @@
+# Runtime dependencies. Pinned to the versions the test suite runs against.
+fastapi==0.162.7
+uvicorn[standard]==0.54.0
+python-multipart==0.0.33
+pydantic==2.14.3
+pydantic-settings==2.16.3
+
+# Persistence
+SQLAlchemy==2.1.8
+alembic==1.20.1
+psycopg[binary]==3.3.9
+boto3==1.44.3
+
+# Security
+argon2-cffi==25.1.0
+itsdangerous==2.2.0
+defusedxml==0.7.1
+
+# Data
+pandas==3.1.1
+numpy==2.4.6
+pyarrow==26.0.1
+openpyxl==3.1.5
+xlrd==2.0.2
+charset-normalizer==3.5.2
+
+# Agent
+langchain-core==1.8.0
+langgraph==1.2.21
+langchain-groq==1.1.3
+
+# Reports and operations
+fpdf2==2.9.0
+sentry-sdk==2.75.0
