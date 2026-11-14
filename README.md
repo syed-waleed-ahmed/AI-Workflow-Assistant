@@ -1,5 +1,10 @@
 # AI Workflow Assistant
 
+[![Live app](https://img.shields.io/badge/live-ai--workflow--assistant--app.vercel.app-2ea44f)](https://ai-workflow-assistant-app.vercel.app)
+[![CI](https://github.com/syed-waleed-ahmed/AI-Workflow-Assistant/actions/workflows/ci.yml/badge.svg)](https://github.com/syed-waleed-ahmed/AI-Workflow-Assistant/actions/workflows/ci.yml)
+[![Production health check](https://github.com/syed-waleed-ahmed/AI-Workflow-Assistant/actions/workflows/health-check.yml/badge.svg)](https://github.com/syed-waleed-ahmed/AI-Workflow-Assistant/actions/workflows/health-check.yml)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+
 An AI data analyst for your spreadsheets. Upload a CSV or Excel file, ask a question in plain
 language, and get a report with key metrics, charts, findings and recommendations — in which
 **every number was computed by pandas and checked against that computation before you see it**.
@@ -211,3 +216,7 @@ what is not implemented.
 ## Author
 
 Created by Syed Waleed Ahmed.
+
+## License
+
+[MIT](LICENSE)
