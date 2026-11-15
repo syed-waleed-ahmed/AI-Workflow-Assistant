@@ -48,9 +48,17 @@
   --heat-positive: #2a78d6;
   --heat-neutral: #f0efec;
 
-  --radius: 0.5rem;
+  /* Brand: a blue-to-violet gradient used sparingly for emphasis, plus a soft glow. */
+  --brand-1: #1d5fc2;
+  --brand-2: #6d4ad8;
+  --brand-soft: #eef0fd;
+  --glow: rgb(29 95 194 / 0.14);
+  --dot: rgb(24 24 27 / 0.12);
+
+  --radius: 0.625rem;
   --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.04);
   --shadow-md: 0 4px 16px -4px rgb(0 0 0 / 0.1), 0 1px 2px 0 rgb(0 0 0 / 0.04);
+  --shadow-lg: 0 16px 40px -12px rgb(29 95 194 / 0.18), 0 2px 6px -2px rgb(0 0 0 / 0.06);
 }
 
 /* Printing always uses the light tokens, whatever theme is active on screen. */
@@ -96,8 +104,15 @@
     --heat-positive: #3987e5;
     --heat-neutral: #383835;
 
+    --brand-1: #7fb2f7;
+    --brand-2: #b69cff;
+    --brand-soft: #171a33;
+    --glow: rgb(127 178 247 / 0.13);
+    --dot: rgb(250 250 250 / 0.1);
+
     --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.4);
     --shadow-md: 0 8px 24px -6px rgb(0 0 0 / 0.6), 0 1px 2px 0 rgb(0 0 0 / 0.4);
+    --shadow-lg: 0 18px 44px -12px rgb(0 0 0 / 0.7), 0 0 0 1px rgb(127 178 247 / 0.08);
   }
 }
 
@@ -126,6 +141,9 @@
   --color-success-text: var(--success-text);
   --color-warning-soft: var(--warning-soft);
   --color-warning-text: var(--warning-text);
+  --color-brand-1: var(--brand-1);
+  --color-brand-2: var(--brand-2);
+  --color-brand-soft: var(--brand-soft);
   --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
   --font-mono: var(--font-geist-mono), ui-monospace, SFMono-Regular, Menlo, monospace;
   --radius-sm: calc(var(--radius) - 2px);
@@ -134,7 +152,9 @@
   --radius-xl: calc(var(--radius) + 6px);
   --shadow-sm: var(--shadow-sm);
   --shadow-md: var(--shadow-md);
+  --shadow-lg: var(--shadow-lg);
   --animate-fade-in: fade-in 150ms ease-out;
+  --animate-fade-up: fade-up 600ms cubic-bezier(0.16, 1, 0.3, 1) both;
   --animate-pop-in: pop-in 150ms ease-out;
   --animate-slide-in-left: slide-in-left 200ms ease-out;
   --animate-indeterminate: indeterminate 1.4s ease-in-out infinite;
@@ -166,6 +186,23 @@
   }
   to {
     transform: translateX(0);
+  }
+}
+
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes border-beam {
+  to {
+    offset-distance: 100%;
   }
 }
 
@@ -211,10 +248,92 @@
     background: var(--accent-soft);
     color: var(--foreground);
   }
+
+  /* Edge adds its own reveal button to password fields; the form already has one. */
+  input[type="password"]::-ms-reveal,
+  input[type="password"]::-ms-clear {
+    display: none;
+  }
 }
 
 @utility tabular {
   font-variant-numeric: tabular-nums;
+}
+
+/* Gradient text for a few words of emphasis. Large text only: both stops pass 3:1 contrast. */
+@utility text-gradient {
+  background-image: linear-gradient(100deg, var(--brand-1), var(--brand-2));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+@utility bg-brand-gradient {
+  background-image: linear-gradient(135deg, var(--brand-1), var(--brand-2));
+}
+
+/* A faint dot grid, faded out towards the edges. Decorative backgrounds only. */
+@utility bg-dots {
+  background-image: radial-gradient(var(--dot) 1px, transparent 1px);
+  background-size: 22px 22px;
+  mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, #000 30%, transparent 75%);
+}
+
+@utility bg-glow {
+  background-image: radial-gradient(closest-side, var(--glow), transparent);
+}
+
+/* Cards that lead somewhere lift slightly and pick up the accent on hover. */
+@utility card-interactive {
+  transition:
+    transform 200ms cubic-bezier(0.16, 1, 0.3, 1),
+    box-shadow 200ms ease,
+    border-color 200ms ease;
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-lg);
+    border-color: color-mix(in oklab, var(--primary) 35%, var(--border));
+  }
+}
+
+/*
+ * Scroll-driven entrance (see components/motion/reveal.tsx). Only where supported and wanted;
+ * everywhere else the content is shown as is.
+ */
+@utility reveal {
+  @supports (animation-timeline: view()) {
+    @media screen and (prefers-reduced-motion: no-preference) {
+      animation: fade-up linear both;
+      animation-timeline: view();
+      animation-range: entry var(--reveal-offset, 0%) entry calc(60% + var(--reveal-offset, 0%));
+    }
+  }
+}
+
+/*
+ * A light travelling around a card's border. The ring is cut out with a mask so only the
+ * border shows the beam; the beam follows the rounded rectangle with offset-path.
+ */
+@utility border-beam {
+  pointer-events: none;
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  border: 1.5px solid transparent;
+  mask:
+    linear-gradient(#000 0 0) padding-box,
+    linear-gradient(#000 0 0);
+  mask-composite: exclude;
+  &::after {
+    content: "";
+    position: absolute;
+    width: 6rem;
+    aspect-ratio: 1;
+    background: linear-gradient(to left, var(--brand-2), var(--brand-1), transparent);
+    offset-path: rect(0 auto auto 0 round 1rem);
+    offset-anchor: 90% 50%;
+    animation: border-beam 9s linear infinite;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -245,6 +364,12 @@
 
   [data-print="hide"] {
     display: none !important;
+  }
+
+  /* Backgrounds are not printed, so gradient text would print invisibly. */
+  .text-gradient {
+    background: none !important;
+    color: inherit !important;
   }
 
   body {

@@ -1,6 +1,7 @@
 import {
   ArrowRight,
   Calculator,
+  Check,
   Download,
   FileSearch,
   Link2,
@@ -14,6 +15,8 @@ import Link from "next/link";
 import { Logo } from "@/components/brand/logo";
 import { LandingAuthLinks } from "@/components/landing/landing-auth-links";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
+import { NumberTicker } from "@/components/motion/number-ticker";
+import { Reveal } from "@/components/motion/reveal";
 import { ReportView } from "@/components/reports/report-view";
 import { Button } from "@/components/ui/button";
 import sampleReportJson from "@/data/sample-report.json";
@@ -119,13 +122,18 @@ function SectionIntro({
   text: string;
 }) {
   return (
-    <div className="max-w-2xl space-y-2">
-      <p className="text-sm font-medium text-accent-text">{eyebrow}</p>
-      <h2 id={id} className="text-2xl leading-8 font-semibold tracking-tight">
+    <Reveal className="max-w-2xl space-y-3">
+      <p className="text-gradient w-fit text-xs font-semibold tracking-widest uppercase">
+        {eyebrow}
+      </p>
+      <h2
+        id={id}
+        className="text-3xl leading-tight font-semibold tracking-tight text-balance sm:text-4xl"
+      >
         {title}
       </h2>
-      <p className="text-base leading-7 text-muted-foreground">{text}</p>
-    </div>
+      <p className="text-base leading-7 text-pretty text-muted-foreground">{text}</p>
+    </Reveal>
   );
 }
 
@@ -141,11 +149,15 @@ function HeroProvenance() {
   const columns = table.columns.slice(0, 3);
 
   return (
-    <figure className="hidden min-w-0 lg:block">
-      <div className="space-y-3 rounded-xl border border-border bg-surface p-4 shadow-sm">
-        <div className="rounded-lg border border-border bg-card p-4">
+    <figure className="hidden min-w-0 animate-fade-up [animation-delay:150ms] lg:block">
+      <div className="relative space-y-3 rounded-2xl border border-border bg-surface/80 p-4 shadow-lg backdrop-blur">
+        <div aria-hidden="true" className="border-beam" />
+        <div className="rounded-xl border border-border bg-card p-4">
           <p className="text-xs text-muted-foreground">{metric.label}</p>
-          <p className="tabular mt-1 text-2xl font-semibold tracking-tight">{metric.value}</p>
+          <NumberTicker
+            value={metric.value}
+            className="tabular mt-1 block text-3xl font-semibold tracking-tight"
+          />
           <p className="mt-2 flex items-center gap-1.5 text-xs text-muted-foreground">
             Computed in
             <span className="tabular rounded-sm border border-border bg-background px-1.5 py-0.5 font-mono font-medium text-accent-text">
@@ -153,7 +165,7 @@ function HeroProvenance() {
             </span>
           </p>
         </div>
-        <div className="rounded-lg border border-border bg-card">
+        <div className="overflow-hidden rounded-xl border border-border bg-card">
           <p className="flex items-center gap-2 border-b border-border px-4 py-2.5 text-xs">
             <span className="tabular font-mono font-semibold text-accent-text">{evidence.id}</span>
             <span className="min-w-0 flex-1 truncate font-medium">{evidence.label}</span>
@@ -194,7 +206,7 @@ function HeroProvenance() {
             </tbody>
           </table>
         </div>
-        <p className="flex items-center gap-2 rounded-md bg-success-soft px-3 py-2 text-xs font-medium text-success-text">
+        <p className="flex items-center gap-2 rounded-lg bg-success-soft px-3 py-2 text-xs font-medium text-success-text">
           <ShieldCheck className="size-3.5 shrink-0" aria-hidden="true" />
           {verificationSummary(sampleReport.verification)}
         </p>
@@ -251,15 +263,23 @@ export default function LandingPage() {
       </header>
 
       <main id="main-content" className="flex-1">
-        <section className="border-b border-border">
-          <div className="mx-auto grid w-full max-w-6xl items-center gap-12 px-4 py-16 sm:px-6 sm:py-24 lg:grid-cols-[minmax(0,1fr)_minmax(0,25rem)]">
-            <div className="max-w-3xl space-y-6">
-              <p className="inline-flex items-center gap-2 rounded-full border border-border px-3 py-1 text-xs font-medium text-muted-foreground">
-                <ShieldCheck className="size-3.5 text-success-text" aria-hidden="true" />
+        <section className="relative isolate overflow-hidden border-b border-border">
+          <div aria-hidden="true" className="bg-dots pointer-events-none absolute inset-0 -z-10" />
+          <div
+            aria-hidden="true"
+            className="bg-glow pointer-events-none absolute -top-56 left-1/2 -z-10 h-[38rem] w-[70rem] max-w-none -translate-x-1/2"
+          />
+          <div className="mx-auto grid w-full max-w-6xl items-center gap-12 px-4 py-16 sm:px-6 sm:py-28 lg:grid-cols-[minmax(0,1fr)_minmax(0,26rem)]">
+            <div className="max-w-3xl space-y-7">
+              <p className="inline-flex animate-fade-up items-center gap-2 rounded-full border border-border bg-background/70 py-1 pr-3 pl-1 text-xs font-medium text-muted-foreground shadow-sm backdrop-blur">
+                <span className="flex size-5 items-center justify-center rounded-full bg-success-soft">
+                  <ShieldCheck className="size-3 text-success-text" aria-hidden="true" />
+                </span>
                 Every figure traced to a computation
               </p>
-              <h1 className="text-4xl leading-[1.1] font-semibold tracking-tight text-balance sm:text-5xl">
-                Ask questions of your spreadsheet. Get answers you can check.
+              <h1 className="text-4xl leading-[1.05] font-semibold tracking-tight text-balance sm:text-5xl lg:text-6xl">
+                Ask questions of your spreadsheet.{" "}
+                <span className="text-gradient">Get answers you can check.</span>
               </h1>
               <p className="max-w-2xl text-lg leading-8 text-pretty text-muted-foreground">
                 Upload a CSV or Excel file and ask in plain language. An AI model plans the
@@ -267,19 +287,29 @@ export default function LandingPage() {
                 links to the calculation behind it.
               </p>
               <div className="flex flex-wrap gap-3">
-                <Button size="lg" asChild>
+                <Button size="lg" asChild className="group">
                   <Link href="/register">
-                    Get started
-                    <ArrowRight aria-hidden="true" />
+                    Get started free
+                    <ArrowRight
+                      aria-hidden="true"
+                      className="transition-transform group-hover:translate-x-0.5"
+                    />
                   </Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
                   <a href="#example">See a real report</a>
                 </Button>
               </div>
-              <p className="text-sm text-muted-foreground">
-                Free to use, with daily limits. Works with CSV, TSV, XLSX and XLS files.
-              </p>
+              <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted-foreground">
+                {["CSV, TSV, XLSX and XLS", "Free, with daily limits", "Charts and exports"].map(
+                  (item) => (
+                    <li key={item} className="flex items-center gap-1.5">
+                      <Check className="size-3.5 text-success-text" aria-hidden="true" />
+                      {item}
+                    </li>
+                  ),
+                )}
+              </ul>
             </div>
             <HeroProvenance />
           </div>
@@ -295,20 +325,28 @@ export default function LandingPage() {
             />
             <ol className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {STEPS.map((step, index) => (
-                <li
-                  key={step.title}
-                  className="space-y-3 rounded-lg border border-border bg-card p-5"
-                >
-                  <div className="flex items-center gap-3">
-                    <span className="flex size-8 items-center justify-center rounded-md bg-muted text-muted-foreground">
-                      <step.icon className="size-4" aria-hidden="true" />
+                <li key={step.title}>
+                  <Reveal
+                    delay={index * 0.08}
+                    className="card-interactive relative h-full space-y-3 overflow-hidden rounded-xl border border-border bg-card p-5 shadow-sm"
+                  >
+                    <span
+                      aria-hidden="true"
+                      className="tabular pointer-events-none absolute -top-3 right-3 text-7xl font-bold text-muted select-none"
+                    >
+                      {index + 1}
                     </span>
-                    <span className="tabular text-xs font-medium text-muted-foreground">
-                      Step {index + 1}
-                    </span>
-                  </div>
-                  <h3 className="text-sm font-semibold">{step.title}</h3>
-                  <p className="text-sm leading-6 text-muted-foreground">{step.text}</p>
+                    <div className="relative flex items-center gap-3">
+                      <span className="flex size-9 items-center justify-center rounded-lg bg-brand-soft text-accent-text ring-1 ring-border">
+                        <step.icon className="size-4" aria-hidden="true" />
+                      </span>
+                      <span className="tabular text-xs font-medium text-muted-foreground">
+                        Step {index + 1}
+                      </span>
+                    </div>
+                    <h3 className="relative text-sm font-semibold">{step.title}</h3>
+                    <p className="relative text-sm leading-6 text-muted-foreground">{step.text}</p>
+                  </Reveal>
                 </li>
               ))}
             </ol>
@@ -323,12 +361,25 @@ export default function LandingPage() {
               title="A report you can audit"
               text="Not a chat transcript: a structured report with metrics, findings, charts, recommendations and the full method behind them."
             />
-            <ul className="grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
-              {FEATURES.map((feature) => (
-                <li key={feature.title} className="space-y-2">
-                  <feature.icon className="size-5 text-accent-text" aria-hidden="true" />
-                  <h3 className="text-sm font-semibold">{feature.title}</h3>
-                  <p className="text-sm leading-6 text-muted-foreground">{feature.text}</p>
+            <ul className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {FEATURES.map((feature, index) => (
+                <li key={feature.title}>
+                  <Reveal
+                    delay={(index % 3) * 0.08}
+                    className="card-interactive group relative h-full space-y-3 overflow-hidden rounded-xl border border-border bg-card p-6 shadow-sm"
+                  >
+                    <div
+                      aria-hidden="true"
+                      className="bg-glow pointer-events-none absolute -top-16 -right-16 size-40 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                    />
+                    <span className="bg-brand-gradient relative flex size-10 items-center justify-center rounded-lg text-primary-foreground shadow-sm">
+                      <feature.icon className="size-5" aria-hidden="true" />
+                    </span>
+                    <h3 className="relative text-base font-semibold">{feature.title}</h3>
+                    <p className="relative text-sm leading-6 text-muted-foreground">
+                      {feature.text}
+                    </p>
+                  </Reveal>
                 </li>
               ))}
             </ul>
@@ -351,9 +402,9 @@ export default function LandingPage() {
               different computations, because the model plans and writes; the numbers are always
               computed.
             </p>
-            <div className="rounded-xl border border-border bg-background p-4 shadow-sm sm:p-8">
+            <Reveal className="rounded-2xl border border-border bg-background p-4 shadow-lg sm:p-8">
               <ReportView report={sampleReport} headingLevel={3} />
-            </div>
+            </Reveal>
           </div>
         </section>
 
@@ -365,37 +416,58 @@ export default function LandingPage() {
               title="What happens to your data"
               text="Plain statements about how the product works today, including its limits."
             />
-            <dl className="grid gap-x-8 gap-y-8 sm:grid-cols-2 lg:grid-cols-3">
-              {SECURITY.map((item) => (
-                <div key={item.title} className="space-y-2">
-                  <dt className="text-sm font-semibold">{item.title}</dt>
-                  <dd className="text-sm leading-6 text-muted-foreground">{item.text}</dd>
-                </div>
-              ))}
-            </dl>
+            <Reveal>
+              <dl className="grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
+                {SECURITY.map((item) => (
+                  <div key={item.title} className="space-y-2 bg-card p-6">
+                    <dt className="flex items-center gap-2 text-sm font-semibold">
+                      <ShieldCheck className="size-4 text-success-text" aria-hidden="true" />
+                      {item.title}
+                    </dt>
+                    <dd className="text-sm leading-6 text-muted-foreground">{item.text}</dd>
+                  </div>
+                ))}
+              </dl>
+            </Reveal>
           </div>
         </section>
 
         <section aria-labelledby="cta">
-          <div className="mx-auto flex w-full max-w-6xl flex-col items-start gap-5 px-4 py-16 sm:px-6">
-            <h2 id="cta" className="text-2xl leading-8 font-semibold tracking-tight">
-              Try it on your own data
-            </h2>
-            <p className="max-w-2xl text-base leading-7 text-muted-foreground">
-              Create an account, upload a file or use the sample dataset, and ask your first
-              question. An analysis usually takes one to two minutes.
-            </p>
-            <div className="flex flex-wrap gap-3">
-              <Button size="lg" asChild>
-                <Link href="/register">
-                  Create an account
-                  <ArrowRight aria-hidden="true" />
-                </Link>
-              </Button>
-              <Button size="lg" variant="outline" asChild>
-                <Link href="/login">Sign in</Link>
-              </Button>
-            </div>
+          <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
+            <Reveal className="relative isolate overflow-hidden rounded-3xl border border-border bg-card px-6 py-14 text-center shadow-lg sm:px-12">
+              <div
+                aria-hidden="true"
+                className="bg-dots pointer-events-none absolute inset-0 -z-10"
+              />
+              <div
+                aria-hidden="true"
+                className="bg-glow pointer-events-none absolute -bottom-40 left-1/2 -z-10 h-[28rem] w-[48rem] max-w-none -translate-x-1/2"
+              />
+              <h2
+                id="cta"
+                className="mx-auto max-w-2xl text-3xl leading-tight font-semibold tracking-tight text-balance sm:text-4xl"
+              >
+                Try it on <span className="text-gradient">your own data</span>
+              </h2>
+              <p className="mx-auto mt-4 max-w-xl text-base leading-7 text-pretty text-muted-foreground">
+                Create an account, upload a file or use the sample dataset, and ask your first
+                question. An analysis usually takes one to two minutes.
+              </p>
+              <div className="mt-8 flex flex-wrap justify-center gap-3">
+                <Button size="lg" asChild className="group">
+                  <Link href="/register">
+                    Create an account
+                    <ArrowRight
+                      aria-hidden="true"
+                      className="transition-transform group-hover:translate-x-0.5"
+                    />
+                  </Link>
+                </Button>
+                <Button size="lg" variant="outline" asChild>
+                  <Link href="/login">Sign in</Link>
+                </Button>
+              </div>
+            </Reveal>
           </div>
         </section>
       </main>

@@ -100,7 +100,7 @@ export function QuestionComposer({
                   onClick={() => void submit(suggestion)}
                   title={compactSuggestions ? suggestion : undefined}
                   className={cn(
-                    "rounded-md border border-border bg-background px-3 py-1.5 text-left text-[13px] leading-5 text-foreground transition-colors hover:border-ring hover:bg-accent-soft disabled:pointer-events-none disabled:opacity-50",
+                    "rounded-full border border-border bg-background px-3.5 py-1.5 text-left text-[13px] leading-5 text-foreground shadow-sm transition-[color,background-color,border-color,transform] hover:-translate-y-px hover:border-ring hover:bg-accent-soft disabled:pointer-events-none disabled:opacity-50",
                     compactSuggestions ? "block max-w-[min(22rem,75vw)] truncate" : "max-w-full",
                   )}
                 >
@@ -116,7 +116,7 @@ export function QuestionComposer({
         <label htmlFor={id} className="sr-only">
           {label}
         </label>
-        <div className="flex items-end gap-2 rounded-lg border border-input bg-background p-2 shadow-sm has-[textarea:focus-visible]:outline-2 has-[textarea:focus-visible]:outline-offset-2 has-[textarea:focus-visible]:outline-ring">
+        <div className="flex items-end gap-2 rounded-xl border border-input bg-background p-2 shadow-sm transition-shadow has-[textarea:focus-visible]:shadow-lg has-[textarea:focus-visible]:outline-2 has-[textarea:focus-visible]:outline-offset-2 has-[textarea:focus-visible]:outline-ring">
           <Textarea
             id={id}
             value={value}

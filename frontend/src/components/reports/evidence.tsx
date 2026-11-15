@@ -185,7 +185,7 @@ export function EvidenceItem({
   };
 
   return (
-    <li id={domId} className="scroll-mt-24 rounded-lg border border-border bg-card">
+    <li id={domId} className="scroll-mt-24 rounded-xl border border-border bg-card shadow-sm">
       <button
         type="button"
         id={`${domId}-trigger`}

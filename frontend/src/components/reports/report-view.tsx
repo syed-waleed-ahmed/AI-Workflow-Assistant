@@ -12,6 +12,12 @@ import { EvidenceChip, EvidenceChips, EvidenceContext, EvidenceItem } from "./ev
 import { VerificationBadge } from "./verification-badge";
 
 const LEVEL_TONE: Record<Level, BadgeTone> = { high: "accent", medium: "neutral", low: "outline" };
+/** A coloured left edge that lets the eye find the most important items first. */
+const LEVEL_EDGE: Record<Level, string> = {
+  high: "border-l-primary",
+  medium: "border-l-warning-text/70",
+  low: "border-l-border",
+};
 
 type HeadingLevel = 1 | 2 | 3;
 
@@ -192,10 +198,10 @@ export function ReportView({
               {report.key_metrics.map((metric, index) => (
                 <li
                   key={`${metric.label}-${index}`}
-                  className="flex min-w-0 flex-col gap-1.5 rounded-lg border border-border bg-card p-4"
+                  className="relative flex min-w-0 flex-col gap-1.5 overflow-hidden rounded-xl border border-border bg-card p-4 shadow-sm before:absolute before:inset-x-0 before:top-0 before:h-0.75 before:bg-brand-gradient"
                 >
                   <p className="text-xs leading-4 text-muted-foreground">{metric.label}</p>
-                  <p className="tabular text-xl leading-7 font-semibold tracking-tight wrap-break-word">
+                  <p className="tabular text-2xl leading-8 font-semibold tracking-tight wrap-break-word">
                     {metric.value}
                   </p>
                   {metric.context ? (
@@ -214,7 +220,10 @@ export function ReportView({
               {report.findings.map((finding, index) => (
                 <li
                   key={`${finding.title}-${index}`}
-                  className="rounded-lg border border-border bg-card p-4"
+                  className={cn(
+                    "rounded-xl border border-l-[3px] border-border bg-card p-4 shadow-sm",
+                    LEVEL_EDGE[finding.significance],
+                  )}
                 >
                   <div className="flex flex-wrap items-start justify-between gap-2">
                     <Heading
@@ -257,7 +266,7 @@ export function ReportView({
               {report.anomalies.map((anomaly, index) => (
                 <li
                   key={`${anomaly.title}-${index}`}
-                  className="rounded-lg border border-border bg-card p-4"
+                  className="rounded-xl border border-l-[3px] border-border border-l-warning-text/70 bg-card p-4 shadow-sm"
                 >
                   <Heading
                     level={itemLevel}
@@ -285,7 +294,10 @@ export function ReportView({
               {report.recommendations.map((recommendation, index) => (
                 <li
                   key={`${recommendation.action}-${index}`}
-                  className="rounded-lg border border-border bg-card p-4"
+                  className={cn(
+                    "rounded-xl border border-l-[3px] border-border bg-card p-4 shadow-sm",
+                    LEVEL_EDGE[recommendation.priority],
+                  )}
                 >
                   <div className="flex flex-wrap items-start justify-between gap-2">
                     <p className="min-w-0 text-sm leading-5 font-semibold wrap-break-word">
