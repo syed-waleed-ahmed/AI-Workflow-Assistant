@@ -23,7 +23,7 @@ import type { ReportContent } from "@/lib/api/types";
 import { verificationSummary } from "@/components/reports/verification-badge";
 import { formatNumber } from "@/lib/format";
 
-// Real output of the backend for data/sample_sales.csv, copied from docs/sample-report.json.
+// Real output of the backend for data/sample_sales.csv (src/data/sample-report.json).
 const sampleReport = sampleReportJson as unknown as ReportContent;
 
 const STEPS: { icon: LucideIcon; title: string; text: string }[] = [

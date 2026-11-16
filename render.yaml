@@ -1,6 +1,6 @@
 # Render blueprint for the API. In the Render dashboard: New → Blueprint → select this
 # repository. Values marked `sync: false` are entered once in the dashboard and never stored
-# in the repository. See DEPLOYMENT.md for the full walkthrough.
+# in the repository. See docs/deployment.md for the full walkthrough.
 services:
   - type: web
     name: ai-workflow-assistant-api

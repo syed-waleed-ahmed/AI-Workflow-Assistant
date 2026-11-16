@@ -12,7 +12,7 @@ import type {
   User,
 } from "@/lib/api/types";
 
-/** The real report the backend produced for data/sample_sales.csv (docs/sample-report.json). */
+/** The real report the backend produced for data/sample_sales.csv. */
 export const sampleReport = sampleReportJson as unknown as ReportContent;
 
 export function sampleChart(evidenceId: string): Chart {

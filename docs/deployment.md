@@ -191,7 +191,7 @@ The container applies migrations on start. CI applies them to a fresh PostgreSQL
 | More than about a dozen analyses a day | Groq Developer tier | Raise `LLM_REQUEST_TOKEN_BUDGET`, `DAILY_ANALYSIS_LIMIT`, `WORKER_CONCURRENCY`. |
 | Database or storage quota | Supabase Pro, Neon, R2, S3 | Change `DATABASE_URL` or the `S3_*` settings. No data-format change. |
 | Commercial use | Vercel Pro | None in the code. |
-| Several API instances | Add Redis | Swap the in-process rate limiter (see ARCHITECTURE.md). Run the worker as a separate service. |
+| Several API instances | Add Redis | Swap the in-process rate limiter (see [architecture.md](architecture.md)). Run the worker as a separate service. |
 
 ## Rollback
 

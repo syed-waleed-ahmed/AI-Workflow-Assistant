@@ -1,12 +1,12 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { stampProxyHeaders } from "@/lib/proxy-headers";
-import { resolveRedirect, SESSION_COOKIE } from "@/lib/route-guard";
+import { stampProxyHeaders } from "@/lib/proxy/headers";
+import { resolveRedirect, SESSION_COOKIE } from "@/lib/proxy/route-guard";
 
 /*
  * Next.js 16 renamed the `middleware.ts` convention to `proxy.ts`. This file does two things:
- * - guards app routes on whether the session cookie exists (see route-guard.ts);
+ * - guards app routes on whether the session cookie exists (see lib/proxy/route-guard.ts);
  * - stamps forwarded sign-in and registration requests with the visitor's address, so the
- *   API's per-address limit applies per visitor (see proxy-headers.ts).
+ *   API's per-address limit applies per visitor (see lib/proxy/headers.ts).
  */
 export function proxy(request: NextRequest) {
   if (request.nextUrl.pathname.startsWith("/api/")) {

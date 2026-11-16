@@ -123,7 +123,7 @@ spreadsheet applications from executing them as formulas.
 | API requests per minute per user | 240 | `RATE_LIMIT_API_PER_MINUTE` |
 | JSON request body | 64 KB | fixed |
 
-The free-tier deployment lowers the upload and row limits; see [DEPLOYMENT.md](DEPLOYMENT.md).
+The free-tier deployment lowers the upload and row limits; see [docs/deployment.md](docs/deployment.md).
 
 **Client addresses.** The per-address auth limit needs an address the caller cannot choose.
 Measured on the hosted deployment, Render's edge keeps whatever `X-Forwarded-For` a caller
@@ -182,7 +182,7 @@ Groq's own data-handling terms apply to this content.
 | Report figures checked against computed results | Implemented | `test_verification.py`, `test_agent_graph.py` |
 | Formula injection neutralised in exports | Implemented | `test_reports_and_platform.py` |
 | Rate limits and quotas | Implemented | `test_api_auth.py`, `test_api_datasets.py`, `test_api_analyses.py` |
-| Rate-limit address cannot be forged by the caller | Implemented; verified on the hosted deployment | `test_api_auth.py`, `lib.test.ts` |
+| Rate-limit address cannot be forged by the caller | Implemented; verified on the hosted deployment | `test_api_auth.py`, `lib/proxy/headers.test.ts` |
 | Errors and health endpoints leak no internals | Implemented | `test_reports_and_platform.py` |
 | Unsafe production configuration refused at startup | Implemented | `test_reports_and_platform.py`, CI image job |
 | Dependency audit in CI | Implemented | `.github/workflows/ci.yml` |
