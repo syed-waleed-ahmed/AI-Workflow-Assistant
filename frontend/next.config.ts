@@ -59,6 +59,10 @@ const nextConfig: NextConfig = {
     // the session cookies are first-party.
     return [{ source: "/api/:path*", destination: `${backendUrl}/api/:path*` }];
   },
+  async redirects() {
+    // Reports are listed with the analyses that produced them; keep old bookmarks working.
+    return [{ source: "/app/reports", destination: "/app/analyses", permanent: true }];
+  },
   async headers() {
     return [{ source: "/:path*", headers: securityHeaders }];
   },

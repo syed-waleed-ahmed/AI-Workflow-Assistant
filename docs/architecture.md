@@ -47,9 +47,9 @@ backend/
   migrations/          Alembic migrations
   tests/               pytest suite
   scripts/smoke_test.py  end-to-end check against a running deployment
-frontend/              Next.js application
-docs/                  OpenAPI schema and a real sample report
-data/                  sample datasets
+frontend/              Next.js application (layout in frontend/README.md)
+docs/                  this document, the deployment guide, OpenAPI schema, screenshots
+data/                  sample datasets for the command line
 ```
 
 There is no separate repository layer. Services use SQLAlchemy sessions directly; with eight
@@ -158,7 +158,7 @@ dataset profile or the user's question — after rounding to the precision shown
 once for correction; anything still unmatched is listed in the report as unverified and the
 report is marked *partially verified*.
 
-What this does and does not guarantee is stated in [SECURITY.md](SECURITY.md#limits-of-verification).
+What this does and does not guarantee is stated in [SECURITY.md](../SECURITY.md#limits-of-verification).
 
 **Bounded execution.** A run is limited by a cap on agent rounds, a cap on tool calls, a cap
 on calls per batch, LangGraph's recursion limit as a backstop, and a wall-clock deadline.

@@ -42,6 +42,9 @@ class AnalysisSummary(BaseModel):
     created_at: datetime
     started_at: datetime | None
     finished_at: datetime | None
+    # The report of the newest completed turn, so a list can export it without opening the
+    # conversation. Filled in by the list endpoint only.
+    latest_report_id: uuid.UUID | None = None
 
 
 class MessageOut(BaseModel):

@@ -34,7 +34,7 @@ All screenshots are from a real run on the bundled sample dataset. [Full report 
 - **Provenance.** Every metric and finding links to the computation behind it, with the
   underlying table.
 - **Follow-ups.** Ask further questions in the same conversation.
-- **Reports.** Saved to your account; export as Markdown, PDF, Excel or CSV.
+- **Reports.** Saved with the analysis that produced them; export as Markdown, PDF, Excel or CSV.
 - **Accounts.** Each user's datasets, analyses and reports are private to them.
 
 ### Analytical tools
@@ -60,13 +60,13 @@ model writes is ever executed as code.
 
 The `agent ⇄ tools` loop is the ReAct agent this project started as; planning, verification,
 structured reporting and numeric grounding were added around it.
-[ARCHITECTURE.md](ARCHITECTURE.md) explains the design and the reasons behind it.
+[docs/architecture.md](docs/architecture.md) explains the design and the reasons behind it.
 
 ## Tech stack
 
 | Layer | Technology |
 | --- | --- |
-| Frontend | Next.js (App Router), React, TypeScript (strict), Tailwind CSS, shadcn/ui, Recharts, Motion, TanStack Query, React Hook Form, Zod |
+| Frontend | Next.js (App Router), React, TypeScript (strict), Tailwind CSS, shadcn/ui, cmdk, Recharts, Motion, TanStack Query, React Hook Form, Zod |
 | Backend | Python 3.12, FastAPI, Pydantic, SQLAlchemy 2, Alembic |
 | Agent | LangGraph, LangChain Core, Groq (`openai/gpt-oss-120b`) |
 | Data | pandas, NumPy, PyArrow (Parquet), openpyxl |
@@ -142,7 +142,7 @@ them all. The essentials:
 
 Multi-sheet workbooks ask which sheet to import. Formulas and macros are never executed; only
 stored values are read. Limits are configurable, and the reasons for the free-tier values are
-in [DEPLOYMENT.md](DEPLOYMENT.md).
+in [docs/deployment.md](docs/deployment.md).
 
 ## Tests
 
@@ -184,7 +184,7 @@ Analyses run in the background: `POST /analyses` returns `202`, and the client p
 ## Deployment
 
 The project deploys on free tiers: Vercel (frontend), Render (API), Supabase (PostgreSQL and
-file storage) and Groq (model). [DEPLOYMENT.md](DEPLOYMENT.md) has the step-by-step guide, the
+file storage) and Groq (model). [docs/deployment.md](docs/deployment.md) has the step-by-step guide, the
 limits those tiers impose, and the upgrade path.
 
 ## Security
@@ -207,11 +207,10 @@ what is not implemented.
 
 ## Project documents
 
-- [ARCHITECTURE.md](ARCHITECTURE.md) — design and trade-offs
-- [SECURITY.md](SECURITY.md) — threat model and controls
-- [DEPLOYMENT.md](DEPLOYMENT.md) — hosting, limits, upgrade path
-- [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) — what was built, in what order, and status
-- [CONTRIBUTING.md](CONTRIBUTING.md) — conventions and checks
+- [Architecture](docs/architecture.md) — design and trade-offs
+- [Security](SECURITY.md) — threat model and controls
+- [Deployment](docs/deployment.md) — hosting, limits, upgrade path
+- [Contributing](CONTRIBUTING.md) — conventions and checks
 
 ## Author
 

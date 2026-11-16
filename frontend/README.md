@@ -36,7 +36,7 @@ can.
 ## Layout
 
 - `src/app` — routes. `/` is public; `/login` and `/register`; everything under `/app` is the signed-in product.
-- `src/proxy.ts` — route guard (Next.js 16 renamed `middleware.ts` to `proxy.ts`). It only checks that the session cookie exists; the API enforces authentication.
+- `src/proxy.ts` — route guard (Next.js 16 renamed `middleware.ts` to `proxy.ts`). It only checks that the session cookie exists; the API enforces authentication. Its logic lives in `src/lib/proxy`.
 - `src/lib/api` — the API client (`apiFetch`, `ApiError`), generated types, upload and download helpers.
 - `src/lib/query` — TanStack Query hooks, including the analysis progress polling.
 - `src/components` — UI primitives (`ui/`), and feature components for datasets, analyses, reports, the dashboard and settings.

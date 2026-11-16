@@ -27,12 +27,18 @@ interface ReportExportMenuProps {
   /** Adds a "Print" entry; only useful on the full report page. */
   allowPrint?: boolean;
   size?: "sm" | "default";
+  /** A compact icon button for dense lists; the label moves to aria-label. */
+  iconOnly?: boolean;
+  /** Names the report in the icon button's label when several are on one page. */
+  reportLabel?: string;
 }
 
 export function ReportExportMenu({
   reportId,
   allowPrint = false,
   size = "sm",
+  iconOnly = false,
+  reportLabel,
 }: ReportExportMenuProps) {
   const [pending, setPending] = useState<ExportFormat | null>(null);
 
@@ -51,10 +57,21 @@ export function ReportExportMenu({
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="outline" size={size} loading={pending !== null}>
-          {pending === null ? <Download aria-hidden="true" /> : null}
-          Export
-        </Button>
+        {iconOnly ? (
+          <Button
+            variant="ghost"
+            size="icon-sm"
+            loading={pending !== null}
+            aria-label={reportLabel ? `Export report: ${reportLabel}` : "Export report"}
+          >
+            {pending === null ? <Download aria-hidden="true" /> : null}
+          </Button>
+        ) : (
+          <Button variant="outline" size={size} loading={pending !== null}>
+            {pending === null ? <Download aria-hidden="true" /> : null}
+            Export
+          </Button>
+        )}
       </DropdownMenuTrigger>
       <DropdownMenuContent align="end">
         <DropdownMenuLabel>Download report as</DropdownMenuLabel>

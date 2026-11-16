@@ -4,7 +4,7 @@ import {
   ArrowRight,
   Database,
   FileSearch,
-  Gauge,
+  FileText,
   MessagesSquare,
   Plus,
   Sparkles,
@@ -37,9 +37,9 @@ import {
   useDatasets,
   useDatasetSuggestions,
   useMe,
+  useReports,
   useUsage,
 } from "@/lib/query/hooks";
-import { UsageMeters } from "./usage-meters";
 
 const ONBOARDING_STEPS = [
   {
@@ -168,28 +168,32 @@ interface Stat {
   icon: LucideIcon;
   label: string;
   value: string;
+  href: string;
 }
 
-/** Headline counts for a returning user. */
+/** Headline counts for a returning user, each leading to where those items live. */
 function StatTiles({ stats }: { stats: readonly Stat[] }) {
   return (
     <ul className="grid grid-cols-3 gap-2 sm:gap-3">
       {stats.map((stat) => (
-        <li
-          key={stat.label}
-          className="flex min-w-0 items-center gap-4 rounded-xl border border-border bg-card p-3 shadow-sm sm:p-4"
-        >
-          <span className="bg-brand-gradient hidden size-10 shrink-0 items-center justify-center rounded-lg text-primary-foreground shadow-sm sm:flex">
-            <stat.icon className="size-5" aria-hidden="true" />
-          </span>
-          <p className="flex min-w-0 flex-col">
-            <span className="text-xs leading-4 font-medium text-muted-foreground">
-              {stat.label}
+        <li key={stat.label}>
+          <Link
+            href={stat.href}
+            aria-label={`${stat.label}: ${stat.value}`}
+            className="card-interactive flex h-full min-w-0 items-center gap-4 rounded-xl border border-border bg-card p-3 shadow-sm sm:p-4"
+          >
+            <span className="hidden size-10 shrink-0 items-center justify-center rounded-lg bg-brand-soft text-accent-text ring-1 ring-border sm:flex">
+              <stat.icon className="size-5" aria-hidden="true" />
             </span>
-            <span className="tabular text-lg font-semibold tracking-tight sm:text-xl">
-              {stat.value}
+            <span className="flex min-w-0 flex-col">
+              <span className="text-xs leading-4 font-medium text-muted-foreground">
+                {stat.label}
+              </span>
+              <span className="tabular text-lg font-semibold tracking-tight sm:text-2xl">
+                {stat.value}
+              </span>
             </span>
-          </p>
+          </Link>
         </li>
       ))}
     </ul>
@@ -282,6 +286,8 @@ export function DashboardView() {
   const usage = useUsage();
   const datasets = useDatasets({ limit: 5 });
   const analyses = useAnalyses({ limit: 5 });
+  // Only the total is shown.
+  const reports = useReports({ limit: 1 });
 
   const firstName = me.data?.name.trim().split(/\s+/)[0];
   const loading = datasets.isPending || analyses.isPending;
@@ -315,18 +321,23 @@ export function DashboardView() {
       <>
         <StatTiles
           stats={[
-            { icon: Database, label: "Datasets", value: formatInteger(datasets.data.total) },
+            {
+              icon: Database,
+              label: "Datasets",
+              value: formatInteger(datasets.data.total),
+              href: "/app/datasets",
+            },
             {
               icon: MessagesSquare,
               label: "Analyses",
               value: formatInteger(analyses.data.total),
+              href: "/app/analyses",
             },
             {
-              icon: Gauge,
-              label: "Analyses today",
-              value: usage.data
-                ? `${usage.data.analyses_today} / ${usage.data.daily_analysis_limit}`
-                : "—",
+              icon: FileText,
+              label: "Reports",
+              value: reports.data ? formatInteger(reports.data.total) : "—",
+              href: "/app/analyses",
             },
           ]}
         />
@@ -385,54 +396,28 @@ export function DashboardView() {
 
   return (
     <PageContainer>
-      <header className="relative isolate overflow-hidden rounded-2xl border border-border bg-card px-5 py-6 shadow-sm sm:px-7 sm:py-8">
-        <div aria-hidden="true" className="bg-dots pointer-events-none absolute inset-0 -z-10" />
-        <div
-          aria-hidden="true"
-          className="bg-glow pointer-events-none absolute -top-32 -right-24 -z-10 size-96"
-        />
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
-          <div className="space-y-1.5">
-            <h1 className="text-2xl leading-8 font-semibold tracking-tight sm:text-3xl">
-              {firstName ? (
-                <>
-                  Welcome, <span className="text-gradient">{firstName}</span>
-                </>
-              ) : (
-                "Welcome"
-              )}
-            </h1>
-            <p className="max-w-xl text-sm text-muted-foreground">
-              Ask questions of your data and get reports you can trace back to the computation.
-            </p>
-          </div>
-          <Button asChild className="group w-fit">
-            <Link href="/app/analyses/new">
-              <Sparkles aria-hidden="true" />
-              New analysis
-              <ArrowRight
-                aria-hidden="true"
-                className="transition-transform group-hover:translate-x-0.5"
-              />
-            </Link>
-          </Button>
+      <header className="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+        <div className="space-y-1">
+          <h1 className="text-2xl leading-8 font-semibold tracking-tight">
+            {firstName ? `Welcome, ${firstName}` : "Welcome"}
+          </h1>
+          <p className="max-w-xl text-sm text-muted-foreground">
+            Ask questions of your data and get reports you can trace back to the computation.
+          </p>
         </div>
+        <Button asChild className="group w-fit">
+          <Link href="/app/analyses/new">
+            <Sparkles aria-hidden="true" />
+            New analysis
+            <ArrowRight
+              aria-hidden="true"
+              className="transition-transform group-hover:translate-x-0.5"
+            />
+          </Link>
+        </Button>
       </header>
 
       {body}
-
-      <Card>
-        <CardHeader>
-          <CardTitle>Usage</CardTitle>
-          <CardDescription>
-            This app runs on free-tier infrastructure, so each account has limits. Analyses are
-            counted over the last 24 hours.
-          </CardDescription>
-        </CardHeader>
-        <CardContent>
-          <UsageMeters />
-        </CardContent>
-      </Card>
     </PageContainer>
   );
 }

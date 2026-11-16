@@ -53,7 +53,7 @@ export function ReportPage({ reportId }: { reportId: string }) {
           retrying={report.isFetching}
           action={
             <Button variant="outline" size="sm" asChild>
-              <Link href="/app/reports">Back to reports</Link>
+              <Link href="/app/analyses">Back to analyses</Link>
             </Button>
           }
         />
@@ -62,15 +62,16 @@ export function ReportPage({ reportId }: { reportId: string }) {
   }
 
   const data = report.data;
+  const conversation = `/app/analyses/${data.analysis_id}`;
   return (
     <PageContainer>
       <Link
-        href="/app/reports"
+        href={conversation}
         data-print="hide"
         className="inline-flex w-fit items-center gap-1 rounded-sm text-sm text-muted-foreground transition-colors hover:text-foreground"
       >
         <ChevronLeft className="size-4" aria-hidden="true" />
-        Reports
+        Back to the analysis
       </Link>
 
       <ReportView
@@ -80,7 +81,7 @@ export function ReportPage({ reportId }: { reportId: string }) {
         actions={
           <>
             <Button variant="outline" size="sm" asChild>
-              <Link href={`/app/analyses/${data.analysis_id}`}>
+              <Link href={conversation}>
                 <MessagesSquare aria-hidden="true" />
                 Conversation
               </Link>
@@ -109,7 +110,7 @@ export function ReportPage({ reportId }: { reportId: string }) {
           remove.mutate(data.id, {
             onSuccess: () => {
               toast.success("Report deleted");
-              router.push("/app/reports");
+              router.push(conversation);
             },
             onError: (error) => {
               toast.error(errorMessage(error, "The report could not be deleted."));

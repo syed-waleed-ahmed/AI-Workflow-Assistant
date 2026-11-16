@@ -102,7 +102,7 @@ def auth_rate_limit(request: Request) -> None:
     settings = get_settings()
     # With a frontend proxy configured, sign-in and registration are accepted only through it,
     # because only there is the visitor's address known. Called directly, the API sits behind
-    # an edge whose forwarded addresses a caller can influence (see DEPLOYMENT.md).
+    # an edge whose forwarded addresses a caller can influence (see docs/deployment.md).
     if settings.proxy_shared_secret and proxy_stamped_address(request) is None:
         raise PermissionDeniedError("Sign in through the web app.", code="proxy_required")
     rate_limiter.check(f"auth:{client_ip(request)}", settings.rate_limit_auth_per_minute)
