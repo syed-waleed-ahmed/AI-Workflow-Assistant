@@ -376,7 +376,7 @@ export function SettingsView() {
 
       <SettingsSection
         title="Usage"
-        description="This app runs on free-tier infrastructure, so each account has limits. Analyses are counted over the last 24 hours."
+        description="Your account limits. Analyses are counted over the last 24 hours."
       >
         <UsageMeters />
         <UsageTotals />
@@ -403,16 +403,8 @@ export function SettingsView() {
             >
               Analyses
             </Link>{" "}
-            — delete a conversation together with the reports it produced.
-          </li>
-          <li>
-            <Link
-              href="/app/reports"
-              className="font-medium text-accent-text underline-offset-4 hover:underline"
-            >
-              Reports
-            </Link>{" "}
-            — export a report as Markdown, PDF or Excel, or delete it.
+            — export a report as Markdown, PDF or Excel, or delete a conversation together with the
+            reports it produced.
           </li>
         </ul>
       </SettingsSection>

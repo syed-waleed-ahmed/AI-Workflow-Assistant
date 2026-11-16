@@ -104,7 +104,7 @@ describe("route guard", () => {
   });
 
   it("leaves everything else alone", () => {
-    expect(resolveRedirect({ pathname: "/app/reports", search: "", hasSession: true })).toBeNull();
+    expect(resolveRedirect({ pathname: "/app/analyses", search: "", hasSession: true })).toBeNull();
     expect(resolveRedirect({ pathname: "/login", search: "", hasSession: false })).toBeNull();
     expect(resolveRedirect({ pathname: "/application", search: "", hasSession: false })).toBeNull();
   });

@@ -234,6 +234,10 @@ def test_list_filter_and_delete(alice, dataset_id, sales_csv, scripted):
     listing = alice.get("/analyses").json()
     assert listing["total"] == 2 and [item["id"] for item in listing["items"]] == [second, first]
     assert alice.get("/analyses", params={"dataset_id": dataset_id}).json()["total"] == 1
+    # The finished analysis links its report; the queued one has none yet.
+    first_report = alice.get(f"/analyses/{first}").json()["messages"][1]["report_id"]
+    latest = {item["id"]: item["latest_report_id"] for item in listing["items"]}
+    assert latest == {first: first_report, second: None}
 
     assert alice.delete(f"/analyses/{second}").status_code == 409  # still queued
     alice.post(f"/analyses/{second}/cancel")

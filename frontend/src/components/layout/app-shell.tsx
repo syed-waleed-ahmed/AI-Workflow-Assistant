@@ -3,7 +3,6 @@
 import {
   CircleUser,
   Database,
-  FileText,
   LayoutDashboard,
   LogOut,
   Menu,
@@ -15,7 +14,6 @@ import {
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Suspense, useState, type ReactNode } from "react";
-import { toast } from "sonner";
 import { Logo } from "@/components/brand/logo";
 import { ClientOnly } from "@/components/common/client-only";
 import { Button } from "@/components/ui/button";
@@ -35,10 +33,11 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-import { hardNavigate } from "@/lib/navigation";
-import { useLogout, useMe, useUsage } from "@/lib/query/hooks";
+import { useMe, useUsage } from "@/lib/query/hooks";
 import { cn } from "@/lib/utils";
+import { CommandMenu } from "./command-menu";
 import { ThemeToggle } from "./theme-toggle";
+import { useSignOut } from "./use-sign-out";
 
 interface NavItem {
   href: string;
@@ -46,21 +45,23 @@ interface NavItem {
   icon: LucideIcon;
   /** Matches only the exact path (the dashboard), not everything below it. */
   exact?: boolean;
+  /** Other sections that belong to this item, such as a report opened from an analysis. */
+  also?: readonly string[];
 }
 
 const NAV_ITEMS: readonly NavItem[] = [
   { href: "/app", label: "Dashboard", icon: LayoutDashboard, exact: true },
   { href: "/app/datasets", label: "Datasets", icon: Database },
-  { href: "/app/analyses", label: "Analyses", icon: MessagesSquare },
-  { href: "/app/reports", label: "Reports", icon: FileText },
+  { href: "/app/analyses", label: "Analyses", icon: MessagesSquare, also: ["/app/reports"] },
   { href: "/app/settings", label: "Settings", icon: Settings },
 ];
 
 function isActive(item: NavItem, pathname: string | null): boolean {
   if (!pathname) return false;
-  return item.exact
-    ? pathname === item.href
-    : pathname === item.href || pathname.startsWith(`${item.href}/`);
+  if (item.exact) return pathname === item.href;
+  return [item.href, ...(item.also ?? [])].some(
+    (href) => pathname === href || pathname.startsWith(`${href}/`),
+  );
 }
 
 function NavList({ pathname, onNavigate }: { pathname: string | null; onNavigate?: () => void }) {
@@ -160,19 +161,13 @@ function SidebarContent({ onNavigate }: { onNavigate?: () => void }) {
 
 function UserMenu() {
   const me = useMe();
-  const logout = useLogout();
+  const { signOut, pending } = useSignOut();
   const initials = (me.data?.name ?? "")
     .split(/\s+/)
     .filter(Boolean)
     .slice(0, 2)
     .map((part) => part[0]?.toUpperCase() ?? "")
     .join("");
-
-  const signOut = () =>
-    logout.mutate(undefined, {
-      onSuccess: () => hardNavigate("/login"),
-      onError: () => toast.error("You could not be signed out. Please try again."),
-    });
 
   return (
     <DropdownMenu>
@@ -212,7 +207,7 @@ function UserMenu() {
             Settings
           </Link>
         </DropdownMenuItem>
-        <DropdownMenuItem onSelect={signOut} disabled={logout.isPending}>
+        <DropdownMenuItem onSelect={signOut} disabled={pending}>
           <LogOut aria-hidden="true" />
           Sign out
         </DropdownMenuItem>
@@ -271,7 +266,9 @@ export function AppShell({ children }: { children: ReactNode }) {
           >
             <Logo className="[&>span:last-child]:hidden sm:[&>span:last-child]:inline" />
           </Link>
-          <div className="ml-auto flex items-center gap-1.5">
+          {/* Pushed right next to the account controls on narrow screens, where the logo leads. */}
+          <CommandMenu className="ml-auto lg:ml-0 lg:w-72" />
+          <div className="flex items-center gap-1.5 lg:ml-auto">
             <ThemeToggle />
             <UserMenu />
           </div>

@@ -17,12 +17,11 @@ import { LandingAuthLinks } from "@/components/landing/landing-auth-links";
 import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { NumberTicker } from "@/components/motion/number-ticker";
 import { Reveal } from "@/components/motion/reveal";
-import { ReportView } from "@/components/reports/report-view";
 import { Button } from "@/components/ui/button";
 import sampleReportJson from "@/data/sample-report.json";
 import type { ReportContent } from "@/lib/api/types";
 import { verificationSummary } from "@/components/reports/verification-badge";
-import { formatInteger, formatNumber } from "@/lib/format";
+import { formatNumber } from "@/lib/format";
 
 // Real output of the backend for data/sample_sales.csv, copied from docs/sample-report.json.
 const sampleReport = sampleReportJson as unknown as ReportContent;
@@ -80,33 +79,6 @@ const FEATURES: { icon: LucideIcon; title: string; text: string }[] = [
     icon: Download,
     title: "Exports",
     text: "Download a report as Markdown, PDF or Excel, and any result table as CSV.",
-  },
-];
-
-const SECURITY: { title: string; text: string }[] = [
-  {
-    title: "Private to your account",
-    text: "Datasets, analyses and reports can only be read by the account that created them. This is enforced on the server for every request.",
-  },
-  {
-    title: "What the AI model sees",
-    text: "The model is an open-weight model hosted by Groq. Column names, summary statistics and aggregated results are sent to it to plan the analysis and write the report. The whole file is not sent.",
-  },
-  {
-    title: "Uploads are validated",
-    text: "Files are checked before they are stored, and spreadsheet formulas and macros are never executed.",
-  },
-  {
-    title: "Sign-in",
-    text: "Passwords are hashed with Argon2id. Sessions use HttpOnly cookies, and requests that change data are protected against cross-site request forgery.",
-  },
-  {
-    title: "You can delete everything",
-    text: "Delete individual datasets and reports, or your whole account with all of its data, from inside the app.",
-  },
-  {
-    title: "Free-tier infrastructure",
-    text: "This app runs on free hosting with daily usage limits, which are shown in the app. After a period of inactivity the first request can take up to a minute while the server wakes up.",
   },
 ];
 
@@ -212,21 +184,18 @@ function HeroProvenance() {
         </p>
       </div>
       <figcaption className="mt-3 text-xs leading-5 text-muted-foreground">
-        A figure and the computation behind it, taken from the{" "}
-        <a
-          href="#example"
-          className="font-medium text-accent-text underline-offset-4 hover:underline"
-        >
-          sample report
-        </a>{" "}
-        below.
+        A figure from a real report, and the computation behind it.
       </figcaption>
     </figure>
   );
 }
 
+const SECTION_LINKS = [
+  { href: "#how-it-works", label: "How it works" },
+  { href: "#features", label: "Features" },
+] as const;
+
 export default function LandingPage() {
-  const overview = sampleReport.dataset_overview;
   return (
     <div className="flex flex-1 flex-col">
       <a
@@ -245,15 +214,15 @@ export default function LandingPage() {
             aria-label="Sections"
             className="ml-4 hidden items-center gap-5 text-sm text-muted-foreground md:flex"
           >
-            <a href="#how-it-works" className="rounded-sm transition-colors hover:text-foreground">
-              How it works
-            </a>
-            <a href="#example" className="rounded-sm transition-colors hover:text-foreground">
-              Example report
-            </a>
-            <a href="#security" className="rounded-sm transition-colors hover:text-foreground">
-              Privacy and security
-            </a>
+            {SECTION_LINKS.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="rounded-sm transition-colors hover:text-foreground"
+              >
+                {link.label}
+              </a>
+            ))}
           </nav>
           <div className="ml-auto flex items-center gap-1.5">
             <ThemeToggle />
@@ -297,18 +266,16 @@ export default function LandingPage() {
                   </Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild>
-                  <a href="#example">See a real report</a>
+                  <a href="#how-it-works">See how it works</a>
                 </Button>
               </div>
               <ul className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted-foreground">
-                {["CSV, TSV, XLSX and XLS", "Free, with daily limits", "Charts and exports"].map(
-                  (item) => (
-                    <li key={item} className="flex items-center gap-1.5">
-                      <Check className="size-3.5 text-success-text" aria-hidden="true" />
-                      {item}
-                    </li>
-                  ),
-                )}
+                {["CSV, TSV, XLSX and XLS", "Free to use", "Charts and exports"].map((item) => (
+                  <li key={item} className="flex items-center gap-1.5">
+                    <Check className="size-3.5 text-success-text" aria-hidden="true" />
+                    {item}
+                  </li>
+                ))}
               </ul>
             </div>
             <HeroProvenance />
@@ -386,52 +353,6 @@ export default function LandingPage() {
           </div>
         </section>
 
-        <section aria-labelledby="example" className="border-b border-border bg-surface">
-          <div className="mx-auto w-full max-w-6xl space-y-8 px-4 py-16 sm:px-6">
-            <SectionIntro
-              id="example"
-              eyebrow="Example output"
-              title="A real report, not a mock-up"
-              text="This is unedited output produced by this product for the bundled sample dataset. It is rendered here with the same components the app uses, so the evidence chips and the Methodology section work."
-            />
-            <p className="max-w-3xl rounded-md border border-border bg-background px-4 py-3 text-sm leading-6 text-muted-foreground">
-              <span className="font-medium text-foreground">Source:</span> {overview.name} (
-              {formatInteger(overview.rows)} rows, {formatInteger(overview.columns)} columns), a
-              sales dataset bundled with the app. You can run the same analysis yourself with “Try
-              the sample dataset” after signing up. A new run may word things differently or choose
-              different computations, because the model plans and writes; the numbers are always
-              computed.
-            </p>
-            <Reveal className="rounded-2xl border border-border bg-background p-4 shadow-lg sm:p-8">
-              <ReportView report={sampleReport} headingLevel={3} />
-            </Reveal>
-          </div>
-        </section>
-
-        <section aria-labelledby="security" className="border-b border-border">
-          <div className="mx-auto w-full max-w-6xl space-y-10 px-4 py-16 sm:px-6">
-            <SectionIntro
-              id="security"
-              eyebrow="Privacy and security"
-              title="What happens to your data"
-              text="Plain statements about how the product works today, including its limits."
-            />
-            <Reveal>
-              <dl className="grid gap-px overflow-hidden rounded-xl border border-border bg-border sm:grid-cols-2 lg:grid-cols-3">
-                {SECURITY.map((item) => (
-                  <div key={item.title} className="space-y-2 bg-card p-6">
-                    <dt className="flex items-center gap-2 text-sm font-semibold">
-                      <ShieldCheck className="size-4 text-success-text" aria-hidden="true" />
-                      {item.title}
-                    </dt>
-                    <dd className="text-sm leading-6 text-muted-foreground">{item.text}</dd>
-                  </div>
-                ))}
-              </dl>
-            </Reveal>
-          </div>
-        </section>
-
         <section aria-labelledby="cta">
           <div className="mx-auto w-full max-w-6xl px-4 py-16 sm:px-6 sm:py-24">
             <Reveal className="relative isolate overflow-hidden rounded-3xl border border-border bg-card px-6 py-14 text-center shadow-lg sm:px-12">
@@ -476,15 +397,15 @@ export default function LandingPage() {
         <div className="mx-auto flex w-full max-w-6xl flex-col gap-4 px-4 py-8 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:px-6">
           <Logo className="text-foreground" />
           <nav aria-label="Footer" className="flex flex-wrap gap-x-5 gap-y-2">
-            <a href="#how-it-works" className="rounded-sm transition-colors hover:text-foreground">
-              How it works
-            </a>
-            <a href="#example" className="rounded-sm transition-colors hover:text-foreground">
-              Example report
-            </a>
-            <a href="#security" className="rounded-sm transition-colors hover:text-foreground">
-              Privacy and security
-            </a>
+            {SECTION_LINKS.map((link) => (
+              <a
+                key={link.href}
+                href={link.href}
+                className="rounded-sm transition-colors hover:text-foreground"
+              >
+                {link.label}
+              </a>
+            ))}
             <Link href="/login" className="rounded-sm transition-colors hover:text-foreground">
               Sign in
             </Link>

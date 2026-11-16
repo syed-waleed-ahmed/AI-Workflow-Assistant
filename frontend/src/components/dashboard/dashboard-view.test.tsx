@@ -34,6 +34,7 @@ function mockDashboard(overrides: Record<string, Route> = {}) {
       ],
       total: 3,
     },
+    "GET /api/v1/reports": { items: [], total: 4 },
     [`GET /api/v1/datasets/${datasetSummary.id}/suggestions`]: SUGGESTIONS,
     ...overrides,
   });
@@ -61,15 +62,13 @@ describe("DashboardView for a new user", () => {
     expect(screen.getByRole("button", { name: "Try the sample dataset" })).toBeInTheDocument();
     expect(screen.queryByRole("region", { name: "Recent analyses" })).not.toBeInTheDocument();
     expect(screen.queryByText("Start an analysis")).not.toBeInTheDocument();
-    // Usage is still shown, at zero.
-    expect(
-      await screen.findByRole("progressbar", { name: "Analyses (last 24 hours): 0 of 10" }),
-    ).toBeInTheDocument();
+    // Usage lives in the sidebar and settings, not on the dashboard.
+    expect(screen.queryByRole("progressbar")).not.toBeInTheDocument();
   });
 });
 
 describe("DashboardView with data", () => {
-  it("shows the quick start, recent analyses with live status, datasets and usage meters", async () => {
+  it("shows the quick start, headline counts, recent analyses with live status and datasets", async () => {
     mockDashboard();
     renderWithClient(<DashboardView />);
 
@@ -92,13 +91,19 @@ describe("DashboardView with data", () => {
     );
     expect(within(datasets).getByText("2,400 rows × 11 columns")).toBeInTheDocument();
 
-    expect(
-      await screen.findByRole("progressbar", { name: "Analyses (last 24 hours): 3 of 10" }),
-    ).toHaveAttribute("aria-valuenow", "30");
-    expect(
-      screen.getByRole("progressbar", { name: "Storage: 5.0 MB of 100 MB" }),
-    ).toBeInTheDocument();
-    expect(screen.getByRole("progressbar", { name: "Datasets: 2 of 25" })).toBeInTheDocument();
+    // Each count leads to where those items live; reports are listed with their analyses.
+    expect(await screen.findByRole("link", { name: "Reports: 4" })).toHaveAttribute(
+      "href",
+      "/app/analyses",
+    );
+    expect(screen.getByRole("link", { name: "Analyses: 3" })).toHaveAttribute(
+      "href",
+      "/app/analyses",
+    );
+    expect(screen.getByRole("link", { name: "Datasets: 1" })).toHaveAttribute(
+      "href",
+      "/app/datasets",
+    );
   });
 
   it("points at the analysis that is still running", async () => {
@@ -152,7 +157,6 @@ describe("DashboardView with data", () => {
       "placeholder",
       "You have reached the analysis limit for the last 24 hours.",
     );
-    expect(screen.getByText(/Daily limit reached/)).toBeInTheDocument();
     expect(
       screen.queryByRole("button", { name: SUGGESTIONS.questions[0] }),
     ).not.toBeInTheDocument();
@@ -192,7 +196,7 @@ describe("DashboardView with data", () => {
       </main>,
     );
     await screen.findByText("Start an analysis");
-    await screen.findByRole("progressbar", { name: "Datasets: 2 of 25" });
+    await screen.findByRole("link", { name: "Reports: 4" });
     expect(await axe(container)).toHaveNoViolations();
   });
 });

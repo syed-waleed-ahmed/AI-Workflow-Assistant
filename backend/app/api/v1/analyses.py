@@ -44,7 +44,14 @@ def list_analyses(
     items, total = analysis_service.list_analyses(
         db, user.id, limit=page.limit, offset=page.offset, dataset_id=dataset_id
     )
-    return AnalysisList(items=[AnalysisSummary.model_validate(item) for item in items], total=total)
+    reports = analysis_service.latest_report_ids(db, [item.id for item in items])
+    return AnalysisList(
+        items=[
+            AnalysisSummary.model_validate(item).model_copy(update={"latest_report_id": reports.get(item.id)})
+            for item in items
+        ],
+        total=total,
+    )
 
 
 @router.get("/{analysis_id}", response_model=AnalysisOut)

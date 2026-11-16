@@ -540,6 +540,8 @@ export interface components {
             started_at: string | null;
             /** Finished At */
             finished_at: string | null;
+            /** Latest Report Id */
+            latest_report_id?: string | null;
             /** Messages */
             messages: components["schemas"]["MessageOut"][];
         };
@@ -574,6 +576,8 @@ export interface components {
             started_at: string | null;
             /** Finished At */
             finished_at: string | null;
+            /** Latest Report Id */
+            latest_report_id?: string | null;
         };
         /** Anomaly */
         Anomaly: {

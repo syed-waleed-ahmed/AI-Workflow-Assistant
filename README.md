@@ -34,7 +34,7 @@ All screenshots are from a real run on the bundled sample dataset. [Full report 
 - **Provenance.** Every metric and finding links to the computation behind it, with the
   underlying table.
 - **Follow-ups.** Ask further questions in the same conversation.
-- **Reports.** Saved to your account; export as Markdown, PDF, Excel or CSV.
+- **Reports.** Saved with the analysis that produced them; export as Markdown, PDF, Excel or CSV.
 - **Accounts.** Each user's datasets, analyses and reports are private to them.
 
 ### Analytical tools
@@ -66,7 +66,7 @@ structured reporting and numeric grounding were added around it.
 
 | Layer | Technology |
 | --- | --- |
-| Frontend | Next.js (App Router), React, TypeScript (strict), Tailwind CSS, shadcn/ui, Recharts, Motion, TanStack Query, React Hook Form, Zod |
+| Frontend | Next.js (App Router), React, TypeScript (strict), Tailwind CSS, shadcn/ui, cmdk, Recharts, Motion, TanStack Query, React Hook Form, Zod |
 | Backend | Python 3.12, FastAPI, Pydantic, SQLAlchemy 2, Alembic |
 | Agent | LangGraph, LangChain Core, Groq (`openai/gpt-oss-120b`) |
 | Data | pandas, NumPy, PyArrow (Parquet), openpyxl |
@@ -210,7 +210,6 @@ what is not implemented.
 - [ARCHITECTURE.md](ARCHITECTURE.md) — design and trade-offs
 - [SECURITY.md](SECURITY.md) — threat model and controls
 - [DEPLOYMENT.md](DEPLOYMENT.md) — hosting, limits, upgrade path
-- [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) — what was built, in what order, and status
 - [CONTRIBUTING.md](CONTRIBUTING.md) — conventions and checks
 
 ## Author

@@ -15,7 +15,7 @@ from sqlalchemy.orm import Session, selectinload
 from app.core.config import get_settings
 from app.core.db import utcnow
 from app.core.exceptions import ConflictError, NotFoundError, QuotaExceededError
-from app.models import Analysis, AnalysisEvent, AnalysisMessage, AnalysisStatus, Dataset
+from app.models import Analysis, AnalysisEvent, AnalysisMessage, AnalysisStatus, Dataset, Report
 from app.models.analysis import ACTIVE_STATUSES
 from app.services import auth_service, dataset_service
 
@@ -105,6 +105,19 @@ def list_analyses(
         select(Analysis).where(*conditions).order_by(Analysis.created_at.desc()).limit(limit).offset(offset)
     ).all()
     return list(rows), total
+
+
+def latest_report_ids(db: Session, analysis_ids: list[uuid.UUID]) -> dict[uuid.UUID, uuid.UUID]:
+    """The newest report of each listed analysis, in one query. Analyses without one are absent."""
+    if not analysis_ids:
+        return {}
+    rows = db.execute(
+        select(Report.analysis_id, Report.id)
+        .where(Report.analysis_id.in_(analysis_ids))
+        .order_by(Report.analysis_id, Report.turn)
+    ).all()
+    # Ordered by turn, so the last row seen for an analysis is its newest report.
+    return {row.analysis_id: row.id for row in rows}
 
 
 def list_events(db: Session, analysis: Analysis, *, after: int) -> list[AnalysisEvent]:

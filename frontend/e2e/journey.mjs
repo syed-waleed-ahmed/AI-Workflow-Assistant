@@ -287,13 +287,37 @@ try {
     ["/app", "09-dashboard"],
     ["/app/datasets", "10-datasets"],
     ["/app/analyses", "11-analyses"],
-    ["/app/reports", "12-reports"],
     ["/app/settings", "13-settings"],
   ]) {
     await page.goto(`${BASE}${route}`, { waitUntil: "networkidle0" });
     await sleep(800);
     await shot(name);
   }
+
+  // Reports are listed, exported and deleted from the analyses page.
+  await page.goto(`${BASE}/app/analyses`, { waitUntil: "networkidle0" });
+  check(
+    "analyses list offers the latest report's export",
+    (await page.$('button[aria-label^="Export report"]')) !== null,
+  );
+  await page.goto(`${BASE}/app/reports`, { waitUntil: "networkidle0" });
+  check(
+    "old reports address redirects to analyses",
+    new URL(page.url()).pathname === "/app/analyses",
+    page.url(),
+  );
+
+  // Command palette.
+  await page.keyboard.down("Control");
+  await page.keyboard.press("k");
+  await page.keyboard.up("Control");
+  await sleep(300);
+  check(
+    "Ctrl+K opens the command palette",
+    (await page.$('[role="dialog"] [cmdk-input]')) !== null,
+  );
+  await shot("12-command-palette");
+  await page.keyboard.press("Escape");
   const usage = await page.evaluate(() => document.body.innerText);
   check(
     "settings page shows usage against limits",
@@ -372,7 +396,7 @@ try {
   // ---------------------------------------------------------------- sign out and back in
   await page.goto(`${BASE}/app`, { waitUntil: "networkidle0" });
   await api("/auth/logout", { method: "POST" });
-  await page.goto(`${BASE}/app/reports`, { waitUntil: "networkidle0" });
+  await page.goto(`${BASE}/app/analyses`, { waitUntil: "networkidle0" });
   check(
     "signed-out visitor is sent to sign in",
     new URL(page.url()).pathname === "/login",
