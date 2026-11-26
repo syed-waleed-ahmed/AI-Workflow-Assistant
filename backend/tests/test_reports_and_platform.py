@@ -9,6 +9,7 @@ import logging
 import pytest
 from openpyxl import load_workbook
 
+from app import __version__
 from app.core.config import Settings
 from app.core.logging import JsonFormatter
 from app.services.report_service import neutralise_formula
@@ -172,7 +173,7 @@ def test_pagination_bounds(alice):
 @pytest.mark.parametrize("path", ["/health", "/api/v1/health"])
 def test_liveness(anon, path):
     response = anon.http.get(path)
-    assert response.status_code == 200 and response.json() == {"status": "ok", "version": "1.0.0"}
+    assert response.status_code == 200 and response.json() == {"status": "ok", "version": __version__}
 
 
 def test_readiness_reports_each_dependency_without_details(anon, settings):

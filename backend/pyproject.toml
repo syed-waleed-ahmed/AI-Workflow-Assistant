@@ -1,6 +1,6 @@
 [project]
 name = "ai-workflow-assistant-backend"
-version = "1.0.0"
+version = "1.1.0"
 description = "AI data analysis platform: FastAPI backend with a LangGraph analysis agent."
 requires-python = ">=3.11"
 license = "MIT"
